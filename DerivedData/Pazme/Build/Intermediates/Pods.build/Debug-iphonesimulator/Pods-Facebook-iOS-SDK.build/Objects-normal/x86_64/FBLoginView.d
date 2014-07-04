@@ -1,0 +1,30 @@
+dependencies: \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/UI/FBLoginView.m \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBLoginView.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBGraphUser.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBGraphObject.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBGraphPlace.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBGraphLocation.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBSession.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBSDKMacros.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBTooltipView.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Insights/FBAppEvents+Internal.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBAppEvents.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBLoginTooltipView.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBLoginViewButtonPNG.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBLoginViewButtonPressedPNG.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBProfilePictureView.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBRequest.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBOpenGraphAction.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBOpenGraphObject.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBRequestConnection.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Network/FBRequestConnection+Internal.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Network/FBRequestMetadata.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Login/FBSession+Internal.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Login/FBSessionAppEventsState.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Login/FBSystemAccountStoreAdapter.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBTask.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBTaskCompletionSource.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Core/FBUtility.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Core/FBFetchedAppSettings.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Core/FBLogger.h

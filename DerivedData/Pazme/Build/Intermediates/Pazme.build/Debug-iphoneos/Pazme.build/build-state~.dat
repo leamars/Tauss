@@ -1,0 +1,412 @@
+TPazme
+v6
+r1
+cCheck dependencies
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/ResourceRules.plist
+cProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pazme-Prefix-dtjrapxerfimllalsdyxryytssou/Pazme-Prefix.pch.pch Pazme/Pazme-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/ViewController.o /Users/Lea/Desktop/Pazme/Pazme/ViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/AppDelegate.o /Users/Lea/Desktop/Pazme/Pazme/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/main.o /Users/Lea/Desktop/Pazme/Pazme/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Pazme normal armv7s
+cCopyStringsFile /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/en.lproj/InfoPlist.strings Pazme/en.lproj/InfoPlist.strings
+cCompileStoryboard /Users/Lea/Desktop/Pazme/Pazme/Base.lproj/Main.storyboard
+cCompileAssetCatalog /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app /Users/Lea/Desktop/Pazme/Pazme/Images.xcassets
+cProcessInfoPlistFile /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Info.plist /Users/Lea/Desktop/Pazme/Pazme/Pazme-Info.plist
+cGenerateDSYMFile /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app.dSYM /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Pazme
+cProcessProductPackaging /Users/Lea/Library/MobileDevice/Provisioning\ Profiles/88B4B2E9-B6E5-4D62-9015-8FF290F44FE2.mobileprovision /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/embedded.mobileprovision
+cTouch /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app
+cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme.xcent
+cCodeSign /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk
+c0000000053119F860000000000000132
+t1393663878
+s306
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist
+c0000000053619CD80000000000000094
+t1398906072
+s148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist
+c0000000053619CD80000000000000096
+t1398906072
+s150
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/SDKSettings.plist
+c0000000053619CD8000000000000036B
+t1398906072
+s875
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000053619CD9000000000000019E
+t1398906073
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c0000000053619CDB00000000004D7BC0
+t1398906075
+s5077952
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c0000000053619CDD0000000000A90C10
+t1398906077
+s11078672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c0000000053619CE50000000002759920
+t1398906085
+s41261344
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c0000000053619D3A0000000000000ADC
+t1398906170
+s2780
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/AppDelegate.o
+t1403574764
+s61688
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/Pazme.LinkFileList
+c0000000053A8D9EB000000000000019A
+t1403574763
+s410
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/ViewController.o
+t1403574764
+s39172
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/main.o
+t1403574764
+s3736
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme.xcent
+t1403574764
+s422
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/assetcatalog_dependencies.txt
+t1403574764
+s357
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/assetcatalog_generated_info.plist
+t1403574764
+s525
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pazme-Prefix-dtjrapxerfimllalsdyxryytssou/Pazme-Prefix.pch.pch
+t1403574764
+s87440
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app
+t1403574764
+s374
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app.dSYM
+t2
+s0
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Base.lproj/Main.storyboardc
+t1403574764
+s170
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Info.plist
+t1403574764
+s1301
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Pazme
+t1403574764
+s53700
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/PkgInfo
+t1403574764
+s8
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/ResourceRules.plist
+t1403574763
+s150
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/embedded.mobileprovision
+t1403574764
+s10300
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/en.lproj/InfoPlist.strings
+t1403574764
+s42
+
+N/Users/Lea/Desktop/Pazme/Pazme/AppDelegate.m
+c0000000053A8D9E100000000000007E0
+t1403574753
+s2016
+
+N/Users/Lea/Desktop/Pazme/Pazme/Base.lproj/Main.storyboard
+c0000000053A8D9E1000000000000071B
+t1403574753
+s1819
+
+N/Users/Lea/Desktop/Pazme/Pazme/Images.xcassets
+c0000000053A8D9E10000000000000088
+t1403574753
+s136
+
+N/Users/Lea/Desktop/Pazme/Pazme/Pazme-Info.plist
+c0000000053A8D9E100000000000004CF
+t1403574753
+s1231
+
+N/Users/Lea/Desktop/Pazme/Pazme/Pazme-Prefix.pch
+c0000000053A8D9E10000000000000158
+t1403574753
+s344
+
+N/Users/Lea/Desktop/Pazme/Pazme/ViewController.m
+c0000000053A8D9E100000000000001F6
+t1403574753
+s502
+
+N/Users/Lea/Desktop/Pazme/Pazme/en.lproj/InfoPlist.strings
+c0000000053A8D9E1000000000000002D
+t1403574753
+s45
+
+N/Users/Lea/Desktop/Pazme/Pazme/main.m
+c0000000053A8D9E1000000000000015A
+t1403574753
+s346
+
+N/Users/Lea/Library/MobileDevice/Provisioning Profiles/88B4B2E9-B6E5-4D62-9015-8FF290F44FE2.mobileprovision
+c000000005353D332000000000000283C
+t1398002482
+s10300
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pazme/AppDelegate.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pazme/ViewController.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pazme/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesc6860e6b1159b941^f2ea146b1159b941^---0#1#1#--18"Check dependencies36"3EF916B2-7B91-477A-838B-3546A1033C72-
+
+CCodeSign /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app
+s425267564.924958
+e425267565.154789
+r1
+xCodeSign
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"CodeSign DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app66"CodeSign DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.appa5ddec6c1159b941^d3a1276d1159b941^---0#0#1#-19%DVTDocumentLocation2@90"file:///Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/0000000000000000^1011"CodeSign DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app    cd /Users/Lea/Desktop/Pazme    export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    Using code signing identity "iPhone Developer: Grinnell AppDev (TGDK2NF7Q9)" and provisioning profile "iOS Team Provisioning Profile: *" (88B4B2E9-B6E5-4D62-9015-8FF290F44FE2)    /usr/bin/codesign --force --sign 1C19C685087B4C64088A2BF2069D9058A8D5C790 --resource-rules=/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/ResourceRules.plist --entitlements /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme.xcent /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app36"E66CA92B-A688-4FEF-B2E0-FAD1E7FAAFA7-
+b1C73DE73-248A-4551-8B24-B200FE963EBA
+
+CCompileAssetCatalog /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app /Users/Lea/Desktop/Pazme/Pazme/Images.xcassets
+s425267564.407956
+e425267564.884095
+r1
+xCompileAssetCatalog
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app
+x/Users/Lea/Desktop/Pazme/Pazme/Images.xcassets
+o/* com.apple.actool.compilation-results */
+o/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/LaunchImage-700-568h@2x.png
+o/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Assets.car
+o/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/assetcatalog_generated_info.plist
+o
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"CompileAssetCatalog DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app Pazme/Images.xcassets99"CompileAssetCatalog DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app Pazme/Images.xcassetsbf82686c1159b941^2a55e26c1159b941^-385"/* com.apple.actool.compilation-results *//Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/LaunchImage-700-568h@2x.png/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Assets.car/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/assetcatalog_generated_info.plist-0#0#1#-19%DVTDocumentLocation2@54"file:///Users/Lea/Desktop/Pazme/Pazme/Images.xcassets/0000000000000000^1037"CompileAssetCatalog DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app Pazme/Images.xcassets    cd /Users/Lea/Desktop/Pazme    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/usr/bin/actool --output-format human-readable-text --notices --warnings --export-dependency-info /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/assetcatalog_dependencies.txt --output-partial-info-plist /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/assetcatalog_generated_info.plist --app-icon AppIcon --launch-image LaunchImage --platform iphoneos --minimum-deployment-target 7.1 --target-device iphone --compress-pngs --compile /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app /Users/Lea/Desktop/Pazme/Pazme/Images.xcassets36"52AE8536-0A67-40F1-B47B-E4B9D4717659-
+b1C73DE73-248A-4551-8B24-B200FE963EBA
+
+CCompileC DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/AppDelegate.o /Users/Lea/Desktop/Pazme/Pazme/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425267564.076403
+e425267564.229243
+r1
+xCompileC
+xDerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/AppDelegate.o
+x/Users/Lea/Desktop/Pazme/Pazme/AppDelegate.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pazme/AppDelegate.m
+d/Users/Lea/Desktop/Pazme/Pazme/AppDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Compile /Users/Lea/Desktop/Pazme/Pazme/AppDelegate.m211"CompileC DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/AppDelegate.o Pazme/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler53b3136c1159b941^a7b03a6c1159b941^---0#0#1#-19%DVTDocumentLocation2@51"file:///Users/Lea/Desktop/Pazme/Pazme/AppDelegate.m0000000000000000^3455"CompileC DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/AppDelegate.o Pazme/AppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/DerivedSources/armv7s -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pazme-Prefix-dtjrapxerfimllalsdyxryytssou/Pazme-Prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/AppDelegate.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/AppDelegate.dia -c /Users/Lea/Desktop/Pazme/Pazme/AppDelegate.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/AppDelegate.o36"C636E646-FFEF-4FC0-BE3C-B02A59B1812A-
+b1C73DE73-248A-4551-8B24-B200FE963EBA
+
+CCompileC DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/ViewController.o /Users/Lea/Desktop/Pazme/Pazme/ViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425267564.076139
+e425267564.228726
+r1
+xCompileC
+xDerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/ViewController.o
+x/Users/Lea/Desktop/Pazme/Pazme/ViewController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pazme/ViewController.m
+d/Users/Lea/Desktop/Pazme/Pazme/ViewController.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Compile /Users/Lea/Desktop/Pazme/Pazme/ViewController.m217"CompileC DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/ViewController.o Pazme/ViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler8598136c1159b941^c18b3a6c1159b941^---0#0#1#-19%DVTDocumentLocation2@54"file:///Users/Lea/Desktop/Pazme/Pazme/ViewController.m0000000000000000^3473"CompileC DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/ViewController.o Pazme/ViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/DerivedSources/armv7s -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pazme-Prefix-dtjrapxerfimllalsdyxryytssou/Pazme-Prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/ViewController.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/ViewController.dia -c /Users/Lea/Desktop/Pazme/Pazme/ViewController.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/ViewController.o36"8F4F681C-39F0-4B3E-8984-BE76B1DA07BE-
+b1C73DE73-248A-4551-8B24-B200FE963EBA
+
+CCompileC DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/main.o /Users/Lea/Desktop/Pazme/Pazme/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425267564.076747
+e425267564.228503
+r1
+xCompileC
+xDerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/main.o
+x/Users/Lea/Desktop/Pazme/Pazme/main.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pazme/main.m
+d/Users/Lea/Desktop/Pazme/Pazme/AppDelegate.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Compile /Users/Lea/Desktop/Pazme/Pazme/main.m197"CompileC DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/main.o Pazme/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilera0c0136c1159b941^06803a6c1159b941^---0#0#1#-19%DVTDocumentLocation2@44"file:///Users/Lea/Desktop/Pazme/Pazme/main.m0000000000000000^3413"CompileC DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/main.o Pazme/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/DerivedSources/armv7s -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pazme-Prefix-dtjrapxerfimllalsdyxryytssou/Pazme-Prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/main.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/main.dia -c /Users/Lea/Desktop/Pazme/Pazme/main.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/main.o36"8F0316AC-3AF1-43CE-AA90-9E8A1807A37A-
+b1C73DE73-248A-4551-8B24-B200FE963EBA
+
+CCompileStoryboard /Users/Lea/Desktop/Pazme/Pazme/Base.lproj/Main.storyboard
+s425267564.407444
+e425267564.461296
+r1
+xCompileStoryboard
+x/Users/Lea/Desktop/Pazme/Pazme/Base.lproj/Main.storyboard
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"CompileStoryboard Pazme/Base.lproj/Main.storyboard50"CompileStoryboard Pazme/Base.lproj/Main.storyboardc362686c1159b941^9c18766c1159b941^---0#0#1#-19%DVTDocumentLocation2@64"file:///Users/Lea/Desktop/Pazme/Pazme/Base.lproj/Main.storyboard0000000000000000^750"CompileStoryboard Pazme/Base.lproj/Main.storyboard    cd /Users/Lea/Desktop/Pazme    export IBSC_MINIMUM_COMPATIBILITY_VERSION=7.1    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 7.1 --output-format human-readable-text --compile /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Base.lproj/Main.storyboardc /Users/Lea/Desktop/Pazme/Pazme/Base.lproj/Main.storyboard36"3101DFA6-A7D3-496D-9F4F-9ACAF62DA755-
+b1C73DE73-248A-4551-8B24-B200FE963EBA
+
+CCopyStringsFile /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/en.lproj/InfoPlist.strings Pazme/en.lproj/InfoPlist.strings
+s425267564.407236
+e425267564.409829
+r1
+xCopyStringsFile
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/en.lproj/InfoPlist.strings
+xPazme/en.lproj/InfoPlist.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Copy Pazme/en.lproj/InfoPlist.strings133"CopyStringsFile DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/en.lproj/InfoPlist.strings Pazme/en.lproj/InfoPlist.strings7156686c1159b941^79eb686c1159b941^---0#0#1#-19%DVTDocumentLocation2@64"file:///Users/Lea/Desktop/Pazme/Pazme/en.lproj/InfoPlist.strings0000000000000000^572"CopyStringsFile DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/en.lproj/InfoPlist.strings Pazme/en.lproj/InfoPlist.strings    cd /Users/Lea/Desktop/Pazme    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/en.lproj -- Pazme/en.lproj/InfoPlist.strings36"63992A86-4613-4356-BEFC-27A74A0E4F74-
+b1C73DE73-248A-4551-8B24-B200FE963EBA
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/ResourceRules.plist
+s425267563.082579
+e425267563.083692
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist
+xDerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/ResourceRules.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Copy DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/ResourceRules.plist210"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/ResourceRules.plistc53a156b1159b941^ba82156b1159b941^---0#0#1#-19%DVTDocumentLocation2@109"file:///Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/ResourceRules.plist0000000d3e5ff141^748"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/ResourceRules.plist    cd /Users/Lea/Desktop/Pazme    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app36"BB1B2A52-5856-453F-9594-805FC04A161C-
+b1C73DE73-248A-4551-8B24-B200FE963EBA
+
+CGenerateDSYMFile /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app.dSYM /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Pazme
+s425267564.886896
+e425267564.920710
+r1
+xGenerateDSYMFile
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app.dSYM
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Pazme
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Generate /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app.dSYM143"GenerateDSYMFile DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app.dSYM DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Pazme7a17e36c1159b941^c4b4eb6c1159b941^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app.dSYM0000000d3e5ff141^644"GenerateDSYMFile DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app.dSYM DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Pazme    cd /Users/Lea/Desktop/Pazme    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Pazme -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app.dSYM36"D65A31B7-E129-40E0-B412-6979BE7460AE-
+b1C73DE73-248A-4551-8B24-B200FE963EBA
+
+CLd /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Pazme normal armv7s
+s425267564.229861
+e425267564.406189
+r1
+xLd
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Pazme
+xnormal
+xarmv7s
+d/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/Pazme.LinkFileList
+d/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/ViewController.o
+d/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/AppDelegate.o
+d/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/main.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreImage.framework/CoreImage
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework/Security
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreText.framework/CoreText
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libxpc.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Link /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Pazme80"Ld DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Pazme normal armv7s82e73a6c1159b941^1efd676c1159b941^---0#0#1#--1278"Ld DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Pazme normal armv7s    cd /Users/Lea/Desktop/Pazme    export IPHONEOS_DEPLOYMENT_TARGET=7.1    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7s -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos -filelist /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/Pazme.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=7.1 -framework CoreGraphics -framework UIKit -framework Foundation -Xlinker -dependency_info -Xlinker /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Objects-normal/armv7s/Pazme_dependency_info.dat -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Pazme36"2A6EFE15-EA6C-42C5-A6DD-B2718009FCA8-
+b1C73DE73-248A-4551-8B24-B200FE963EBA
+
+CProcessInfoPlistFile /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Info.plist /Users/Lea/Desktop/Pazme/Pazme/Pazme-Info.plist
+s425267564.884659
+e425267564.886417
+r1
+xProcessInfoPlistFile
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Info.plist
+x/Users/Lea/Desktop/Pazme/Pazme/Pazme-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Process /Users/Lea/Desktop/Pazme/Pazme/Pazme-Info.plist112"ProcessInfoPlistFile DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Info.plist Pazme/Pazme-Info.plist2b87e26c1159b941^57ede26c1159b941^---0#0#1#-19%DVTDocumentLocation2@54"file:///Users/Lea/Desktop/Pazme/Pazme/Pazme-Info.plist0000000000000000^946"ProcessInfoPlistFile DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Info.plist Pazme/Pazme-Info.plist    cd /Users/Lea/Desktop/Pazme    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility /Users/Lea/Desktop/Pazme/Pazme/Pazme-Info.plist -genpkginfo /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/ResourceRules.plist -additionalcontentfile /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/assetcatalog_generated_info.plist -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/Info.plist36"7836D62E-EDE0-4DF5-8C01-1BA1968BDC96-
+b1C73DE73-248A-4551-8B24-B200FE963EBA
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pazme-Prefix-dtjrapxerfimllalsdyxryytssou/Pazme-Prefix.pch.pch Pazme/Pazme-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425267563.084213
+e425267564.075336
+r1
+xProcessPCH
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pazme-Prefix-dtjrapxerfimllalsdyxryytssou/Pazme-Prefix.pch.pch
+xPazme/Pazme-Prefix.pch
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pazme/Pazme-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection33"Precompile Pazme/Pazme-Prefix.pch223"ProcessPCH DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pazme-Prefix-dtjrapxerfimllalsdyxryytssou/Pazme-Prefix.pch.pch Pazme/Pazme-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler77a1156b1159b941^344a136c1159b941^---0#0#1#-19%DVTDocumentLocation2@54"file:///Users/Lea/Desktop/Pazme/Pazme/Pazme-Prefix.pch0000000000000000^3344"ProcessPCH DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pazme-Prefix-dtjrapxerfimllalsdyxryytssou/Pazme-Prefix.pch.pch Pazme/Pazme-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/DerivedSources/armv7s -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pazme-Prefix-dtjrapxerfimllalsdyxryytssou/Pazme-Prefix.pch.dia -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pazme-Prefix-dtjrapxerfimllalsdyxryytssou/Pazme-Prefix.pch.d -c /Users/Lea/Desktop/Pazme/Pazme/Pazme-Prefix.pch -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pazme-Prefix-dtjrapxerfimllalsdyxryytssou/Pazme-Prefix.pch.pch36"153C540D-E2AC-4870-93B0-F2D07E7174AC-
+b1C73DE73-248A-4551-8B24-B200FE963EBA
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Index/PrecompiledHeaders/Pazme-Prefix-gfmugklcwfxysvelwrvzxmbnvvzb_ast/Pazme-Prefix.pch.pch Pazme/Pazme-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme.xcent
+s425267564.923385
+e425267564.924516
+r1
+xProcessProductPackaging
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme.xcent
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection233"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme.xcent233"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme.xcent4370ec6c1159b941^43aeec6c1159b941^---0#0#1#-19%DVTDocumentLocation2@120"file:///Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme.xcent0000000d3e5ff141^754"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme.xcent    cd /Users/Lea/Desktop/Pazme    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pazme.build/Debug-iphoneos/Pazme.build/Pazme.xcent36"15C62422-9429-4FE9-89FC-BF8DD21559ED-
+b1C73DE73-248A-4551-8B24-B200FE963EBA
+
+CProcessProductPackaging /Users/Lea/Library/MobileDevice/Provisioning\ Profiles/88B4B2E9-B6E5-4D62-9015-8FF290F44FE2.mobileprovision /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/embedded.mobileprovision
+s425267564.921189
+e425267564.922668
+r1
+xProcessProductPackaging
+x/Users/Lea/Library/MobileDevice/Provisioning Profiles/88B4B2E9-B6E5-4D62-9015-8FF290F44FE2.mobileprovision
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/embedded.mobileprovision
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection214"ProcessProductPackaging /Users/Lea/Library/MobileDevice/Provisioning\ Profiles/88B4B2E9-B6E5-4D62-9015-8FF290F44FE2.mobileprovision DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/embedded.mobileprovision214"ProcessProductPackaging /Users/Lea/Library/MobileDevice/Provisioning\ Profiles/88B4B2E9-B6E5-4D62-9015-8FF290F44FE2.mobileprovision DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/embedded.mobileprovision00e1eb6c1159b941^f434ec6c1159b941^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/embedded.mobileprovision0000000d3e5ff141^690"ProcessProductPackaging /Users/Lea/Library/MobileDevice/Provisioning\ Profiles/88B4B2E9-B6E5-4D62-9015-8FF290F44FE2.mobileprovision DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/embedded.mobileprovision    cd /Users/Lea/Desktop/Pazme    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Users/Lea/Library/MobileDevice/Provisioning\ Profiles/88B4B2E9-B6E5-4D62-9015-8FF290F44FE2.mobileprovision -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app/embedded.mobileprovision36"A4666CD4-9CB7-4135-A782-61681E3695C3-
+b1C73DE73-248A-4551-8B24-B200FE963EBA
+
+CTouch /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/Pazme.app
+r0
+

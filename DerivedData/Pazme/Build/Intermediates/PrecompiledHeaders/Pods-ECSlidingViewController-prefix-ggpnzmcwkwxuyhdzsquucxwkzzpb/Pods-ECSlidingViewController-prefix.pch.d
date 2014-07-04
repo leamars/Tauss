@@ -1,0 +1,19 @@
+dependencies: \
+  /Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-prefix.pch \
+  /Users/Lea/Desktop/Pazme/DerivedData/ModuleCache/3FE0RC7JOLZ0K/Darwin-3133I65RZ1TXG.pcm \
+  /Users/Lea/Desktop/Pazme/DerivedData/ModuleCache/3FE0RC7JOLZ0K/MachO-3AY6H4PXFOQ85.pcm \
+  /Users/Lea/Desktop/Pazme/DerivedData/ModuleCache/3FE0RC7JOLZ0K/ObjectiveC-CJA4U3ZCIO5H.pcm \
+  /Users/Lea/Desktop/Pazme/DerivedData/ModuleCache/3FE0RC7JOLZ0K/os-3133I65RZ1TXG.pcm \
+  /Users/Lea/Desktop/Pazme/DerivedData/ModuleCache/3FE0RC7JOLZ0K/Dispatch-4FMSCUQTDIQI.pcm \
+  /Users/Lea/Desktop/Pazme/DerivedData/ModuleCache/3FE0RC7JOLZ0K/CoreFoundation-1V0BCRUTQ0HVY.pcm \
+  /Users/Lea/Desktop/Pazme/DerivedData/ModuleCache/3FE0RC7JOLZ0K/Security-13JIW4C4ZDBHK.pcm \
+  /Users/Lea/Desktop/Pazme/DerivedData/ModuleCache/3FE0RC7JOLZ0K/CFNetwork-Z8BMBGBJ8X3V.pcm \
+  /Users/Lea/Desktop/Pazme/DerivedData/ModuleCache/3FE0RC7JOLZ0K/Foundation-210BIMCM43Z2F.pcm \
+  /Users/Lea/Desktop/Pazme/DerivedData/ModuleCache/3FE0RC7JOLZ0K/CoreGraphics-Z8BMBGBJ8X3V.pcm \
+  /Users/Lea/Desktop/Pazme/DerivedData/ModuleCache/3FE0RC7JOLZ0K/OpenGLES-1DU7AD8IMP4LW.pcm \
+  /Users/Lea/Desktop/Pazme/DerivedData/ModuleCache/3FE0RC7JOLZ0K/CoreVideo-1P4LYRQ8APF3A.pcm \
+  /Users/Lea/Desktop/Pazme/DerivedData/ModuleCache/3FE0RC7JOLZ0K/CoreImage-Z8BMBGBJ8X3V.pcm \
+  /Users/Lea/Desktop/Pazme/DerivedData/ModuleCache/3FE0RC7JOLZ0K/CoreText-Z8BMBGBJ8X3V.pcm \
+  /Users/Lea/Desktop/Pazme/DerivedData/ModuleCache/3FE0RC7JOLZ0K/QuartzCore-MS96M63TOSBI.pcm \
+  /Users/Lea/Desktop/Pazme/DerivedData/ModuleCache/3FE0RC7JOLZ0K/UIKit-16AYEBDX2G7RS.pcm \
+  /Users/Lea/Desktop/Pazme/Pods/Pods-environment.h

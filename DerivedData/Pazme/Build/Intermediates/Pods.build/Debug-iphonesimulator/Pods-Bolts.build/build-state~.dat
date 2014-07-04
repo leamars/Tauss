@@ -1,0 +1,511 @@
+TPods-Bolts
+v6
+r1
+cCheck dependencies
+cProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch.pch Pods-Bolts-prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-bctmnezjopfmgdcjnetpmghdawoz/Pods-Bolts-prefix.pch.pch Pods-Bolts-prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLink.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLink.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkNavigation.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkNavigation.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkReturnToRefererController.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkReturnToRefererView.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkTarget.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkTarget.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFExecutor.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFExecutor.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFTask.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTask.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFTaskCompletionSource.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTaskCompletionSource.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFURL.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFURL.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFWebViewAppLinkResolver.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFWebViewAppLinkResolver.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Bolts.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/Bolts.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Pods-Bolts-dummy.o /Users/Lea/Desktop/Pazme/Pods/Pods-Bolts-dummy.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/libPods-Bolts.a normal x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c0000000053619CDD0000000000A90C10
+t1398906077
+s11078672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c0000000053119F8A0000000000000198
+t1393663882
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c0000000053619CF400000000000003B4
+t1398906100
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000053619CFF000000000000019E
+t1398906111
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c0000000053619D3A0000000000000ADC
+t1398906170
+s2780
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLink.o
+t1404429862
+s13036
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkNavigation.o
+t1404429862
+s34948
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkReturnToRefererController.o
+t1404429862
+s91700
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkReturnToRefererView.o
+t1404429862
+s97820
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkTarget.o
+t1404429862
+s10424
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFExecutor.o
+t1404429862
+s29044
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFTask.o
+t1404429862
+s65356
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFTaskCompletionSource.o
+t1404429862
+s16364
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFURL.o
+t1404429862
+s27940
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFWebViewAppLinkResolver.o
+t1404429862
+s104612
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Bolts.o
+t1404429862
+s5848
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Pods-Bolts-dummy.o
+t1404429862
+s3796
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Pods-Bolts.LinkFileList
+c0000000053B5E6240000000000000739
+t1404429860
+s1849
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch.pch
+t1404429862
+s119156
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-bctmnezjopfmgdcjnetpmghdawoz/Pods-Bolts-prefix.pch.pch
+t1404429862
+s118272
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/libPods-Bolts.a
+t2
+s0
+
+N/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLink.m
+c0000000053A913AB00000000000004B5
+t1403589547
+s1205
+
+N/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkNavigation.m
+c0000000053A913AB0000000000001C8E
+t1403589547
+s7310
+
+N/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererController.m
+c0000000053A913AB0000000000002580
+t1403589547
+s9600
+
+N/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererView.m
+c0000000053A913AB0000000000001CC2
+t1403589547
+s7362
+
+N/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkTarget.m
+c0000000053A913AB00000000000002C8
+t1403589547
+s712
+
+N/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFExecutor.m
+c0000000053A913AB0000000000000DD5
+t1403589547
+s3541
+
+N/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTask.m
+c0000000053A913AB000000000000279B
+t1403589547
+s10139
+
+N/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTaskCompletionSource.m
+c0000000053A913AB00000000000006BF
+t1403589547
+s1727
+
+N/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFURL.m
+c0000000053A913AB000000000000143C
+t1403589547
+s5180
+
+N/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFWebViewAppLinkResolver.m
+c0000000053A913AB0000000000003852
+t1403589547
+s14418
+
+N/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/Bolts.m
+c0000000053A913AB00000000000001CD
+t1403589547
+s461
+
+N/Users/Lea/Desktop/Pazme/Pods/Pods-Bolts-dummy.m
+c0000000053A9145F000000000000007C
+t1403589727
+s124
+
+N/Users/Lea/Desktop/Pazme/Pods/Pods-Bolts-prefix.pch
+c0000000053A9145F000000000000004D
+t1403589727
+s77
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLink.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkNavigation.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererController.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererView.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkTarget.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFExecutor.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTask.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTaskCompletionSource.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFURL.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFWebViewAppLinkResolver.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/Bolts.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/Pods-Bolts-dummy.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesaa0b6ca41d66b941^e21f72a41d66b941^---0#1#1#--18"Check dependencies36"3E9EA9A0-9F1F-4E40-8104-012254EF291D-
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLink.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLink.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s426122662.044873
+e426122662.107136
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLink.o
+x/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLink.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLink.m
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLink.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Compile /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLink.m249"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLink.o Bolts/Bolts/BFAppLink.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilera1a10ba61d66b941^fc6d1ba61d66b941^---0#0#1#-19%DVTDocumentLocation2@60"file:///Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLink.m0000000000000000^3987"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLink.o Bolts/Bolts/BFAppLink.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources/x86_64 -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLink.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLink.dia -c /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLink.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLink.o36"B034A163-995B-484F-BDB5-3A0E45018B20-
+b9B25E258-128A-4E71-971C-D66A2EBA5755
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkNavigation.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkNavigation.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s426122662.045278
+e426122662.127381
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkNavigation.o
+x/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkNavigation.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkNavigation.m
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkNavigation.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLink.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTaskCompletionSource.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkTarget.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BoltsVersion.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFWebViewAppLinkResolver.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkResolving.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFExecutor.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTask.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkNavigation.m269"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkNavigation.o Bolts/Bolts/BFAppLinkNavigation.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler42b30ba61d66b941^ada322a61d66b941^---0#0#1#-19%DVTDocumentLocation2@70"file:///Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkNavigation.m0000000000000000^4047"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkNavigation.o Bolts/Bolts/BFAppLinkNavigation.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources/x86_64 -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkNavigation.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkNavigation.dia -c /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkNavigation.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkNavigation.o36"9FD26F79-5366-4094-844B-8AC9EEF0123E-
+b9B25E258-128A-4E71-971C-D66A2EBA5755
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkReturnToRefererController.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s426122662.045612
+e426122662.204467
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkReturnToRefererController.o
+x/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererController.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererController.m
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererController.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererView.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkNavigation.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLink.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererView_Internal.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFURL.h
+o/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererController.m:239:44: warning: undeclared selector 'returnToRefererController:willOpenAppLink:' [-Wundeclared-selector]
+o        if ([_delegate respondsToSelector:@selector(returnToRefererController:willOpenAppLink:)]) {
+o                                           ^
+o/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererController.m:246:44: warning: undeclared selector 'returnToRefererController:didOpenURL:success:' [-Wundeclared-selector]
+o        if ([_delegate respondsToSelector:@selector(returnToRefererController:didOpenURL:success:)]) {
+o                                           ^
+o2 warnings generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererController.m299"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkReturnToRefererController.o Bolts/Bolts/BFAppLinkReturnToRefererController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler10ca0ba61d66b941^3cbf34a61d66b941^-688"/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererController.m:239:44: warning: undeclared selector 'returnToRefererController:willOpenAppLink:' [-Wundeclared-selector]        if ([_delegate respondsToSelector:@selector(returnToRefererController:willOpenAppLink:)]) {                                           ^/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererController.m:246:44: warning: undeclared selector 'returnToRefererController:didOpenURL:success:' [-Wundeclared-selector]        if ([_delegate respondsToSelector:@selector(returnToRefererController:didOpenURL:success:)]) {                                           ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@64"Undeclared selector 'returnToRefererController:willOpenAppLink:'-426122662#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@85"file:///Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererController.m0000000000000000^238#43#238#43#9070#0#14"Semantic Issue--2@67"Undeclared selector 'returnToRefererController:didOpenURL:success:'-426122662#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@85"file:///Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererController.m0000000000000000^245#43#245#43#9413#0#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@85"file:///Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererController.m0000000000000000^4137"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkReturnToRefererController.o Bolts/Bolts/BFAppLinkReturnToRefererController.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources/x86_64 -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkReturnToRefererController.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkReturnToRefererController.dia -c /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererController.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkReturnToRefererController.o36"9D7BB8CA-C816-4525-9778-832FFB5ECF2D-
+b9B25E258-128A-4E71-971C-D66A2EBA5755
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkReturnToRefererView.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s426122662.107385
+e426122662.290732
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkReturnToRefererView.o
+x/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererView.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererView.m
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererView.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkNavigation.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLink.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkTarget.h
+o/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererView.m:83:36: warning: 'UITextAlignmentCenter' is deprecated: first deprecated in iOS 6.0 [-Wdeprecated-declarations]
+o        _labelView.textAlignment = UITextAlignmentCenter;
+o                                   ^
+oIn module 'UIKit' imported from /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererView.h:11:
+o/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStringDrawing.h:42:5: note: 'UITextAlignmentCenter' declared here
+o    UITextAlignmentCenter,
+o    ^
+o1 warning generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererView.m287"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkReturnToRefererView.o Bolts/Bolts/BFAppLinkReturnToRefererView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler529c1ba61d66b941^fdf74ca61d66b941^-676"/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererView.m:83:36: warning: 'UITextAlignmentCenter' is deprecated: first deprecated in iOS 6.0 [-Wdeprecated-declarations]        _labelView.textAlignment = UITextAlignmentCenter;                                   ^In module 'UIKit' imported from /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererView.h:11:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStringDrawing.h:42:5: note: 'UITextAlignmentCenter' declared here    UITextAlignmentCenter,    ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@66"'UITextAlignmentCenter' is deprecated: first deprecated in iOS 6.0-426122662#18446744073709551615#0#1(2@37"'UITextAlignmentCenter' declared here-426122662#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@190"file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStringDrawing.h0000000000000000^41#4#41#4#2493#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@79"file:///Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererView.m0000000000000000^82#35#82#35#2673#0#12"Deprecations--0#0#1#-19%DVTDocumentLocation4@79"file:///Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererView.m0000000000000000^4101"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkReturnToRefererView.o Bolts/Bolts/BFAppLinkReturnToRefererView.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources/x86_64 -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkReturnToRefererView.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkReturnToRefererView.dia -c /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkReturnToRefererView.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkReturnToRefererView.o36"02A00E9A-6FB8-47B6-AE62-296BEB374723-
+b9B25E258-128A-4E71-971C-D66A2EBA5755
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkTarget.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkTarget.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s426122662.127640
+e426122662.185452
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkTarget.o
+x/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkTarget.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkTarget.m
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkTarget.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkTarget.m261"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkTarget.o Bolts/Bolts/BFAppLinkTarget.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler9fcb20a61d66b941^5bb434a61d66b941^---0#0#1#-19%DVTDocumentLocation2@66"file:///Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkTarget.m0000000000000000^4023"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkTarget.o Bolts/Bolts/BFAppLinkTarget.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources/x86_64 -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkTarget.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkTarget.dia -c /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkTarget.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFAppLinkTarget.o36"7A2AB757-C427-431F-8D1A-57AD68B47DD5-
+b9B25E258-128A-4E71-971C-D66A2EBA5755
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFExecutor.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFExecutor.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s426122662.186614
+e426122662.283440
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFExecutor.o
+x/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFExecutor.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFExecutor.m
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFExecutor.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFExecutor.m251"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFExecutor.o Bolts/Bolts/BFExecutor.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerf3e32fa61d66b941^abeb4ca61d66b941^---0#0#1#-19%DVTDocumentLocation2@61"file:///Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFExecutor.m0000000000000000^3993"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFExecutor.o Bolts/Bolts/BFExecutor.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources/x86_64 -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFExecutor.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFExecutor.dia -c /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFExecutor.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFExecutor.o36"F1F71EA1-EF06-409A-B87A-5D1C6F0644D4-
+b9B25E258-128A-4E71-971C-D66A2EBA5755
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFTask.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTask.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s426122662.205738
+e426122662.385904
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFTask.o
+x/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTask.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTask.m
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTask.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFExecutor.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTaskCompletionSource.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/Bolts.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BoltsVersion.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkNavigation.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLink.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkTarget.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFURL.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTask.m243"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFTask.o Bolts/Bolts/BFTask.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler3d1035a61d66b941^162f66a61d66b941^---0#0#1#-19%DVTDocumentLocation2@57"file:///Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTask.m0000000000000000^3969"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFTask.o Bolts/Bolts/BFTask.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources/x86_64 -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFTask.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFTask.dia -c /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTask.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFTask.o36"42B17FB6-FA22-4B8B-9CAD-2636E96DEB18-
+b9B25E258-128A-4E71-971C-D66A2EBA5755
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFTaskCompletionSource.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTaskCompletionSource.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s426122662.283703
+e426122662.352030
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFTaskCompletionSource.o
+x/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTaskCompletionSource.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTaskCompletionSource.m
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTaskCompletionSource.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTask.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTaskCompletionSource.m275"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFTaskCompletionSource.o Bolts/Bolts/BFTaskCompletionSource.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler44c148a61d66b941^50c45aa61d66b941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTaskCompletionSource.m0000000000000000^4065"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFTaskCompletionSource.o Bolts/Bolts/BFTaskCompletionSource.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources/x86_64 -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFTaskCompletionSource.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFTaskCompletionSource.dia -c /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTaskCompletionSource.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFTaskCompletionSource.o36"EBCEF610-1191-4DE5-B213-2DDCFFE2FEA5-
+b9B25E258-128A-4E71-971C-D66A2EBA5755
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFURL.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFURL.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s426122662.290987
+e426122662.369961
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFURL.o
+x/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFURL.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFURL.m
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFURL.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLink.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkTarget.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Compile /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFURL.m241"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFURL.o Bolts/Bolts/BFURL.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler8be14aa61d66b941^4bac60a61d66b941^---0#0#1#-19%DVTDocumentLocation2@56"file:///Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFURL.m0000000000000000^3963"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFURL.o Bolts/Bolts/BFURL.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources/x86_64 -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFURL.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFURL.dia -c /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFURL.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFURL.o36"05179FEC-9600-4A82-8AF5-1E0707DA7EB9-
+b9B25E258-128A-4E71-971C-D66A2EBA5755
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFWebViewAppLinkResolver.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFWebViewAppLinkResolver.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s426122662.353383
+e426122662.490644
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFWebViewAppLinkResolver.o
+x/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFWebViewAppLinkResolver.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFWebViewAppLinkResolver.m
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFWebViewAppLinkResolver.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkResolving.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLink.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkTarget.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTask.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTaskCompletionSource.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFExecutor.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Compile /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFWebViewAppLinkResolver.m279"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFWebViewAppLinkResolver.o Bolts/Bolts/BFWebViewAppLinkResolver.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler919a5aa61d66b941^5f9b7da61d66b941^---0#0#1#-19%DVTDocumentLocation2@75"file:///Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFWebViewAppLinkResolver.m0000000000000000^4077"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFWebViewAppLinkResolver.o Bolts/Bolts/BFWebViewAppLinkResolver.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources/x86_64 -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFWebViewAppLinkResolver.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFWebViewAppLinkResolver.dia -c /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFWebViewAppLinkResolver.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/BFWebViewAppLinkResolver.o36"D6938339-7B10-4AA4-9B83-A1270CA055A0-
+b9B25E258-128A-4E71-971C-D66A2EBA5755
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Bolts.o /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/Bolts.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s426122662.370243
+e426122662.438226
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Bolts.o
+x/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/Bolts.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/Bolts.m
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/Bolts.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BoltsVersion.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFExecutor.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTask.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFTaskCompletionSource.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkNavigation.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLink.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFAppLinkTarget.h
+d/Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/BFURL.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Compile /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/Bolts.m241"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Bolts.o Bolts/Bolts/Bolts.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerf92c5fa61d66b941^820372a61d66b941^---0#0#1#-19%DVTDocumentLocation2@56"file:///Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/Bolts.m0000000000000000^3963"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Bolts.o Bolts/Bolts/Bolts.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources/x86_64 -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Bolts.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Bolts.dia -c /Users/Lea/Desktop/Pazme/Pods/Bolts/Bolts/Bolts.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Bolts.o36"F3647531-5F5B-4EDC-89AC-2B3E0393A996-
+b9B25E258-128A-4E71-971C-D66A2EBA5755
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Pods-Bolts-dummy.o /Users/Lea/Desktop/Pazme/Pods/Pods-Bolts-dummy.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s426122662.387257
+e426122662.442367
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Pods-Bolts-dummy.o
+x/Users/Lea/Desktop/Pazme/Pods/Pods-Bolts-dummy.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Pods-Bolts-dummy.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Compile /Users/Lea/Desktop/Pazme/Pods/Pods-Bolts-dummy.m251"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Pods-Bolts-dummy.o Pods-Bolts-dummy.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerae4563a61d66b941^7d0872a61d66b941^---0#0#1#-19%DVTDocumentLocation2@55"file:///Users/Lea/Desktop/Pazme/Pods/Pods-Bolts-dummy.m0000000000000000^3971"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Pods-Bolts-dummy.o Pods-Bolts-dummy.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources/x86_64 -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-bctmnezjopfmgdcjnetpmghdawoz/Pods-Bolts-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Pods-Bolts-dummy.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Pods-Bolts-dummy.dia -c /Users/Lea/Desktop/Pazme/Pods/Pods-Bolts-dummy.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Pods-Bolts-dummy.o36"108C5EE5-5F17-4CFA-971A-7A8093A5A352-
+b9B25E258-128A-4E71-971C-D66A2EBA5755
+
+CLibtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/libPods-Bolts.a normal x86_64
+s426122662.491894
+e426122662.505459
+r1
+xLibtool
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/libPods-Bolts.a
+xnormal
+xx86_64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Libtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/libPods-Bolts.a normal x86_64117"Libtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/libPods-Bolts.a normal x86_6483fb7da61d66b941^cf6681a61d66b941^---0#0#1#--1017"Libtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/libPods-Bolts.a normal x86_64    cd /Users/Lea/Desktop/Pazme/Pods    export IPHONEOS_DEPLOYMENT_TARGET=7.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator -filelist /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Objects-normal/x86_64/Pods-Bolts.LinkFileList -framework Foundation -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/libPods-Bolts.a36"E1608F8F-059C-4F51-BB68-A04BB2CC4390-
+b9B25E258-128A-4E71-971C-D66A2EBA5755
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch.pch Pods-Bolts-prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s426122660.433739
+e426122662.040919
+r1
+xProcessPCH
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch.pch
+xPods-Bolts-prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Pods-Bolts-prefix.pch
+d/Users/Lea/Desktop/Pazme/Pods/Pods-environment.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection32"Precompile Pods-Bolts-prefix.pch257"ProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch.pch Pods-Bolts-prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler732c6fa41d66b941^0a830aa61d66b941^---0#0#1#-19%DVTDocumentLocation2@58"file:///Users/Lea/Desktop/Pazme/Pods/Pods-Bolts-prefix.pch0000000000000000^3860"ProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch.pch Pods-Bolts-prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources/x86_64 -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch.dia -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch.d -c /Users/Lea/Desktop/Pazme/Pods/Pods-Bolts-prefix.pch -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-anvgbuheeierctgnhvfaycghivbn/Pods-Bolts-prefix.pch.pch36"2E20CDDF-FC3B-4C28-9841-9712AC323A51-
+b9B25E258-128A-4E71-971C-D66A2EBA5755
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-bctmnezjopfmgdcjnetpmghdawoz/Pods-Bolts-prefix.pch.pch Pods-Bolts-prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s426122660.434264
+e426122662.044096
+r1
+xProcessPCH
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-bctmnezjopfmgdcjnetpmghdawoz/Pods-Bolts-prefix.pch.pch
+xPods-Bolts-prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Pods-Bolts-prefix.pch
+d/Users/Lea/Desktop/Pazme/Pods/Pods-environment.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection32"Precompile Pods-Bolts-prefix.pch257"ProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-bctmnezjopfmgdcjnetpmghdawoz/Pods-Bolts-prefix.pch.pch Pods-Bolts-prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler6a686fa41d66b941^00520ba61d66b941^---0#0#1#-19%DVTDocumentLocation2@58"file:///Users/Lea/Desktop/Pazme/Pods/Pods-Bolts-prefix.pch0000000000000000^3826"ProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-bctmnezjopfmgdcjnetpmghdawoz/Pods-Bolts-prefix.pch.pch Pods-Bolts-prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/Pods-Bolts-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources/x86_64 -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Bolts.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-bctmnezjopfmgdcjnetpmghdawoz/Pods-Bolts-prefix.pch.dia -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-bctmnezjopfmgdcjnetpmghdawoz/Pods-Bolts-prefix.pch.d -c /Users/Lea/Desktop/Pazme/Pods/Pods-Bolts-prefix.pch -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-Bolts-prefix-bctmnezjopfmgdcjnetpmghdawoz/Pods-Bolts-prefix.pch.pch36"924CC437-2EC1-4C4E-9798-54FAF1479B34-
+b9B25E258-128A-4E71-971C-D66A2EBA5755
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Index/PrecompiledHeaders/Pods-Bolts-prefix-akxdfdfzwhujtfbtuqyoolrplaqp_ast/Pods-Bolts-prefix.pch.pch Pods-Bolts-prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Index/PrecompiledHeaders/Pods-Bolts-prefix-avenxqkhbenxreefrtqqjxwqxzmr_ast/Pods-Bolts-prefix.pch.pch Pods-Bolts-prefix.pch normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+

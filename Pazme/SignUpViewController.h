@@ -1,0 +1,22 @@
+//
+//  SignUpViewController.h
+//  Pazme
+//
+//  Created by Lea Marolt on 6/23/14.
+//  Copyright (c) 2014 Lea Marolt Sonnenschein. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface SignUpViewController : UIViewController <UITextFieldDelegate>
+
+// Outlets
+@property (weak, nonatomic) IBOutlet UITextField *usernameField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
+@property (weak, nonatomic) IBOutlet UITextField *emailField;
+@property (weak, nonatomic) IBOutlet UIButton *signUpButton;
+
+// Actions
+- (IBAction)signUp:(id)sender;
+
+@end

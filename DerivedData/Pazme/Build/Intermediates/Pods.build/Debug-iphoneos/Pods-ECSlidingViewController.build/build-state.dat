@@ -1,0 +1,508 @@
+TPods-ECSlidingViewController
+v7
+r1
+cCheck dependencies
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk
+c0000000053119F860000000000000132
+t1393663878
+s306
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/SDKSettings.plist
+c0000000053619CD8000000000000036B
+t1398906072
+s875
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000053619CD9000000000000019E
+t1398906073
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c0000000053619CDD0000000000A90C10
+t1398906077
+s11078672
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c0000000053619D3A0000000000000ADC
+t1398906170
+s2780
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECPercentDrivenInteractiveTransition.o
+t1403590504
+s29260
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingAnimationController.o
+t1403590504
+s56188
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingInteractiveTransition.o
+t1403590504
+s57648
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingSegue.o
+t1403590504
+s47920
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingViewController.o
+t1403590504
+s193492
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/Pods-ECSlidingViewController-dummy.o
+t1403590504
+s3816
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/Pods-ECSlidingViewController.LinkFileList
+c0000000053A8E9B700000000000004E0
+t1403578807
+s1248
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/UIViewController+ECSlidingViewController.o
+t1403590504
+s43008
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-byppdydpewpamwervywzlsyatqia/Pods-ECSlidingViewController-prefix.pch.pch
+t1403590503
+s96072
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-dfhtgecfyyrnbgbnjwghfchefvik/Pods-ECSlidingViewController-prefix.pch.pch
+t1403578808
+s87716
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-eqeljujyepcqxedjuweqrrnpropt/Pods-ECSlidingViewController-prefix.pch.pch
+t1403578808
+s87328
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-fjhncapnkqjlltdujulfivbyihom/Pods-ECSlidingViewController-prefix.pch.pch
+t1403590503
+s96460
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods-ECSlidingViewController.a
+t1403578808
+s437088
+
+N/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECPercentDrivenInteractiveTransition.h
+c0000000053A8E0920000000000000EB7
+t1403576466
+s3767
+
+N/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECPercentDrivenInteractiveTransition.m
+c0000000053A8E092000000000000118D
+t1403576466
+s4493
+
+N/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingAnimationController.h
+c0000000053A8E092000000000000076E
+t1403576466
+s1902
+
+N/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingAnimationController.m
+c0000000053A8E0920000000000000E64
+t1403576466
+s3684
+
+N/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingConstants.h
+c0000000053A8E092000000000000144C
+t1403576466
+s5196
+
+N/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingInteractiveTransition.h
+c0000000053A8E0920000000000000A09
+t1403576466
+s2569
+
+N/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingInteractiveTransition.m
+c0000000053A8E09200000000000014E4
+t1403576466
+s5348
+
+N/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingSegue.h
+c0000000053A8E0920000000000000880
+t1403576466
+s2176
+
+N/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingSegue.m
+c0000000053A8E0920000000000000A50
+t1403576466
+s2640
+
+N/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingViewController.h
+c0000000053A8E0920000000000003B3E
+t1403576466
+s15166
+
+N/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingViewController.m
+c0000000053A8E092000000000000A9D1
+t1403576466
+s43473
+
+N/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/UIViewController+ECSlidingViewController.h
+c0000000053A8E09200000000000006E1
+t1403576466
+s1761
+
+N/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/UIViewController+ECSlidingViewController.m
+c0000000053A8E0920000000000000724
+t1403576466
+s1828
+
+N/Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-dummy.m
+c0000000053A9145F00000000000000A0
+t1403589727
+s160
+
+N/Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-prefix.pch
+c0000000053A9145F000000000000004D
+t1403589727
+s77
+
+N/Users/Lea/Desktop/Pazme/Pods/Pods-environment.h
+c0000000053A8E09300000000000001E5
+t1403576467
+s485
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECPercentDrivenInteractiveTransition.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingAnimationController.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingInteractiveTransition.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingSegue.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingViewController.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/UIViewController+ECSlidingViewController.m
+r0
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-dummy.m
+r0
+
+CCheck dependencies
+r0
+lSLF07#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciese50a17a57a5ab941^8a1f4ba57a5ab941^---0#1#1#--18"Check dependencies36"19707A6A-2FF0-444A-B15B-7F4D85F848EB-
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/arm64/ECPercentDrivenInteractiveTransition.o /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECPercentDrivenInteractiveTransition.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/arm64/ECSlidingAnimationController.o /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingAnimationController.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/arm64/ECSlidingInteractiveTransition.o /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingInteractiveTransition.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/arm64/ECSlidingSegue.o /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingSegue.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/arm64/ECSlidingViewController.o /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingViewController.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/arm64/Pods-ECSlidingViewController-dummy.o /Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-dummy.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/arm64/UIViewController+ECSlidingViewController.o /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/UIViewController+ECSlidingViewController.m normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7/ECPercentDrivenInteractiveTransition.o /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECPercentDrivenInteractiveTransition.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7/ECSlidingAnimationController.o /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingAnimationController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7/ECSlidingInteractiveTransition.o /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingInteractiveTransition.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7/ECSlidingSegue.o /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingSegue.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7/ECSlidingViewController.o /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7/Pods-ECSlidingViewController-dummy.o /Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-dummy.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7/UIViewController+ECSlidingViewController.o /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/UIViewController+ECSlidingViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECPercentDrivenInteractiveTransition.o /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECPercentDrivenInteractiveTransition.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425283303.928401
+e425283304.200055
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECPercentDrivenInteractiveTransition.o
+x/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECPercentDrivenInteractiveTransition.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECPercentDrivenInteractiveTransition.m
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECPercentDrivenInteractiveTransition.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Compile /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECPercentDrivenInteractiveTransition.m350"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECPercentDrivenInteractiveTransition.o ECSlidingViewController/ECSlidingViewController/ECPercentDrivenInteractiveTransition.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerd6c9ede74e59b941^973733e84e59b941^---0#0#1#-19%DVTDocumentLocation2@123"file:///Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECPercentDrivenInteractiveTransition.m0000000000000000^4324"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECPercentDrivenInteractiveTransition.o ECSlidingViewController/ECSlidingViewController/ECPercentDrivenInteractiveTransition.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources/armv7s -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos -fobjc-arc -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-fjhncapnkqjlltdujulfivbyihom/Pods-ECSlidingViewController-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECPercentDrivenInteractiveTransition.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECPercentDrivenInteractiveTransition.dia -c /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECPercentDrivenInteractiveTransition.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECPercentDrivenInteractiveTransition.o36"F073547C-AAA4-4339-8968-2C20339D1DC1-
+bF07351D1-A997-4CBA-A2E5-25430028199E
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingAnimationController.o /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingAnimationController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425283303.928804
+e425283304.225099
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingAnimationController.o
+x/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingAnimationController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingAnimationController.m
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingAnimationController.h
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingConstants.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Compile /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingAnimationController.m334"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingAnimationController.o ECSlidingViewController/ECSlidingViewController/ECSlidingAnimationController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerdae3ede74e59b941^aea039e84e59b941^---0#0#1#-19%DVTDocumentLocation2@115"file:///Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingAnimationController.m0000000000000000^4276"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingAnimationController.o ECSlidingViewController/ECSlidingViewController/ECSlidingAnimationController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources/armv7s -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos -fobjc-arc -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-fjhncapnkqjlltdujulfivbyihom/Pods-ECSlidingViewController-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingAnimationController.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingAnimationController.dia -c /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingAnimationController.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingAnimationController.o36"782D40E2-314B-47F6-8A4D-867B66961DD4-
+bF07351D1-A997-4CBA-A2E5-25430028199E
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingInteractiveTransition.o /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingInteractiveTransition.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425283303.929567
+e425283304.200912
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingInteractiveTransition.o
+x/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingInteractiveTransition.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingInteractiveTransition.m
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingInteractiveTransition.h
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECPercentDrivenInteractiveTransition.h
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingViewController.h
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingConstants.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Compile /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingInteractiveTransition.m338"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingInteractiveTransition.o ECSlidingViewController/ECSlidingViewController/ECSlidingInteractiveTransition.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler6f2aeee74e59b941^a06f33e84e59b941^---0#0#1#-19%DVTDocumentLocation2@117"file:///Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingInteractiveTransition.m0000000000000000^4288"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingInteractiveTransition.o ECSlidingViewController/ECSlidingViewController/ECSlidingInteractiveTransition.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources/armv7s -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos -fobjc-arc -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-fjhncapnkqjlltdujulfivbyihom/Pods-ECSlidingViewController-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingInteractiveTransition.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingInteractiveTransition.dia -c /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingInteractiveTransition.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingInteractiveTransition.o36"E4ECD86F-237E-413D-B7D7-2284FABF7210-
+bF07351D1-A997-4CBA-A2E5-25430028199E
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingSegue.o /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingSegue.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425283304.200291
+e425283304.377489
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingSegue.o
+x/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingSegue.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingSegue.m
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingSegue.h
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/UIViewController+ECSlidingViewController.h
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingViewController.h
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingConstants.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compile /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingSegue.m306"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingSegue.o ECSlidingViewController/ECSlidingViewController/ECSlidingSegue.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler0f6233e84e59b941^d7a360e84e59b941^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingSegue.m0000000000000000^4192"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingSegue.o ECSlidingViewController/ECSlidingViewController/ECSlidingSegue.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources/armv7s -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos -fobjc-arc -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-fjhncapnkqjlltdujulfivbyihom/Pods-ECSlidingViewController-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingSegue.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingSegue.dia -c /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingSegue.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingSegue.o36"DC6C60FE-1E7C-4107-A92C-6155E1250509-
+bF07351D1-A997-4CBA-A2E5-25430028199E
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingViewController.o /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425283304.201158
+e425283304.649155
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingViewController.o
+x/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingViewController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingViewController.m
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingViewController.h
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingConstants.h
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingAnimationController.h
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingInteractiveTransition.h
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECPercentDrivenInteractiveTransition.h
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingSegue.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Compile /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingViewController.m324"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingViewController.o ECSlidingViewController/ECSlidingViewController/ECSlidingViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler029b33e84e59b941^e02fa6e84e59b941^---0#0#1#-19%DVTDocumentLocation2@110"file:///Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingViewController.m0000000000000000^4246"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingViewController.o ECSlidingViewController/ECSlidingViewController/ECSlidingViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources/armv7s -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos -fobjc-arc -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-fjhncapnkqjlltdujulfivbyihom/Pods-ECSlidingViewController-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingViewController.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingViewController.dia -c /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingViewController.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/ECSlidingViewController.o36"9EEABD94-BA26-4E6D-9036-0CBB55EF24DC-
+bF07351D1-A997-4CBA-A2E5-25430028199E
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/Pods-ECSlidingViewController-dummy.o /Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-dummy.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425283304.225362
+e425283304.334863
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/Pods-ECSlidingViewController-dummy.o
+x/Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-dummy.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-dummy.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-dummy.m298"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/Pods-ECSlidingViewController-dummy.o Pods-ECSlidingViewController-dummy.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerb3cd39e84e59b941^a0fc55e84e59b941^---0#0#1#-19%DVTDocumentLocation2@73"file:///Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-dummy.m0000000000000000^4205"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/Pods-ECSlidingViewController-dummy.o Pods-ECSlidingViewController-dummy.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources/armv7s -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-byppdydpewpamwervywzlsyatqia/Pods-ECSlidingViewController-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/Pods-ECSlidingViewController-dummy.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/Pods-ECSlidingViewController-dummy.dia -c /Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-dummy.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/Pods-ECSlidingViewController-dummy.o36"6935C442-A1E9-40AD-90C6-4104CFA3308C-
+bF07351D1-A997-4CBA-A2E5-25430028199E
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/UIViewController+ECSlidingViewController.o /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/UIViewController+ECSlidingViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425283304.335112
+e425283304.457566
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/UIViewController+ECSlidingViewController.o
+x/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/UIViewController+ECSlidingViewController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/UIViewController+ECSlidingViewController.m
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/UIViewController+ECSlidingViewController.h
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingViewController.h
+d/Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/ECSlidingConstants.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Compile /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/UIViewController+ECSlidingViewController.m358"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/UIViewController+ECSlidingViewController.o ECSlidingViewController/ECSlidingViewController/UIViewController+ECSlidingViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerbcea55e84e59b941^e62375e84e59b941^---0#0#1#-19%DVTDocumentLocation2@127"file:///Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/UIViewController+ECSlidingViewController.m0000000000000000^4348"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/UIViewController+ECSlidingViewController.o ECSlidingViewController/ECSlidingViewController/UIViewController+ECSlidingViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources/armv7s -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos -fobjc-arc -include /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-fjhncapnkqjlltdujulfivbyihom/Pods-ECSlidingViewController-prefix.pch -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/UIViewController+ECSlidingViewController.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/UIViewController+ECSlidingViewController.dia -c /Users/Lea/Desktop/Pazme/Pods/ECSlidingViewController/ECSlidingViewController/UIViewController+ECSlidingViewController.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/UIViewController+ECSlidingViewController.o36"E00C186F-8485-4DC0-A9F6-9A1FF00FEB23-
+bF07351D1-A997-4CBA-A2E5-25430028199E
+
+CCreateUniversalBinary /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods-ECSlidingViewController.a normal armv7\ arm64
+r0
+
+CCreateUniversalBinary /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods-ECSlidingViewController.a normal armv7\ armv7s\ arm64
+r0
+
+CLibtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/arm64/libPods-ECSlidingViewController.a normal arm64
+r0
+
+CLibtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7/libPods-ECSlidingViewController.a normal armv7
+r0
+
+CLibtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/libPods-ECSlidingViewController.a normal armv7s
+r0
+
+CLibtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods-ECSlidingViewController.a normal armv7
+r0
+
+CLibtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods-ECSlidingViewController.a normal armv7s
+s425283304.650737
+e425283304.677581
+r1
+xLibtool
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods-ECSlidingViewController.a
+xnormal
+xarmv7s
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Libtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods-ECSlidingViewController.a normal armv7s128"Libtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods-ECSlidingViewController.a normal armv7s3ab2a6e84e59b941^5377ade84e59b941^---0#0#1#--1040"Libtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods-ECSlidingViewController.a normal armv7s    cd /Users/Lea/Desktop/Pazme/Pods    export IPHONEOS_DEPLOYMENT_TARGET=7.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7s -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos -filelist /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Objects-normal/armv7s/Pods-ECSlidingViewController.LinkFileList -framework Foundation -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods-ECSlidingViewController.a36"0823B582-914E-4806-9681-A6CF4F585737-
+bF07351D1-A997-4CBA-A2E5-25430028199E
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-acinvvksvfdqxnbrupcxpnzotmxj/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-aerbtcgpikmjwkcevjbjbalccbaa/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-bhwpctyklabzsgfvkfbypxxbupzx/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-btsgsbdvcxapmkbzsdomdsgsefbq/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-byppdydpewpamwervywzlsyatqia/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425283303.621296
+e425283303.927075
+r1
+xProcessPCH
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-byppdydpewpamwervywzlsyatqia/Pods-ECSlidingViewController-prefix.pch.pch
+xPods-ECSlidingViewController-prefix.pch
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-prefix.pch
+d/Users/Lea/Desktop/Pazme/Pods/Pods-environment.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Precompile Pods-ECSlidingViewController-prefix.pch311"ProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-byppdydpewpamwervywzlsyatqia/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilercf329fe74e59b941^3d80ede74e59b941^---0#0#1#-19%DVTDocumentLocation2@76"file:///Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-prefix.pch0000000000000000^4052"ProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-byppdydpewpamwervywzlsyatqia/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources/armv7s -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-byppdydpewpamwervywzlsyatqia/Pods-ECSlidingViewController-prefix.pch.dia -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-byppdydpewpamwervywzlsyatqia/Pods-ECSlidingViewController-prefix.pch.d -c /Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-prefix.pch -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-byppdydpewpamwervywzlsyatqia/Pods-ECSlidingViewController-prefix.pch.pch36"B8EC1A88-4016-4835-84FA-C20EA4425C54-
+bF07351D1-A997-4CBA-A2E5-25430028199E
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-cybnnhubijlwwmbmpppzxrysaugl/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-dfhtgecfyyrnbgbnjwghfchefvik/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425271607.110768
+e425271608.322802
+r1
+xProcessPCH
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-dfhtgecfyyrnbgbnjwghfchefvik/Pods-ECSlidingViewController-prefix.pch.pch
+xPods-ECSlidingViewController-prefix.pch
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-prefix.pch
+d/Users/Lea/Desktop/Pazme/Pods/Pods-environment.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Precompile Pods-ECSlidingViewController-prefix.pch311"ProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-dfhtgecfyyrnbgbnjwghfchefvik/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler59db1c372159b941^a0a652382159b941^---0#0#1#-19%DVTDocumentLocation2@76"file:///Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-prefix.pch0000000000000000^3845"ProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-dfhtgecfyyrnbgbnjwghfchefvik/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources/armv7s -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos -fobjc-arc --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-dfhtgecfyyrnbgbnjwghfchefvik/Pods-ECSlidingViewController-prefix.pch.dia -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-dfhtgecfyyrnbgbnjwghfchefvik/Pods-ECSlidingViewController-prefix.pch.d -c /Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-prefix.pch -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-dfhtgecfyyrnbgbnjwghfchefvik/Pods-ECSlidingViewController-prefix.pch.pch36"4EDC2EBB-C0ED-4B37-934F-4BBF99BED49B-
+bE38576F8-5D8A-4351-B33A-7713C59418C1
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-eqeljujyepcqxedjuweqrrnpropt/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425271607.110897
+e425271608.319043
+r1
+xProcessPCH
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-eqeljujyepcqxedjuweqrrnpropt/Pods-ECSlidingViewController-prefix.pch.pch
+xPods-ECSlidingViewController-prefix.pch
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-prefix.pch
+d/Users/Lea/Desktop/Pazme/Pods/Pods-environment.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Precompile Pods-ECSlidingViewController-prefix.pch311"ProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-eqeljujyepcqxedjuweqrrnpropt/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler9be71c372159b941^2eae51382159b941^---0#0#1#-19%DVTDocumentLocation2@76"file:///Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-prefix.pch0000000000000000^3834"ProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-eqeljujyepcqxedjuweqrrnpropt/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources/armv7s -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-eqeljujyepcqxedjuweqrrnpropt/Pods-ECSlidingViewController-prefix.pch.dia -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-eqeljujyepcqxedjuweqrrnpropt/Pods-ECSlidingViewController-prefix.pch.d -c /Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-prefix.pch -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-eqeljujyepcqxedjuweqrrnpropt/Pods-ECSlidingViewController-prefix.pch.pch36"DCDCAD06-39AE-42C7-978C-8561C9C8C9EA-
+bE38576F8-5D8A-4351-B33A-7713C59418C1
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-fdzsagejhvezckbrvleozbcxidxq/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-fjhncapnkqjlltdujulfivbyihom/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425283303.620214
+e425283303.927447
+r1
+xProcessPCH
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-fjhncapnkqjlltdujulfivbyihom/Pods-ECSlidingViewController-prefix.pch.pch
+xPods-ECSlidingViewController-prefix.pch
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-prefix.pch
+d/Users/Lea/Desktop/Pazme/Pods/Pods-environment.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Precompile Pods-ECSlidingViewController-prefix.pch311"ProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-fjhncapnkqjlltdujulfivbyihom/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerfeed9ee74e59b941^cf85ede74e59b941^---0#0#1#-19%DVTDocumentLocation2@76"file:///Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-prefix.pch0000000000000000^4063"ProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-fjhncapnkqjlltdujulfivbyihom/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/Pods-ECSlidingViewController-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/include -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders -I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources/armv7s -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ECSlidingViewController.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos -fobjc-arc --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-fjhncapnkqjlltdujulfivbyihom/Pods-ECSlidingViewController-prefix.pch.dia -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-fjhncapnkqjlltdujulfivbyihom/Pods-ECSlidingViewController-prefix.pch.d -c /Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-prefix.pch -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-fjhncapnkqjlltdujulfivbyihom/Pods-ECSlidingViewController-prefix.pch.pch36"F9736937-E94F-4E0C-9746-843D5DB559A6-
+bF07351D1-A997-4CBA-A2E5-25430028199E
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-gqlavtukostpwpfaagomtatimplz/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-gxqkbldkwuodkfeokbpieubqcfpc/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Index/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-agbawzkfblfoexabwfzaqxrwvxbx_ast/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Index/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-aleexwanmugaljhirqfuidwrtpvk_ast/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Index/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-bwubkeazahodpubfbcetrtcjkglm_ast/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Index/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-dzghljthjpxjehbjczdxaihzplos_ast/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Index/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-ecqchgzsndukpzeltrcozbwvovgt_ast/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Index/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-fcmqawztlzxqqyfmxrvcxdeneisl_ast/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Index/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-ffaqgezhokdyskdpkhxrkppoosmv_ast/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Index/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-flxqusqxkapsrjawoqqiaghqcnyb_ast/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Index/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-garxguwvdfizwhevonhkhqcydpka_ast/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Index/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-gnesxkfqepgbcwbnrubrrbkfeuxu_ast/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Index/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-gtwpozerhfzrdqdbahhvchjwidtk_ast/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Index/PrecompiledHeaders/Pods-ECSlidingViewController-prefix-hhglmvbitwbifjfyevbgwgraagbm_ast/Pods-ECSlidingViewController-prefix.pch.pch Pods-ECSlidingViewController-prefix.pch normal arm64 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+

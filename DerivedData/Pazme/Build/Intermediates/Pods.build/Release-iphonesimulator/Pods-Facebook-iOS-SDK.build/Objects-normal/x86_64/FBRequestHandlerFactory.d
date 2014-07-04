@@ -1,0 +1,25 @@
+dependencies: \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Network/FBRequestHandlerFactory.m \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Network/FBRequestHandlerFactory.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBRequestConnection.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBGraphObject.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBSDKMacros.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBAccessTokenData.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBSession.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Insights/FBAppEvents+Internal.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBAppEvents.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBError.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Core/FBErrorUtility+Internal.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBErrorUtility.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Network/FBRequest+Internal.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBRequest.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBOpenGraphAction.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBOpenGraphObject.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Network/FBRequestConnection+Internal.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Network/FBRequestMetadata.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Network/FBRequestConnectionRetryManager.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Login/FBSession+Internal.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Login/FBSessionAppEventsState.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Login/FBSystemAccountStoreAdapter.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBTask.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBTaskCompletionSource.h

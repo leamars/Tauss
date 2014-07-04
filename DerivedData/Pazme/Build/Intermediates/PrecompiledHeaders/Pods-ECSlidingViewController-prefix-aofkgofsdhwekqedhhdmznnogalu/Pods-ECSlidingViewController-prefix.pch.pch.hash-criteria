@@ -1,0 +1,37 @@
+Contents of /Users/Lea/Desktop/Pazme/Pods/Pods-ECSlidingViewController-prefix.pch
+-x
+objective-c
+-arch
+i386
+-std=gnu99
+-fmodules
+-fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache
+-fpascal-strings
+-Os
+-DCOCOAPODS=1
+-DNS_BLOCK_ASSERTIONS=1
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+-fexceptions
+-fasm-blocks
+-g
+-fobjc-abi-version=2
+-fobjc-legacy-dispatch
+-mios-simulator-version-min=7.0
+-iquote
+-iquote
+-I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator/include
+-I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders
+-I/Users/Lea/Desktop/Pazme/Pods/BuildHeaders/ECSlidingViewController
+-I/Users/Lea/Desktop/Pazme/Pods/Headers
+-I/Users/Lea/Desktop/Pazme/Pods/Headers/Bolts
+-I/Users/Lea/Desktop/Pazme/Pods/Headers/ECSlidingViewController
+-I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK
+-I/Users/Lea/Desktop/Pazme/Pods/Headers/Facebook-iOS-SDK/FacebookSDK
+-I/Users/Lea/Desktop/Pazme/Pods/Headers/Parse
+-F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator
+-DNS_BLOCK_ASSERTIONS=1
+i386-apple-darwin14.0.0
+"4.2.1 Compatible Apple LLVM 5.1 (clang-503.0.40)"
+SDK_PRODUCT_BUILD_VERSION=11D167
+11D167

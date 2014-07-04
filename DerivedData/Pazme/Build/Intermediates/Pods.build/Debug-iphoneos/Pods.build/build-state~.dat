@@ -1,0 +1,88 @@
+TPods
+v6
+r1
+cCheck dependencies
+cCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/Objects-normal/armv7s/Pods-dummy.o /Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods.a normal armv7s
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk
+c0000000053119F860000000000000132
+t1393663878
+s306
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/SDKSettings.plist
+c0000000053619CD8000000000000036B
+t1398906072
+s875
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000053619CD9000000000000019E
+t1398906073
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c0000000053619CDD0000000000A90C10
+t1398906077
+s11078672
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c0000000053619D3A0000000000000ADC
+t1398906170
+s2780
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/Objects-normal/armv7s/Pods-dummy.o
+t1403578809
+s3384
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/Objects-normal/armv7s/Pods.LinkFileList
+c0000000053A8E9B80000000000000087
+t1403578808
+s135
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods-ECSlidingViewController.a
+c0000000053A8E9B8000000000006AB60
+t1403578808
+s437088
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods.a
+t2
+s0
+
+N/Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m
+c0000000053A8E0930000000000000070
+t1403576467
+s112
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies917fba382159b941^020cbb382159b941^---0#1#1#--18"Check dependencies36"FB35BD45-E01D-4109-8711-ACCA085EE8A9-
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/Objects-normal/armv7s/Pods-dummy.o /Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s425271608.731277
+e425271609.206554
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/Objects-normal/armv7s/Pods-dummy.o
+x/Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Compile /Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m226"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/Objects-normal/armv7s/Pods-dummy.o Pods-dummy.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compilerfd4ebb382159b941^75e434392159b941^---0#0#1#-19%DVTDocumentLocation2@49"file:///Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m0000000000000000^3345"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/Objects-normal/armv7s/Pods-dummy.o Pods-dummy.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/Pods-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/Pods-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/Pods-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/Pods-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/include -I/Users/Lea/Desktop/Pazme/Pods/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/DerivedSources/armv7s -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos -isystem /Users/Lea/Desktop/Pazme/Pods/Pods/Headers -isystem /Users/Lea/Desktop/Pazme/Pods/Pods/Headers/ECSlidingViewController -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/Objects-normal/armv7s/Pods-dummy.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/Objects-normal/armv7s/Pods-dummy.dia -c /Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/Objects-normal/armv7s/Pods-dummy.o36"DB421370-416E-4E5A-A2A5-5BAEEAB92F62-
+b54070ACF-63A1-47A0-A8C3-228C8D6D5BDE
+
+CLibtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods.a normal armv7s
+s425271609.207180
+e425271609.226572
+r1
+xLibtool
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods.a
+xnormal
+xarmv7s
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Libtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods.a normal armv7s104"Libtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods.a normal armv7s4c1835392159b941^ac013a392159b941^---0#0#1#--975"Libtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods.a normal armv7s    cd /Users/Lea/Desktop/Pazme/Pods    export IPHONEOS_DEPLOYMENT_TARGET=7.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7s -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos -filelist /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/Objects-normal/armv7s/Pods.LinkFileList -framework Foundation -lPods-ECSlidingViewController -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Debug-iphoneos/libPods.a36"273D7A85-B849-4C83-80EB-578404A7BC2A-
+b54070ACF-63A1-47A0-A8C3-228C8D6D5BDE
+

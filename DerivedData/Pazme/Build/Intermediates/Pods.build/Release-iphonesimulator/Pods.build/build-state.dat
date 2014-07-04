@@ -1,0 +1,160 @@
+TPods
+v6
+r1
+cCheck dependencies
+cCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o /Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/Pods-dummy.o /Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/libPods.a normal i386
+cLibtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/libPods.a normal x86_64
+cCreateUniversalBinary /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator/libPods.a normal i386\ x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c0000000053619CDD0000000000A90C10
+t1398906077
+s11078672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c0000000053119F8A0000000000000198
+t1393663882
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c0000000053619CF400000000000003B4
+t1398906100
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000053619CFF000000000000019E
+t1398906111
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c0000000053619D3A0000000000000ADC
+t1398906170
+s2780
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o
+t1404429373
+s3064
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods.LinkFileList
+c0000000053B5E43D000000000000008E
+t1404429373
+s142
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/libPods.a
+t1404429373
+s5636176
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/Pods-dummy.o
+t1404429373
+s3500
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/Pods.LinkFileList
+c0000000053B5E43D0000000000000090
+t1404429373
+s144
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/libPods.a
+t1404429373
+s6426720
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator/libPods-Bolts.a
+c0000000053B5E43100000000000EC8C8
+t1404429361
+s968904
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator/libPods-ECSlidingViewController.a
+c0000000053B5E43100000000000D5C98
+t1404429361
+s875672
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator/libPods-Facebook-iOS-SDK.a
+c0000000053B5E43D00000000009BB530
+t1404429373
+s10204464
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator/libPods-Parse.a
+c0000000053B5E43D0000000000001E58
+t1404429373
+s7768
+
+N/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator/libPods.a
+t2
+s0
+
+N/Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m
+c0000000053A9145F0000000000000070
+t1403589727
+s112
+
+CBuild AST from /Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesa0f948bd1b66b941^13d749bd1b66b941^---0#1#1#--18"Check dependencies36"355FDB74-E729-40E6-87B1-C4DBE8A4C2D3-
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o /Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s426122173.289230
+e426122173.329281
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o
+x/Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Compile /Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m231"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler302d4abd1b66b941^be4c54bd1b66b941^---0#0#1#-19%DVTDocumentLocation2@49"file:///Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m0000000000000000^4110"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Pods-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Pods-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Pods-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Pods-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator/include -I/Users/Lea/Desktop/Pazme/Pods/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/DerivedSources/i386 -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator -F/Users/Lea/Desktop/Pazme/Pods/Pods/Parse -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/Lea/Desktop/Pazme/Pods/Pods/Headers -isystem /Users/Lea/Desktop/Pazme/Pods/Pods/Headers/Bolts -isystem /Users/Lea/Desktop/Pazme/Pods/Pods/Headers/ECSlidingViewController -isystem /Users/Lea/Desktop/Pazme/Pods/Pods/Headers/Facebook-iOS-SDK -isystem /Users/Lea/Desktop/Pazme/Pods/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -isystem /Users/Lea/Desktop/Pazme/Pods/Pods/Headers/Parse -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.dia -c /Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o36"B9E8CD24-4869-4EC5-A593-ECBD93EEBBD2-
+b4FEC7528-68E8-411A-901D-DF2004373F29
+
+CCompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/Pods-dummy.o /Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s426122173.289546
+e426122173.332711
+r1
+xCompileC
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/Pods-dummy.o
+x/Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Compile /Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m235"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/Pods-dummy.o Pods-dummy.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler3e414abd1b66b941^ff5b55bd1b66b941^---0#0#1#-19%DVTDocumentLocation2@49"file:///Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m0000000000000000^4124"CompileC /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/Pods-dummy.o Pods-dummy.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lea/Desktop/Pazme/Pods    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -fmodules-cache-path=/Users/Lea/Desktop/Pazme/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DCOCOAPODS=1 -DNS_BLOCK_ASSERTIONS=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Pods-generated-files.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Pods-own-target-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Pods-all-target-headers.hmap -iquote /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Pods-project-headers.hmap -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator/include -I/Users/Lea/Desktop/Pazme/Pods/Pods/Headers -I/Users/Lea/Desktop/Pazme/Pods/Pods/Headers/Bolts -I/Users/Lea/Desktop/Pazme/Pods/Pods/Headers/ECSlidingViewController -I/Users/Lea/Desktop/Pazme/Pods/Pods/Headers/Facebook-iOS-SDK -I/Users/Lea/Desktop/Pazme/Pods/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/Lea/Desktop/Pazme/Pods/Pods/Headers/Parse -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/DerivedSources/x86_64 -I/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/DerivedSources -F/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator -F/Users/Lea/Desktop/Pazme/Pods/Pods/Parse -DNS_BLOCK_ASSERTIONS=1 -isystem /Users/Lea/Desktop/Pazme/Pods/Pods/Headers -isystem /Users/Lea/Desktop/Pazme/Pods/Pods/Headers/Bolts -isystem /Users/Lea/Desktop/Pazme/Pods/Pods/Headers/ECSlidingViewController -isystem /Users/Lea/Desktop/Pazme/Pods/Pods/Headers/Facebook-iOS-SDK -isystem /Users/Lea/Desktop/Pazme/Pods/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -isystem /Users/Lea/Desktop/Pazme/Pods/Pods/Headers/Parse -MMD -MT dependencies -MF /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/Pods-dummy.d --serialize-diagnostics /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/Pods-dummy.dia -c /Users/Lea/Desktop/Pazme/Pods/Pods-dummy.m -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/Pods-dummy.o36"69C439A7-9716-4E04-A59A-285B96652165-
+b4FEC7528-68E8-411A-901D-DF2004373F29
+
+CCreateUniversalBinary /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator/libPods.a normal i386\ x86_64
+s426122173.470160
+e426122173.684665
+r1
+xCreateUniversalBinary
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator/libPods.a
+xnormal
+xi386 x86_64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Create universal binary /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator/libPods.a133"CreateUniversalBinary /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator/libPods.a normal i386\ x86_64b16a78bd1b66b941^5247afbd1b66b941^---0#0#1#-19%DVTDocumentLocation2@98"file:///Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator/libPods.a0034e415dfffdf42^848"CreateUniversalBinary /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator/libPods.a normal i386\ x86_64    cd /Users/Lea/Desktop/Pazme/Pods    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/libPods.a /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/libPods.a -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator/libPods.a36"6546460B-D473-444D-A0E4-5FE0E0834900-
+b4FEC7528-68E8-411A-901D-DF2004373F29
+
+CLibtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/libPods.a normal i386
+s426122173.333561
+e426122173.469688
+r1
+xLibtool
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/libPods.a
+xnormal
+xi386
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection158"Libtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/libPods.a normal i386158"Libtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/libPods.a normal i386637b55bd1b66b941^ff3d78bd1b66b941^---0#0#1#--1170"Libtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/libPods.a normal i386    cd /Users/Lea/Desktop/Pazme/Pods    export IPHONEOS_DEPLOYMENT_TARGET=7.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator -filelist /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/Pods.LinkFileList -framework Foundation -lPods-Bolts -lPods-ECSlidingViewController -lPods-Facebook-iOS-SDK -lPods-Parse -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/i386/libPods.a36"28B8287E-7CDB-4F06-B130-315DABD781CF-
+b4FEC7528-68E8-411A-901D-DF2004373F29
+
+CLibtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/libPods.a normal x86_64
+s426122173.333838
+e426122173.468687
+r1
+xLibtool
+x/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/libPods.a
+xnormal
+xx86_64
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection162"Libtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/libPods.a normal x86_64162"Libtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/libPods.a normal x86_64278555bd1b66b941^2ffd77bd1b66b941^---0#0#1#--1180"Libtool /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/libPods.a normal x86_64    cd /Users/Lea/Desktop/Pazme/Pods    export IPHONEOS_DEPLOYMENT_TARGET=7.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Products/Release-iphonesimulator -filelist /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/Pods.LinkFileList -framework Foundation -lPods-Bolts -lPods-ECSlidingViewController -lPods-Facebook-iOS-SDK -lPods-Parse -o /Users/Lea/Desktop/Pazme/DerivedData/Pazme/Build/Intermediates/Pods.build/Release-iphonesimulator/Pods.build/Objects-normal/x86_64/libPods.a36"BF75E0A7-134A-4DB3-8C72-0D26EE813010-
+b4FEC7528-68E8-411A-901D-DF2004373F29
+

@@ -1,0 +1,35 @@
+dependencies: \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/UI/FBLikeActionController.m \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/UI/FBLikeActionController.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBSDKMacros.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Insights/FBAppEvents+Internal.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBAppEvents.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBSession.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Core/FBDataDiskCache.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/DeviceAPI/FBDialogs+Internal.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBDialogs.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBAppCall.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBAccessTokenData.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBAppLinkData.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBDialogsData.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBLinkShareParams.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBDialogsParams.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBOpenGraphActionParams.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBOpenGraphAction.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBGraphObject.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBPhotoParams.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/DeviceAPI/FBLikeDialogParams.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBError.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Core/FBErrorUtility+Internal.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBErrorUtility.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Core/FBInternalSettings.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBSettings.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBLikeButtonPopWAV.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Core/FBAudioResourceLoader.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Core/FBLogger.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Network/FBRequest+Internal.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBRequest.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBOpenGraphObject.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/FBRequestConnection.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Core/FBUtility.h \
+  /Users/Lea/Desktop/Pazme/Pods/Facebook-iOS-SDK/src/Core/FBFetchedAppSettings.h
