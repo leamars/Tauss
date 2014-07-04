@@ -13,7 +13,8 @@
 
 @interface InterestCell : UICollectionViewCell
 
-@property(nonatomic, strong) IBOutlet UIImageView *imageView;
+@property(nonatomic, strong) IBOutlet UIImageView *interestImage;
+@property (weak, nonatomic) IBOutlet UILabel *interestLabel;
 @property(nonatomic, strong) Interest *interest;
 
 @end

@@ -27,7 +27,8 @@
         _interest = interest;
     }
     
-    self.imageView.image = _interest.image;
+    self.interestImage.image = _interest.image;
+    self.interestLabel.text = _interest.tag;
 }
 
 @end

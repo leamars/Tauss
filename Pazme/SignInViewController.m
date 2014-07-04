@@ -51,8 +51,6 @@
     
     // SHIMMER AWAY
     [self shimmerThisView:self.testLabel];
-    
-    [Interests sharedInterests];
 
 }
 

@@ -33,6 +33,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    interestsArray = [[NSMutableArray alloc] init];
+    interestsArray = [[Interests sharedInterests] interests];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,7 +70,12 @@
 // 3
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     InterestCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"InterestCell" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor whiteColor];
+    cell.backgroundColor = [UIColor colorWithRed:175.0/255.0 green:82.0/255.0 blue:15.0/255.0 alpha:0.6];
+    
+    Interest *currentInterest = [[Interest alloc] init];
+    currentInterest = interestsArray[indexPath.row];
+    cell.interestImage.image = currentInterest.image;
+    cell.interestLabel.text = currentInterest.tag;
     return cell;
 }
 
@@ -90,18 +98,16 @@
 #pragma mark – UICollectionViewDelegateFlowLayout
 
 // 1
-//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-//    NSString *searchTerm = self.searches[indexPath.section]; FlickrPhoto *photo =
-//    self.searchResults[searchTerm][indexPath.row];
-//    // 2
-//    CGSize retval = photo.thumbnail.size.width > 0 ? photo.thumbnail.size : CGSizeMake(100, 100);
-//    retval.height += 35; retval.width += 35; return retval;
-//}
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+
+    CGSize retval = CGSizeMake(125, 125);
+    return retval;
+}
 
 // 3
 - (UIEdgeInsets)collectionView:
 (UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    return UIEdgeInsetsMake(50, 20, 50, 20);
+    return UIEdgeInsetsMake(50, 25, 50, 25);
 }
 
 @end
