@@ -31,8 +31,10 @@
 		8B8985E119672A9D00CF24BD /* InterestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8985E019672A9D00CF24BD /* InterestCell.m */; };
 		8B8985E419672CFE00CF24BD /* Interest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8985E319672CFE00CF24BD /* Interest.m */; };
 		8B8985E7196732CD00CF24BD /* Interests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8985E6196732CD00CF24BD /* Interests.m */; };
-		8BCDE90F195919B8006B7D30 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDE90E195919B8006B7D30 /* MainViewController.m */; };
-		8BCDE91219591AC8006B7D30 /* UserMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDE91119591AC8006B7D30 /* UserMenuViewController.m */; };
+		8B8985EE1968C0EB00CF24BD /* MainViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8B8985EA1968C0EB00CF24BD /* MainViewController.h */; };
+		8B8985EF1968C0EB00CF24BD /* UserMenuViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8B8985EB1968C0EB00CF24BD /* UserMenuViewController.h */; };
+		8B8985F01968C0EB00CF24BD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8985EC1968C0EB00CF24BD /* MainViewController.m */; };
+		8B8985F11968C0EB00CF24BD /* UserMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8985ED1968C0EB00CF24BD /* UserMenuViewController.m */; };
 		8BCDE91A19591ED7006B7D30 /* IntroStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCDE91919591ED7006B7D30 /* IntroStoryboard.storyboard */; };
 		8BCDE9201959200C006B7D30 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDE91F1959200C006B7D30 /* SignInViewController.m */; };
 		8BCDE92319592015006B7D30 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDE92219592015006B7D30 /* SignUpViewController.m */; };
@@ -95,10 +97,10 @@
 		8B8985E319672CFE00CF24BD /* Interest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interest.m; sourceTree = "<group>"; };
 		8B8985E5196732CD00CF24BD /* Interests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interests.h; sourceTree = "<group>"; };
 		8B8985E6196732CD00CF24BD /* Interests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interests.m; sourceTree = "<group>"; };
-		8BCDE90D195919B8006B7D30 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
-		8BCDE90E195919B8006B7D30 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
-		8BCDE91019591AC8006B7D30 /* UserMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserMenuViewController.h; path = ../UserMenuViewController.h; sourceTree = "<group>"; };
-		8BCDE91119591AC8006B7D30 /* UserMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserMenuViewController.m; path = ../UserMenuViewController.m; sourceTree = "<group>"; };
+		8B8985EA1968C0EB00CF24BD /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8B8985EB1968C0EB00CF24BD /* UserMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserMenuViewController.h; sourceTree = "<group>"; };
+		8B8985EC1968C0EB00CF24BD /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		8B8985ED1968C0EB00CF24BD /* UserMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserMenuViewController.m; sourceTree = "<group>"; };
 		8BCDE91919591ED7006B7D30 /* IntroStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = IntroStoryboard.storyboard; path = ../IntroStoryboard.storyboard; sourceTree = "<group>"; };
 		8BCDE91E1959200C006B7D30 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
 		8BCDE91F1959200C006B7D30 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
@@ -279,12 +281,12 @@
 		8BCDE91C19591F45006B7D30 /* Main Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8B8985EA1968C0EB00CF24BD /* MainViewController.h */,
+				8B8985EB1968C0EB00CF24BD /* UserMenuViewController.h */,
+				8B8985EC1968C0EB00CF24BD /* MainViewController.m */,
+				8B8985ED1968C0EB00CF24BD /* UserMenuViewController.m */,
 				8BD049191959276F005B1826 /* FindFBFriendsTableViewController.h */,
 				8BD0491A1959276F005B1826 /* FindFBFriendsTableViewController.m */,
-				8BCDE91019591AC8006B7D30 /* UserMenuViewController.h */,
-				8BCDE91119591AC8006B7D30 /* UserMenuViewController.m */,
-				8BCDE90D195919B8006B7D30 /* MainViewController.h */,
-				8BCDE90E195919B8006B7D30 /* MainViewController.m */,
 				8BCDE92D195924A8006B7D30 /* FindContactsFriendsTableViewController.h */,
 				8BCDE92E195924A8006B7D30 /* FindContactsFriendsTableViewController.m */,
 				8BCDE930195924BC006B7D30 /* FriendsTableViewController.h */,
@@ -462,6 +464,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8985EE1968C0EB00CF24BD /* MainViewController.h in Sources */,
+				8B8985EF1968C0EB00CF24BD /* UserMenuViewController.h in Sources */,
+				8B8985F01968C0EB00CF24BD /* MainViewController.m in Sources */,
+				8B8985F11968C0EB00CF24BD /* UserMenuViewController.m in Sources */,
 				8BCDE9201959200C006B7D30 /* SignInViewController.m in Sources */,
 				8BCDE92C19592046006B7D30 /* FacebookFriendsViewController.m in Sources */,
 				8BCDE9291959203B006B7D30 /* ContactFriendsViewController.m in Sources */,
@@ -472,10 +478,8 @@
 				8BCDE9261959202A006B7D30 /* SelectInterestsViewController.m in Sources */,
 				8B8985E7196732CD00CF24BD /* Interests.m in Sources */,
 				8B401D7F1959116100EE906A /* main.m in Sources */,
-				8BCDE91219591AC8006B7D30 /* UserMenuViewController.m in Sources */,
 				8BCDE932195924BC006B7D30 /* FriendsTableViewController.m in Sources */,
 				8BCDE92319592015006B7D30 /* SignUpViewController.m in Sources */,
-				8BCDE90F195919B8006B7D30 /* MainViewController.m in Sources */,
 				8BCDE938195926A8006B7D30 /* SignUpOptViewController.m in Sources */,
 				8BD0491E19592845005B1826 /* SettingsViewController.m in Sources */,
 				8B8985E119672A9D00CF24BD /* InterestCell.m in Sources */,
