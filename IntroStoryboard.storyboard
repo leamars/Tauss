@@ -122,6 +122,7 @@
                         <outlet property="passwordField" destination="nQg-JE-9vF" id="sZV-ok-GsZ"/>
                         <outlet property="testLabel" destination="gEl-KY-lNt" id="ZaO-cr-XHU"/>
                         <outlet property="usernameField" destination="0Jk-wq-ihx" id="8yo-v3-e4J"/>
+                        <segue destination="XYy-MN-GK3" kind="push" identifier="toHub" id="ccg-4q-cJP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DAJ-Hu-nBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -422,6 +423,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="rkk-Yf-F8B"/>
+        <segue reference="ccg-4q-cJP"/>
     </inferredMetricsTieBreakers>
 </document>

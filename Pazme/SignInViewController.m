@@ -54,6 +54,18 @@
 
 }
 
+- (void) viewWillAppear:(BOOL)animated {
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser) {
+        NSLog(@"Is there a current user?");
+        [self performSegueWithIdentifier:@"toHub" sender:self];
+        
+    } else {
+        NSLog(@"There is no current user.");
+    }
+
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

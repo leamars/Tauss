@@ -15,6 +15,7 @@
     
     [interest setImage:image];
     [interest setTag:tag];
+    [interest setSelected:NO];
     
     return interest;
 }

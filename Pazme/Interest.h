@@ -15,6 +15,7 @@
 // Lookup info
 @property(nonatomic,strong) NSString *tag;
 @property (nonatomic, strong) NSNumber *numOfSelected;
+@property (nonatomic) BOOL selected;
 
 - (id)interestWithImage:(UIImage *)image andTag:(NSString *)tag;
 
