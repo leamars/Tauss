@@ -7,8 +7,14 @@
 //
 
 #import "SignUpOptViewController.h"
+#import <Parse/Parse.h>
 
-@interface SignUpOptViewController ()
+@interface SignUpOptViewController () {
+    NSString *firstName;
+    NSString *lastName;
+    NSNumber *phoneNumber;
+    PFUser *user;
+}
 
 @end
 
@@ -27,6 +33,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    user = [PFUser currentUser];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,5 +53,52 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)continue:(id)sender {
+    [self saveData];
+}
+
+#pragma mark - textfield methods
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    // get rid of keyboard when you touch anywhere on the screen
+    [self.view endEditing:YES];
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    [self saveData];
+    [textField resignFirstResponder];
+    
+    return NO;
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    
+}
+
+- (void) saveData {
+    firstName = self.firstNameField.text;
+    lastName = self.lastNameField.text;
+    int phoneNum = [self.phoneField.text intValue];
+    phoneNumber = [NSNumber numberWithInt:phoneNum];
+    
+    user[@"firstName"] = firstName;
+    user[@"lastName"] = lastName;
+    user[@"phone"] = phoneNumber;
+    
+    NSLog(@"phone nubmer: %@", phoneNumber);
+    
+    [user saveInBackground];
+    [self.view endEditing:YES];
+}
+
+#pragma mark - Unwine Segue
+- (IBAction)unwindToFirstOpt:(UIStoryboardSegue *)unwindSegue {
+}
 
 @end

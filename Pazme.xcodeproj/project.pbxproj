@@ -46,6 +46,8 @@
 		8BCDE938195926A8006B7D30 /* SignUpOptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDE937195926A8006B7D30 /* SignUpOptViewController.m */; };
 		8BD0491B1959276F005B1826 /* FindFBFriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD0491A1959276F005B1826 /* FindFBFriendsTableViewController.m */; };
 		8BD0491E19592845005B1826 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD0491D19592845005B1826 /* SettingsViewController.m */; };
+		8BEB19DF196BC3F70034B5F2 /* FriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB19DE196BC3F70034B5F2 /* FriendCell.m */; };
+		8BEB19E2196BC8600034B5F2 /* PazmeDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEB19E1196BC8600034B5F2 /* PazmeDataModel.m */; };
 		8BF1C56719664C2100350A05 /* SegoeLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF1C56319664AD700350A05 /* SegoeLight.ttf */; };
 		8BF1C56819664C2500350A05 /* SegoeBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF1C56519664AE700350A05 /* SegoeBold.ttf */; };
 		8BF1C56919664C2800350A05 /* SegoeSemiLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF1C56419664AE700350A05 /* SegoeSemiLight.ttf */; };
@@ -122,6 +124,10 @@
 		8BD0491A1959276F005B1826 /* FindFBFriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindFBFriendsTableViewController.m; sourceTree = "<group>"; };
 		8BD0491C19592845005B1826 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		8BD0491D19592845005B1826 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		8BEB19DD196BC3F70034B5F2 /* FriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendCell.h; sourceTree = "<group>"; };
+		8BEB19DE196BC3F70034B5F2 /* FriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendCell.m; sourceTree = "<group>"; };
+		8BEB19E0196BC8600034B5F2 /* PazmeDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PazmeDataModel.h; sourceTree = "<group>"; };
+		8BEB19E1196BC8600034B5F2 /* PazmeDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PazmeDataModel.m; sourceTree = "<group>"; };
 		8BF1C56319664AD700350A05 /* SegoeLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SegoeLight.ttf; sourceTree = "<group>"; };
 		8BF1C56419664AE700350A05 /* SegoeSemiLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SegoeSemiLight.ttf; sourceTree = "<group>"; };
 		8BF1C56519664AE700350A05 /* SegoeBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SegoeBold.ttf; sourceTree = "<group>"; };
@@ -254,6 +260,8 @@
 			children = (
 				8B8985DF19672A9D00CF24BD /* InterestCell.h */,
 				8B8985E019672A9D00CF24BD /* InterestCell.m */,
+				8BEB19DD196BC3F70034B5F2 /* FriendCell.h */,
+				8BEB19DE196BC3F70034B5F2 /* FriendCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -265,6 +273,8 @@
 				8B8985E319672CFE00CF24BD /* Interest.m */,
 				8B8985E5196732CD00CF24BD /* Interests.h */,
 				8B8985E6196732CD00CF24BD /* Interests.m */,
+				8BEB19E0196BC8600034B5F2 /* PazmeDataModel.h */,
+				8BEB19E1196BC8600034B5F2 /* PazmeDataModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -471,9 +481,11 @@
 				8BCDE9201959200C006B7D30 /* SignInViewController.m in Sources */,
 				8BCDE92C19592046006B7D30 /* FacebookFriendsViewController.m in Sources */,
 				8BCDE9291959203B006B7D30 /* ContactFriendsViewController.m in Sources */,
+				8BEB19DF196BC3F70034B5F2 /* FriendCell.m in Sources */,
 				8B8985E419672CFE00CF24BD /* Interest.m in Sources */,
 				8B401D831959116100EE906A /* AppDelegate.m in Sources */,
 				8BCDE92F195924A8006B7D30 /* FindContactsFriendsTableViewController.m in Sources */,
+				8BEB19E2196BC8600034B5F2 /* PazmeDataModel.m in Sources */,
 				8BD0491B1959276F005B1826 /* FindFBFriendsTableViewController.m in Sources */,
 				8BCDE9261959202A006B7D30 /* SelectInterestsViewController.m in Sources */,
 				8B8985E7196732CD00CF24BD /* Interests.m in Sources */,

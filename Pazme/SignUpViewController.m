@@ -8,6 +8,8 @@
 
 #import "SignUpViewController.h"
 #import <Parse/Parse.h>
+#import <FBShimmering.h>
+#import <FBShimmeringView.h>
 
 @interface SignUpViewController ()
 
@@ -17,6 +19,7 @@
     NSString *username;
     NSString *password;
     NSString *email;
+    BOOL optional;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -33,9 +36,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.usernameField.delegate = self;
-    self.emailField.delegate = self;
-    self.passwordField.delegate = self;
+    optional = true;
+    
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -71,10 +73,8 @@
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    
-    username = [self.usernameField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    password = [self.passwordField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    email = [self.emailField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+
+    [self saveData];
     
     [textField resignFirstResponder];
     [self signUp:self.signUpButton];
@@ -83,6 +83,9 @@
 }
 
 - (IBAction)signUp:(id)sender {
+    
+    [self saveData];
+    
     if ([username length] == 0 || [password length] == 0 || [email length] == 0) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oops!" message:@"Looks like you didn't enter information for all the fields." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [alert show];
@@ -103,11 +106,23 @@
                 [alert show];
             }
             else {
-                [self performSegueWithIdentifier:@"toInterests" sender:self];
+                if (optional) {
+                    PFUser *currentUser = [PFUser currentUser];
+                    NSLog(@"USER: %@", currentUser);
+                    [self performSegueWithIdentifier:@"toOpt" sender:self];
+                }
+                else {
+                    [self performSegueWithIdentifier:@"signUpToInterests" sender:self];
+                }
             }
             
         }];
     }
 }
 
+- (void) saveData {
+    username = [self.usernameField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    password = [self.passwordField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    email = [self.emailField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+}
 @end

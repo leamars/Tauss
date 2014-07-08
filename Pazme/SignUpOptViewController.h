@@ -12,6 +12,12 @@
 
 // Outlets
 @property (weak, nonatomic) IBOutlet UITextField *phoneField;
-@property (weak, nonatomic) IBOutlet UITextField *fullNameField;
+@property (weak, nonatomic) IBOutlet UITextField *firstNameField;
+@property (weak, nonatomic) IBOutlet UITextField *lastNameField;
+@property (weak, nonatomic) IBOutlet UIButton *continueButton;
+
+// Actions
+- (IBAction)continue:(id)sender;
+
 
 @end

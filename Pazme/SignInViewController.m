@@ -35,9 +35,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.usernameField.delegate = self;
-    self.passwordField.delegate = self;
-    
 //    self.usernameField.attributedPlaceholder = [self changePlaceholderFont:@"SegoeUISymbol" andColor:[UIColor colorWithRed:213.0/255 green:213.0/255 blue:213.0/255 alpha:213.0/255] andSize:24.0 andString:@"Username"];
 //    
 //    self.passwordField.attributedPlaceholder = [self changePlaceholderFont:@"SegoeUISymbol" andColor:[UIColor colorWithRed:213.0/255 green:213.0/255 blue:213.0/255 alpha:213.0/255] andSize:24.0 andString:@"Password"];
@@ -57,8 +54,8 @@
 - (void) viewWillAppear:(BOOL)animated {
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
-        NSLog(@"Is there a current user?");
-        [self performSegueWithIdentifier:@"toHub" sender:self];
+        NSLog(@"Is there a current user? IT IS: %@", currentUser);
+        [self performSegueWithIdentifier:@"signInToInterests" sender:self];
         
     } else {
         NSLog(@"There is no current user.");
@@ -85,11 +82,13 @@
 
 - (IBAction)signIn:(id)sender {
     
+    [self saveData];
+    
     [PFUser logInWithUsernameInBackground:username password:password
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
                                             
-                                            [self performSegueWithIdentifier:@"toHub" sender:self];
+                                            [self performSegueWithIdentifier:@"toInterests" sender:self];
                                             
                                             
                                         } else {
@@ -107,11 +106,9 @@
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
-    username = self.usernameField.text;
-    password = self.passwordField.text;
     
+    [self saveData];
     [textField resignFirstResponder];
-
     [self signIn:self.loginButton];
     
     return NO;
@@ -182,5 +179,11 @@
     
     return placeholder;
 }
+
+- (void) saveData {
+    username = self.usernameField.text;
+    password = self.passwordField.text;
+}
+
 
 @end

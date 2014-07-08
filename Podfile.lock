@@ -5,11 +5,15 @@ PODS:
     - Bolts
   - Parse (1.2.19):
     - Facebook-iOS-SDK (~> 3.11)
+  - SDWebImage (3.6):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.6)
   - Shimmer (1.0.1)
 
 DEPENDENCIES:
   - ECSlidingViewController (~> 2.0.2)
   - Parse
+  - SDWebImage (~> 3.6)
   - Shimmer
 
 SPEC CHECKSUMS:
@@ -17,6 +21,7 @@ SPEC CHECKSUMS:
   ECSlidingViewController: 6c11fadb10d720c2d48bc577962332bdd4264c9f
   Facebook-iOS-SDK: 56214af8e0ef16e751eb2804250326b709e571b8
   Parse: ffebaecaddd32cb52671010f81567c298ff93d04
+  SDWebImage: c6989652c1cdf27cbdf3f56957e2030f825af5bc
   Shimmer: 35aa2a57b8fbc17f9e16706021665966fd93dbd1
 
 COCOAPODS: 0.32.1

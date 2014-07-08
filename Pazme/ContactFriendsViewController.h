@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ContactFriendsViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITableView *contactsTableView;
 
 @end
