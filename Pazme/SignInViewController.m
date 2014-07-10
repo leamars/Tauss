@@ -11,6 +11,7 @@
 #import <FBShimmering.h>
 #import <FBShimmeringView.h>
 #import "Interests.h"
+#import "SVProgressHUD.h"
 
 @interface SignInViewController ()
 
@@ -44,7 +45,6 @@
     
     [self.usernameField.layer setCornerRadius:5.0f];
     [self.passwordField.layer setCornerRadius:5.0f];
-
     
     // SHIMMER AWAY
     [self shimmerThisView:self.testLabel];
@@ -55,7 +55,8 @@
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
         NSLog(@"Is there a current user? IT IS: %@", currentUser);
-        [self performSegueWithIdentifier:@"signInToInterests" sender:self];
+        [self performSegueWithIdentifier:@"toFb" sender:self];
+        // Send the user to the main screen if they're already logged in
         
     } else {
         NSLog(@"There is no current user.");
@@ -88,7 +89,7 @@
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
                                             
-                                            [self performSegueWithIdentifier:@"toInterests" sender:self];
+                                            [self performSegueWithIdentifier:@"toFb" sender:self];
                                             
                                             
                                         } else {
@@ -96,6 +97,128 @@
                                             [alert show];
                                         }
                                     }];
+}
+
+-(IBAction)loginWithFacebook:(id)sender {
+        
+        [[SVProgressHUD  appearance] setBackgroundColor:[UIColor clearColor]];
+        [SVProgressHUD show];
+        
+        NSArray *permissions = @[ @"email", @"user_friends"];
+        
+        [PFFacebookUtils logInWithPermissions:permissions block:^(PFUser *user, NSError *error) {
+            if (!user) {
+                if (!error) {
+                    NSLog(@"User cancelled the facebook login");
+                } else {
+                    NSLog(@"An error occured: %@", [error localizedDescription]);
+                }
+                [SVProgressHUD dismiss];
+            } else {
+                if (user.isNew) {
+                    NSLog(@"NEWWWWW USSSSSEEEERR!!!");
+                } else {
+                    NSLog(@"User logged back in! ");
+                }
+                
+                //Do some more stuff.
+                NSLog(@"fbUser: %@", user);
+                
+                //Store the user's facebookId.
+                [FBRequestConnection startForMeWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+                    if (error) {
+                        NSLog(@"Something went wrong: %@", [error localizedDescription]);
+                        [SVProgressHUD dismiss];
+                    } else {
+                        NSDictionary<FBGraphUser> *me = (NSDictionary<FBGraphUser> *)result;
+                        
+                        PFUser *currentUser = [PFUser currentUser];
+                        currentUser[@"facebookId"] = me.objectID;
+                        currentUser[@"firstName"] = me.first_name;
+                        currentUser[@"lastName"] = me.last_name;
+                        
+                        //If facebook user permitted us to having email.
+                        if(me[@"email"]) {
+                            //only update the email if there is none.
+                            if (!currentUser[@"email"]) {
+                                currentUser[@"email"] = me[@"email"];
+                            }
+                        }
+                        
+                        NSString *profilePictureURL = [NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?width=200&height=200", me.id];
+                        
+                        //Update the profile picture with a facebook one if there is no profile picture at all. (First time user)
+                        if (!currentUser[@"profilePictureURL"]) {
+                            currentUser[@"profilePictureURL"] = profilePictureURL;
+                        }
+                        
+                        
+                        [currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                            if (error) {
+                                NSLog(@"I hate errors: %@", [error localizedDescription]);
+                                [SVProgressHUD dismiss];
+                            } else {
+                                NSLog(@"No error, it should've saved");
+                                
+                                
+                                [FBRequestConnection startForMyFriendsWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+                                    if (error) {
+                                        NSLog(@"Really hate errors: %@", [error localizedDescription]);
+                                        [SVProgressHUD dismiss];
+                                    } else {
+                                        
+                                        NSLog(@"result: %@", result);
+                                        NSArray *data = result[@"data"];
+                                        NSMutableArray *facebookIds = [[NSMutableArray alloc] initWithCapacity:data.count];
+                                        for (NSDictionary *friendData in data) {
+                                            [facebookIds addObject:friendData[@"id"]];
+                                        }
+                                        
+                                        [[PFUser currentUser] setObject:facebookIds forKey:@"facebookFriends"];
+                                        [[PFUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                                            
+                                            // Whew We're in!
+                                            // If the user already has a username and password, we're good. Login normally.
+                                            // else send them to the username and password page.
+                                            if (currentUser[@"hasCustomUsername"]) {
+                                                [PFQuery clearAllCachedResults];
+                                                [SVProgressHUD dismiss];
+                                                [self showMainScreen];
+                                            } else {
+                                                [SVProgressHUD dismiss];
+                                                [self performSegueWithIdentifier:@"showFbSignIn" sender:self];
+                                            }
+                                        }];
+                                    }
+                                }];
+                            }
+                        }];
+                    }
+                }];
+            }
+        }];
+    }
+
+- (void)showMainScreen
+{
+//    [[PFUser currentUser] refresh];
+//    
+//    PFInstallation *installation = [PFInstallation currentInstallation];
+//    installation[@"owner"] = [PFUser currentUser];
+//    [installation saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//        if (succeeded) {
+//            NSLog(@"Installation saved");
+//        }
+//    }];
+//    
+//    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    UIViewController *slideViewController = [mainStoryboard instantiateInitialViewController];
+//    [self presentViewController:slideViewController animated:NO completion:nil];
+    
+    NSLog(@"WE ARE GETTING SOMEWHERE.");
+}
+
+- (IBAction)loginWithTwitter:(id)sender {
 }
 
 #pragma mark - UITextFieldDelegate Methods
@@ -122,6 +245,48 @@
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     [self animateTextField: textField up: NO];
+}
+
+#define ACCEPTABLE_CHARECTERS @"abcdefghijklmnopqrstuvwxyz0123456789_."
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string  {
+    if (textField == self.usernameField) {
+        
+        NSCharacterSet *cs = [[NSCharacterSet characterSetWithCharactersInString:ACCEPTABLE_CHARECTERS] invertedSet];
+        NSString *filtered = [[string componentsSeparatedByCharactersInSet:cs] componentsJoinedByString:@""];
+        return [string isEqualToString:filtered];
+    }
+    return YES;
+}
+
+#pragma mark - View UI Methods
+
+-(void)shimmerThisView:(UIView *) view {
+    
+    FBShimmeringView *shimmeringView = [[FBShimmeringView alloc] initWithFrame:view.frame];
+    [self.view addSubview:shimmeringView];
+    shimmeringView.contentView = view;
+    
+    // Start shimmering.
+    shimmeringView.shimmering = YES;
+}
+
+- (NSAttributedString *)changePlaceholderFont:(NSString *)font andColor:(UIColor *)color andSize:(CGFloat)size andString:(NSString *)string {
+    
+    NSMutableDictionary *stringAttributes = [NSMutableDictionary dictionaryWithObject:[UIColor colorWithRed:213.0/255.0 green:213.0/255.0 blue:213.0/255.0 alpha:1] forKey:NSForegroundColorAttributeName];
+    
+    [stringAttributes setObject:[UIFont fontWithName:font size:size] forKey:NSFontAttributeName];
+    
+    NSAttributedString *placeholder = [[NSAttributedString alloc] initWithString:string attributes:[NSDictionary dictionaryWithDictionary:stringAttributes]];
+    
+    return placeholder;
+}
+
+#pragma mark - Helper Methods
+
+- (void) saveData {
+    username = self.usernameField.text;
+    password = self.passwordField.text;
 }
 
 - (void) animateTextField: (UITextField *)textField up: (BOOL) up
@@ -155,34 +320,6 @@
             NSLog(@"    Font name: %@", [fontNames objectAtIndex:indFont]);
         }
     }
-}
-
-#pragma mark - View UI Methods
-
--(void)shimmerThisView:(UIView *) view {
-    
-    FBShimmeringView *shimmeringView = [[FBShimmeringView alloc] initWithFrame:view.frame];
-    [self.view addSubview:shimmeringView];
-    shimmeringView.contentView = view;
-    
-    // Start shimmering.
-    shimmeringView.shimmering = YES;
-}
-
-- (NSAttributedString *)changePlaceholderFont:(NSString *)font andColor:(UIColor *)color andSize:(CGFloat)size andString:(NSString *)string {
-    
-    NSMutableDictionary *stringAttributes = [NSMutableDictionary dictionaryWithObject:[UIColor colorWithRed:213.0/255.0 green:213.0/255.0 blue:213.0/255.0 alpha:1] forKey:NSForegroundColorAttributeName];
-    
-    [stringAttributes setObject:[UIFont fontWithName:font size:size] forKey:NSFontAttributeName];
-    
-    NSAttributedString *placeholder = [[NSAttributedString alloc] initWithString:string attributes:[NSDictionary dictionaryWithDictionary:stringAttributes]];
-    
-    return placeholder;
-}
-
-- (void) saveData {
-    username = self.usernameField.text;
-    password = self.passwordField.text;
 }
 
 

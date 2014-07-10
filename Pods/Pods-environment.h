@@ -24,6 +24,18 @@
 #define COCOAPODS_VERSION_MINOR_Facebook_iOS_SDK 15
 #define COCOAPODS_VERSION_PATCH_Facebook_iOS_SDK 1
 
+// HTAutocompleteTextField
+#define COCOAPODS_POD_AVAILABLE_HTAutocompleteTextField
+#define COCOAPODS_VERSION_MAJOR_HTAutocompleteTextField 1
+#define COCOAPODS_VERSION_MINOR_HTAutocompleteTextField 2
+#define COCOAPODS_VERSION_PATCH_HTAutocompleteTextField 6
+
+// MDCSwipeToChoose
+#define COCOAPODS_POD_AVAILABLE_MDCSwipeToChoose
+#define COCOAPODS_VERSION_MAJOR_MDCSwipeToChoose 0
+#define COCOAPODS_VERSION_MINOR_MDCSwipeToChoose 2
+#define COCOAPODS_VERSION_PATCH_MDCSwipeToChoose 1
+
 // Parse
 #define COCOAPODS_POD_AVAILABLE_Parse
 #define COCOAPODS_VERSION_MAJOR_Parse 1
@@ -41,6 +53,12 @@
 #define COCOAPODS_VERSION_MAJOR_SDWebImage_Core 3
 #define COCOAPODS_VERSION_MINOR_SDWebImage_Core 6
 #define COCOAPODS_VERSION_PATCH_SDWebImage_Core 0
+
+// SVProgressHUD
+#define COCOAPODS_POD_AVAILABLE_SVProgressHUD
+#define COCOAPODS_VERSION_MAJOR_SVProgressHUD 1
+#define COCOAPODS_VERSION_MINOR_SVProgressHUD 0
+#define COCOAPODS_VERSION_PATCH_SVProgressHUD 0
 
 // Shimmer
 #define COCOAPODS_POD_AVAILABLE_Shimmer

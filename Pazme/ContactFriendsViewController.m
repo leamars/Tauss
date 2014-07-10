@@ -17,8 +17,8 @@
 
 @interface ContactFriendsViewController ()
 
-@property (nonatomic, strong) NSArray *contactsOnPazme;
-@property (nonatomic, strong) NSMutableArray *contactsNotOnPazme;
+@property (nonatomic, strong) NSArray *contactsOnPaz;
+@property (nonatomic, strong) NSMutableArray *contactsNotOnPaz;
 @property (nonatomic, strong) NSMutableArray *allEmailsArray;
 @property (nonatomic, strong) NSMutableArray *allPhoneNumbersArray;
 
@@ -42,7 +42,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.contactsNotOnPazme = [NSMutableArray new];
+    self.contactsNotOnPaz = [NSMutableArray new];
     self.allEmailsArray = [NSMutableArray new];
     self.allPhoneNumbersArray = [NSMutableArray new];
     
@@ -183,17 +183,17 @@
                                      @"phones": phones,
                                      @"image": image };
             
-            [self.contactsNotOnPazme addObject:person];
+            [self.contactsNotOnPaz addObject:person];
         }
     }
-    [self checkforContactsOnPazme];
+    [self checkforContactsOnPaz];
     
 }
 
-- (void)checkforContactsOnPazme
+- (void)checkforContactsOnPaz
 {
-    NSMutableArray *userEmailsOnPazme = [NSMutableArray new];
-    NSMutableArray *userPhonesOnPazme = [NSMutableArray new];
+    NSMutableArray *userEmailsOnPaz = [NSMutableArray new];
+    NSMutableArray *userPhonesOnPaz = [NSMutableArray new];
     
     PFQuery *emailQuery = [PFUser query];
     [emailQuery whereKey:@"email" containedIn:self.allEmailsArray];
@@ -209,30 +209,30 @@
         if (error) {
             NSLog(@"bad bad errors: %@", [error localizedDescription]);
         } else {
-            self.contactsOnPazme = objects;
+            self.contactsOnPaz = objects;
             
             //We have a list of users who match some email address or phone in there.
             for (PFUser *user in objects) {
                 
                 if (user[@"email"]) {
-                    [userEmailsOnPazme addObject:user[@"email"]];
+                    [userEmailsOnPaz addObject:user[@"email"]];
                 }
                 
                 if  (user[@"phone"]) {
-                    [userPhonesOnPazme addObject:user[@"phone"]];
+                    [userPhonesOnPaz addObject:user[@"phone"]];
                 }
             }
             
             //We can't mutate an array while enumerating so we make a copy of the contactsNotOnVoice
-            NSArray *cnonv = [NSArray arrayWithArray:self.contactsNotOnPazme];
+            NSArray *cnonv = [NSArray arrayWithArray:self.contactsNotOnPaz];
             
             for (NSDictionary *contact in cnonv) {
                 
                 for (NSString *email in contact[@"emails"]) {
                     
-                    if ([userEmailsOnPazme containsObject:email]) {
+                    if ([userEmailsOnPaz containsObject:email]) {
                         //Remove from contactsNOTonVoice
-                        [self.contactsNotOnPazme removeObject:contact];
+                        [self.contactsNotOnPaz removeObject:contact];
                         break;
                     }
                 }
@@ -240,8 +240,8 @@
                 // This isn't really a problem because I just found out that that if you removeObject that is not in the array
                 // Nothing happens. Whew. Thank you NSMutableArray.
                 for (NSString *phone in contact[@"phones"]) {
-                    if ([userPhonesOnPazme containsObject:phone]) {
-                        [self.contactsNotOnPazme removeObject:contact];
+                    if ([userPhonesOnPaz containsObject:phone]) {
+                        [self.contactsNotOnPaz removeObject:contact];
                         break;
                     }
                 }
@@ -249,7 +249,7 @@
             
             //Sort the contacts out
             NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
-            [self.contactsNotOnPazme sortUsingDescriptors:@[sortDescriptor]];
+            [self.contactsNotOnPaz sortUsingDescriptors:@[sortDescriptor]];
             
             
             
@@ -293,7 +293,7 @@
     
     switch (section) {
         case 0: {
-            label.text =  [NSString stringWithFormat:@"You have %ld contacts on Pazme. Friend them!", self.contactsOnPazme.count];
+            label.text =  [NSString stringWithFormat:@"You have %ld contacts on Paz. Friend them!", self.contactsOnPaz.count];
             break;
         }
             
@@ -314,11 +314,11 @@
     
     switch (section) {
         case 0:
-            return self.contactsOnPazme.count;
+            return self.contactsOnPaz.count;
             break;
             
         case 1: {
-            return self.contactsNotOnPazme.count;
+            return self.contactsNotOnPaz.count;
             break;
         }
             
@@ -343,7 +343,7 @@
     switch (indexPath.section) {
         case 0: {
             [cell.addFriendButton addTarget:self action:@selector(addFriendButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-            PFUser *user = self.contactsOnPazme[indexPath.row];
+            PFUser *user = self.contactsOnPaz[indexPath.row];
             cell.nameLabel.text = user[@"fullName"];
             
             
@@ -364,7 +364,7 @@
             [cell.addFriendButton addTarget:self action:@selector(inviteFriendButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
             [cell.addFriendButton setImage:[UIImage imageNamed:@"purple_plus"] forState:UIControlStateNormal];
             
-            NSDictionary *contactDict = self.contactsNotOnPazme[indexPath.row];
+            NSDictionary *contactDict = self.contactsNotOnPaz[indexPath.row];
             
             cell.friendImageView.image = contactDict[@"image"];
             
@@ -388,7 +388,7 @@
     FriendCell *cell = (FriendCell *)[[[sender superview] superview] superview];
     NSIndexPath *indexPath = [self.contactsTableView indexPathForCell:cell];
     
-    PFUser *user =  self.contactsOnPazme[indexPath.row];
+    PFUser *user =  self.contactsOnPaz[indexPath.row];
     
     //[self configureAddFriendButtonWithUser:user forCell:cell];
     
@@ -467,7 +467,7 @@
     FriendCell *cell = (FriendCell *)[[[sender superview] superview] superview];
     NSIndexPath *indexPath = [self.contactsTableView indexPathForCell:cell];
     
-    NSDictionary *friendDict = self.contactsNotOnPazme[indexPath.row];
+    NSDictionary *friendDict = self.contactsNotOnPaz[indexPath.row];
     
     UIAlertView *al = [[UIAlertView alloc] initWithTitle:nil message:@"How would you like to reach out?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles: nil];
     
@@ -567,7 +567,7 @@
         controller.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blueColor]};
         
         
-        controller.body = @"Hey! Join me on Pazme! http://itunes.apple.com/app/id809039837" ;
+        controller.body = @"Hey! Join me on Paz! http://itunes.apple.com/app/id809039837" ;
         controller.recipients = @[recipient];
         controller.messageComposeDelegate = self;
         if (controller) {
@@ -584,8 +584,8 @@
         controller.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blueColor]};
         
         controller.mailComposeDelegate = self;
-        [controller setSubject:@"Hey! Join me on Pazme!"];
-        [controller setMessageBody:@"I've been using Pazme since forever! http://itunes.apple.com/app/id809039837" isHTML:NO];
+        [controller setSubject:@"Hey! Join me on Paz!"];
+        [controller setMessageBody:@"I've been using Paz since forever! http://itunes.apple.com/app/id809039837" isHTML:NO];
         [controller setToRecipients:@[recipient]];
         if (controller)
             [self presentViewController:controller animated:YES completion:nil];

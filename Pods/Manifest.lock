@@ -3,25 +3,34 @@ PODS:
   - ECSlidingViewController (2.0.2)
   - Facebook-iOS-SDK (3.15.1):
     - Bolts
+  - HTAutocompleteTextField (1.2.6)
+  - MDCSwipeToChoose (0.2.1)
   - Parse (1.2.19):
     - Facebook-iOS-SDK (~> 3.11)
   - SDWebImage (3.6):
     - SDWebImage/Core
   - SDWebImage/Core (3.6)
   - Shimmer (1.0.1)
+  - SVProgressHUD (HEAD based on 1.0)
 
 DEPENDENCIES:
   - ECSlidingViewController (~> 2.0.2)
+  - HTAutocompleteTextField
+  - MDCSwipeToChoose
   - Parse
   - SDWebImage (~> 3.6)
   - Shimmer
+  - SVProgressHUD (HEAD)
 
 SPEC CHECKSUMS:
   Bolts: 91c2af8eae1d44e1dd75946a5b0ae04a43ea43e4
   ECSlidingViewController: 6c11fadb10d720c2d48bc577962332bdd4264c9f
   Facebook-iOS-SDK: 56214af8e0ef16e751eb2804250326b709e571b8
+  HTAutocompleteTextField: 92ca48eb8f2a7fba756fb9f19bc54cba3391b8f4
+  MDCSwipeToChoose: 54f7b1675eff182cdc46c582360c7fca4c766a67
   Parse: ffebaecaddd32cb52671010f81567c298ff93d04
   SDWebImage: c6989652c1cdf27cbdf3f56957e2030f825af5bc
   Shimmer: 35aa2a57b8fbc17f9e16706021665966fd93dbd1
+  SVProgressHUD: 5034c6e22b8c2ca3e09402e48d41ed0340aa1c50
 
 COCOAPODS: 0.32.1

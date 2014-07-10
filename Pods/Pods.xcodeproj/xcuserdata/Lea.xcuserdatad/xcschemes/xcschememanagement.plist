@@ -19,12 +19,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-HTAutocompleteTextField.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MDCSwipeToChoose.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,37 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>239AFC1782A64302896660ED</key>
+		<key>35F6F6FA15BB4065B0240E80</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>60020E6BEFD34B81859453D4</key>
+		<key>3FF2C1F085A44347B440F447</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>60E251E031354899815FB14A</key>
+		<key>4EBEAB673DD04501A428415B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6B41D95DB93B4E3CAB708002</key>
+		<key>73E66796739D445CBDD15FED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BFC46D1FD9314139BCC48109</key>
+		<key>8568C25A780D4CA28E797889</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CF45ADAB33E442E69E59DC76</key>
+		<key>B5E0764358B24AD09A601185</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EFE92372053F4A61A5D6B567</key>
+		<key>BB1F1ACA7E414E3DA831845B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4A8AAAE8FCD47A38344882A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D695B4160B7148B187B2C8EE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EF18B0437E9D4BD798F388AF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -10,4 +10,7 @@
 
 @interface FacebookFriendsViewController : UIViewController
 
+@property (nonatomic, strong) NSMutableArray *friends;
+@property (weak, nonatomic) IBOutlet UITableView *fbContactsTableView;
+
 @end

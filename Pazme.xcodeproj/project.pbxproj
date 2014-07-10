@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B0CDE5B196F1E8B00E5804C /* CompleteFbSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0CDE5A196F1E8B00E5804C /* CompleteFbSignInViewController.m */; };
 		8B0EE421196666EB00F64BA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0EE420196666EB00F64BA0 /* Foundation.framework */; };
 		8B401D751959116100EE906A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B401D741959116100EE906A /* CoreGraphics.framework */; };
 		8B401D771959116100EE906A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B401D761959116100EE906A /* UIKit.framework */; };
@@ -67,6 +68,8 @@
 
 /* Begin PBXFileReference section */
 		3A0803FB80604A72B14E77FB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		8B0CDE59196F1E8B00E5804C /* CompleteFbSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteFbSignInViewController.h; sourceTree = "<group>"; };
+		8B0CDE5A196F1E8B00E5804C /* CompleteFbSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleteFbSignInViewController.m; sourceTree = "<group>"; };
 		8B0EE420196666EB00F64BA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8B401D6F1959116100EE906A /* Pazme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pazme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B401D741959116100EE906A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -322,6 +325,8 @@
 				8BCDE92B19592046006B7D30 /* FacebookFriendsViewController.m */,
 				8BCDE936195926A8006B7D30 /* SignUpOptViewController.h */,
 				8BCDE937195926A8006B7D30 /* SignUpOptViewController.m */,
+				8B0CDE59196F1E8B00E5804C /* CompleteFbSignInViewController.h */,
+				8B0CDE5A196F1E8B00E5804C /* CompleteFbSignInViewController.m */,
 			);
 			name = "Intro Controllers";
 			sourceTree = "<group>";
@@ -490,6 +495,7 @@
 				8BCDE9261959202A006B7D30 /* SelectInterestsViewController.m in Sources */,
 				8B8985E7196732CD00CF24BD /* Interests.m in Sources */,
 				8B401D7F1959116100EE906A /* main.m in Sources */,
+				8B0CDE5B196F1E8B00E5804C /* CompleteFbSignInViewController.m in Sources */,
 				8BCDE932195924BC006B7D30 /* FriendsTableViewController.m in Sources */,
 				8BCDE92319592015006B7D30 /* SignUpViewController.m in Sources */,
 				8BCDE938195926A8006B7D30 /* SignUpOptViewController.m in Sources */,
@@ -623,6 +629,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pazme/Pazme-Prefix.pch";
 				INFOPLIST_FILE = "Pazme/Pazme-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -637,6 +647,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pazme/Pazme-Prefix.pch";
 				INFOPLIST_FILE = "Pazme/Pazme-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -17,6 +17,9 @@
 
 // Actions
 - (IBAction)signIn:(id)sender;
+- (IBAction)loginWithFacebook:(id)sender;
+- (IBAction)loginWithTwitter:(id)sender;
+
 
 @property (weak, nonatomic) IBOutlet UILabel *testLabel;
 
