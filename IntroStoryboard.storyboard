@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="14A283o" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="u6f-aG-3oK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14A283o" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="u6f-aG-3oK">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Sign In View Controller - Sign In-->
@@ -134,14 +134,13 @@
                         <outlet property="passwordField" destination="nQg-JE-9vF" id="sZV-ok-GsZ"/>
                         <outlet property="testLabel" destination="gEl-KY-lNt" id="ZaO-cr-XHU"/>
                         <outlet property="usernameField" destination="0Jk-wq-ihx" id="8yo-v3-e4J"/>
-                        <segue destination="siw-48-O4O" kind="push" identifier="fromFbToOpt" id="QAR-qo-CNh"/>
-                        <segue destination="siw-48-O4O" kind="push" identifier="toFb" id="bM4-FM-PRa"/>
                         <segue destination="B73-ID-kNT" kind="push" identifier="showFbSignIn" id="dvq-0n-F4t"/>
+                        <segue destination="XYy-MN-GK3" kind="push" identifier="testPush" id="eEH-eR-JQn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DAJ-Hu-nBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="391" y="-839"/>
+            <point key="canvasLocation" x="-137" y="29"/>
         </scene>
         <!--Contact Friends View Controller-->
         <scene sceneID="RFO-po-iM6">
@@ -161,7 +160,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="siw-48-O4O" kind="push" id="hqk-ji-UuQ"/>
+                                    <action selector="toInterests:" destination="X9E-uU-ay0" eventType="touchUpInside" id="Mzj-n8-TlK"/>
                                 </connections>
                             </button>
                             <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXI-DD-vpg">
@@ -177,7 +176,7 @@
                                 <rect key="frame" x="0.0" y="58" width="320" height="510"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell appearanceType="aqua" contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="66" id="xDg-Qp-44F" customClass="FriendCell">
+                                    <tableViewCell appearanceType="aqua" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" rowHeight="66" id="xDg-Qp-44F" customClass="FriendCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xDg-Qp-44F" id="cla-8E-tQr">
@@ -219,12 +218,13 @@
                     <navigationItem key="navigationItem" id="wyr-wg-dz7"/>
                     <connections>
                         <outlet property="contactsTableView" destination="XPx-C2-rzq" id="80F-j8-B1B"/>
+                        <segue destination="XYy-MN-GK3" kind="push" identifier="contactsToInterests" id="Pud-9v-jcB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DKp-Zo-9GK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="agq-4g-MR0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1814" y="-5"/>
+            <point key="canvasLocation" x="1426" y="29"/>
         </scene>
         <!--Sign Up View Controller - Sign Up-->
         <scene sceneID="0CJ-mH-TBQ">
@@ -260,14 +260,11 @@
                                     <outlet property="delegate" destination="cLY-Ur-6C3" id="AUu-Kr-EdJ"/>
                                 </connections>
                             </textField>
-                            <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Xcb-Ly-9Hx">
+                            <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Xcb-Ly-9Hx" customClass="HTAutocompleteTextField">
                                 <rect key="frame" x="73" y="237" width="179" height="39"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
-                                <connections>
-                                    <outlet property="delegate" destination="cLY-Ur-6C3" id="qVx-7F-vKc"/>
-                                </connections>
                             </textField>
                             <button appearanceType="aqua" opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Axj-9b-yA0">
                                 <rect key="frame" x="-5" y="289" width="325" height="47"/>
@@ -327,7 +324,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pa5-dz-jHR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="907" y="-5"/>
+            <point key="canvasLocation" x="403" y="-405"/>
         </scene>
         <!--Sign Up Opt View Controller-->
         <scene sceneID="6xH-4u-9kV">
@@ -342,7 +339,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone # (optional)" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Iop-mV-Jnp">
-                                <rect key="frame" x="75" y="153" width="170" height="30"/>
+                                <rect key="frame" x="75" y="198" width="170" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
@@ -350,7 +347,7 @@
                                 </connections>
                             </textField>
                             <textField appearanceType="aqua" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name (optional)" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nUX-tS-l6Z">
-                                <rect key="frame" x="75" y="214" width="170" height="30"/>
+                                <rect key="frame" x="75" y="236" width="170" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -375,6 +372,15 @@
                                     <segue destination="X9E-uU-ay0" kind="push" id="tXz-Z3-uTT"/>
                                 </connections>
                             </button>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUm-9s-ejm">
+                                <rect key="frame" x="105" y="75" width="111" height="115"/>
+                                <state key="normal" image="defaultProfile">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="assignProfiePicture:" destination="fHE-su-1Zt" eventType="touchUpInside" id="LGM-Wp-ps7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.19950766640000001" green="0.69854972380000002" blue="0.67914001540000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -384,11 +390,12 @@
                         <outlet property="firstNameField" destination="nUX-tS-l6Z" id="wBV-1L-FTE"/>
                         <outlet property="lastNameField" destination="bMr-hM-uLG" id="EQA-ZK-4zk"/>
                         <outlet property="phoneField" destination="Iop-mV-Jnp" id="XtV-D1-g3N"/>
+                        <outlet property="profilePictureButton" destination="OUm-9s-ejm" id="7oS-wL-YzO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCc-YD-d7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1331" y="-5"/>
+            <point key="canvasLocation" x="933" y="29"/>
         </scene>
         <!--Select Interests View Controller - Interests-->
         <scene sceneID="Ztb-kV-9HJ">
@@ -405,19 +412,6 @@
                             <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG4" translatesAutoresizingMaskIntoConstraints="NO" id="zqw-u9-DGF">
                                 <rect key="frame" x="-260" y="-84" width="1366" height="768"/>
                             </imageView>
-                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSF-lg-yRB">
-                                <rect key="frame" x="34" y="30" width="266" height="21"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="What inspires you?">
-                                        <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <font key="NSFont" size="24" name="Georgia-BoldItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <collectionView appearanceType="aqua" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="R3I-94-eYF">
                                 <rect key="frame" x="-5" y="66" width="325" height="502"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -466,17 +460,40 @@
                                     <outlet property="delegate" destination="XYy-MN-GK3" id="daL-0V-cGt"/>
                                 </connections>
                             </collectionView>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSF-lg-yRB">
+                                <rect key="frame" x="27" y="11" width="266" height="39"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Select Interests">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="24" name="Georgia-BoldItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VH-Iw-4dm">
+                                <rect key="frame" x="268" y="20" width="46" height="30"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toMainScreen:" destination="XYy-MN-GK3" eventType="touchUpInside" id="1tC-5K-Y1r"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Interests" id="VHX-Je-MlM"/>
                     <connections>
                         <outlet property="interestsCollection" destination="R3I-94-eYF" id="d81-us-kyc"/>
+                        <outlet property="toMainButton" destination="4VH-Iw-4dm" id="sFL-dt-aSw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bi7-2T-8D7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2850" y="-5"/>
+            <point key="canvasLocation" x="2429" y="43"/>
         </scene>
         <!--Complete Fb Sign In View Controller-->
         <scene sceneID="8at-FV-qKN">
@@ -563,11 +580,12 @@
                         <outlet property="profilePictureImageView" destination="lhW-8J-iab" id="m8M-KR-5fp"/>
                         <outlet property="usernameField" destination="xnY-E5-Te6" id="d4u-qI-d80"/>
                         <outlet property="welcomeLabel" destination="w1T-xe-NA9" id="uHK-XJ-hQG"/>
+                        <segue destination="fHE-su-1Zt" kind="push" identifier="fromFb2ParseToOpt" id="eb6-qO-aIS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="42h-sb-66r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2276" y="-716"/>
+            <point key="canvasLocation" x="403" y="452"/>
         </scene>
         <!--Facebook Friends View Controller-->
         <scene sceneID="pFb-79-vgJ">
@@ -595,12 +613,15 @@
                                 <state key="normal" title="Done">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="doneWithSignUp:" destination="siw-48-O4O" eventType="touchUpInside" id="Fjf-xe-7ec"/>
+                                </connections>
                             </button>
                             <tableView appearanceType="aqua" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ORb-CA-4EI">
                                 <rect key="frame" x="0.0" y="50" width="320" height="518"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell appearanceType="aqua" contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FbFriendCell" rowHeight="56" id="NQo-Bc-SOH" customClass="FriendCell">
+                                    <tableViewCell appearanceType="aqua" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FbFriendCell" rowHeight="56" id="NQo-Bc-SOH" customClass="FriendCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NQo-Bc-SOH" id="iAa-NS-itu">
@@ -647,7 +668,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jTl-vH-GCo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2276" y="-8"/>
+            <point key="canvasLocation" x="1928" y="-463"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TgE-WW-Zn8">
@@ -666,12 +687,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zKV-xx-WDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-49" y="13"/>
+            <point key="canvasLocation" x="-655" y="29"/>
         </scene>
     </scenes>
     <resources>
         <image name="BG1" width="1024" height="1024"/>
         <image name="BG4" width="1366" height="768"/>
+        <image name="defaultProfile" width="95" height="92"/>
         <image name="read" width="342" height="317"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -680,7 +702,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="Pud-9v-jcB"/>
         <segue reference="5ea-Sj-wyu"/>
-        <segue reference="QAR-qo-CNh"/>
+        <segue reference="eb6-qO-aIS"/>
     </inferredMetricsTieBreakers>
 </document>

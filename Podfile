@@ -6,3 +6,4 @@ pod 'SDWebImage', '~> 3.6'
 pod 'MDCSwipeToChoose'
 pod 'SVProgressHUD', :head
 pod 'HTAutocompleteTextField'
+pod 'DZNPhotoPickerController', '~> 1.0.7'

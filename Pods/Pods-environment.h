@@ -6,11 +6,29 @@
 // project.
 
 
+// 500px-iOS-api
+#define COCOAPODS_POD_AVAILABLE_500px_iOS_api
+#define COCOAPODS_VERSION_MAJOR_500px_iOS_api 1
+#define COCOAPODS_VERSION_MINOR_500px_iOS_api 0
+#define COCOAPODS_VERSION_PATCH_500px_iOS_api 5
+
+// AFNetworking
+#define COCOAPODS_POD_AVAILABLE_AFNetworking
+#define COCOAPODS_VERSION_MAJOR_AFNetworking 1
+#define COCOAPODS_VERSION_MINOR_AFNetworking 3
+#define COCOAPODS_VERSION_PATCH_AFNetworking 4
+
 // Bolts
 #define COCOAPODS_POD_AVAILABLE_Bolts
 #define COCOAPODS_VERSION_MAJOR_Bolts 1
 #define COCOAPODS_VERSION_MINOR_Bolts 1
 #define COCOAPODS_VERSION_PATCH_Bolts 0
+
+// DZNPhotoPickerController
+#define COCOAPODS_POD_AVAILABLE_DZNPhotoPickerController
+#define COCOAPODS_VERSION_MAJOR_DZNPhotoPickerController 1
+#define COCOAPODS_VERSION_MINOR_DZNPhotoPickerController 0
+#define COCOAPODS_VERSION_PATCH_DZNPhotoPickerController 10
 
 // ECSlidingViewController
 #define COCOAPODS_POD_AVAILABLE_ECSlidingViewController
@@ -23,6 +41,12 @@
 #define COCOAPODS_VERSION_MAJOR_Facebook_iOS_SDK 3
 #define COCOAPODS_VERSION_MINOR_Facebook_iOS_SDK 15
 #define COCOAPODS_VERSION_PATCH_Facebook_iOS_SDK 1
+
+// FlickrKit
+#define COCOAPODS_POD_AVAILABLE_FlickrKit
+#define COCOAPODS_VERSION_MAJOR_FlickrKit 1
+#define COCOAPODS_VERSION_MINOR_FlickrKit 0
+#define COCOAPODS_VERSION_PATCH_FlickrKit 3
 
 // HTAutocompleteTextField
 #define COCOAPODS_POD_AVAILABLE_HTAutocompleteTextField

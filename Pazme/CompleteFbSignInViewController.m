@@ -9,7 +9,6 @@
 #import "CompleteFbSignInViewController.h"
 #import <Parse/Parse.h>
 #import <SDWebImage/UIImageView+WebCache.h>
-#import "SVProgressHUD.h"
 
 @interface CompleteFbSignInViewController () {
     PFUser *currentUser;
@@ -32,7 +31,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    currentUser = [PFUser currentUser];
+    NSLog(@"tralalalala");
 
 }
 
@@ -45,6 +44,8 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
     
+    currentUser = [PFUser currentUser];
+    
     self.welcomeLabel.text =  [NSString stringWithFormat:@"Hi %@!", currentUser[@"firstName"]];
     
     self.notIntendedUserLabel.text = [NSString stringWithFormat:@"Not %@?", currentUser[@"firstName"]];
@@ -52,9 +53,11 @@
     NSString *profilePictureString = [[PFUser currentUser] objectForKey:@"profilePictureURL"];
     //NSString *ppS = [NSString stringWithFormat:@"%@%@", profilePictureString, @"?width=200&height=200"];
     NSURL *profileImageURL = [NSURL URLWithString:profilePictureString];
-    [self.profilePictureImageView setImageWithURL:profileImageURL];
     
-    self.profilePictureImageView.layer.cornerRadius = 40;
+    NSData *imageData = [NSData dataWithContentsOfURL:profileImageURL];
+    self.profilePictureImageView.image = [UIImage imageWithData:imageData];
+    
+    self.profilePictureImageView.layer.cornerRadius = 100;
     self.profilePictureImageView.layer.masksToBounds = YES;
 }
 
@@ -85,9 +88,9 @@
     [currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (error) {
             NSLog(@"error: %@", error);
-            [SVProgressHUD showErrorWithStatus:[error.userInfo objectForKey:@"error"]];
+            //[SVProgressHUD showErrorWithStatus:[error.userInfo objectForKey:@"error"]];
         } else {
-            [self performSegueWithIdentifier:@"showInitialFindFriends" sender:self];
+            [self performSegueWithIdentifier:@"fromFb2ParseToOpt" sender:self];
         }
     }];
 }

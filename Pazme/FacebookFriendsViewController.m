@@ -457,4 +457,7 @@
     }];
 }
 
+- (IBAction)doneWithSignUp:(id)sender {
+    [self performSegueWithIdentifier:@"fbToInterests" sender:self];
+}
 @end

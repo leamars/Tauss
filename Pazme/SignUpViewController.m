@@ -10,8 +10,7 @@
 #import <Parse/Parse.h>
 #import <FBShimmering.h>
 #import <FBShimmeringView.h>
-#import "HTAutocompleteTextField.h"
-#import "HTEmailAutocompleteTextField.h"
+#import "HTAutoCompleteManager.h"
 
 @interface SignUpViewController ()
 
@@ -40,6 +39,8 @@
     
     optional = true;
     
+    self.emailField.autocompleteDataSource = [HTAutocompleteManager sharedManager];
+    self.emailField.autocompleteType = HTAutocompleteTypeEmail;
 }
 
 - (void) viewWillAppear:(BOOL)animated {

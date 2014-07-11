@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CompleteFbSignInViewController : UIViewController
+@interface CompleteFbSignInViewController : UIViewController <UITextFieldDelegate>
 
 // Properties
 @property (weak, nonatomic) IBOutlet UILabel *welcomeLabel;

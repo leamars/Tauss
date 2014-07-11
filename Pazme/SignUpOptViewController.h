@@ -8,16 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SignUpOptViewController : UIViewController
+@interface SignUpOptViewController : UIViewController <UIActionSheetDelegate, UINavigationControllerDelegate, UIPopoverControllerDelegate, UITextFieldDelegate, UIImagePickerControllerDelegate>
 
 // Outlets
 @property (weak, nonatomic) IBOutlet UITextField *phoneField;
 @property (weak, nonatomic) IBOutlet UITextField *firstNameField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameField;
 @property (weak, nonatomic) IBOutlet UIButton *continueButton;
+@property (weak, nonatomic) IBOutlet UIButton *profilePictureButton;
+@property (nonatomic, strong) UIImagePickerController *imagePickerController;
 
 // Actions
 - (IBAction)continue:(id)sender;
+- (IBAction)assignProfiePicture:(id)sender;
 
 
 @end

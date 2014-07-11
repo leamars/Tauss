@@ -42,7 +42,13 @@
     user = [PFUser currentUser];
     
     userTags = [[NSMutableArray alloc] initWithCapacity:10];
-    userTags = user[@"tags"];
+    
+    if (user[@"tags"]) {
+        userTags = [NSMutableArray arrayWithArray:user[@"tags"]];
+    }
+    else {
+        userTags = [[NSMutableArray alloc] initWithCapacity:10];
+    }
     
 }
 
@@ -137,7 +143,6 @@
         }];
         
         [userTags removeObject:currentInterest.tag];
-        
     }
     
     cell.transform = CGAffineTransformMakeScale(1.1, 1.1);
@@ -172,6 +177,18 @@
 - (UIEdgeInsets)collectionView:
 (UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
     return UIEdgeInsetsMake(50, 25, 50, 25);
+}
+
+- (IBAction)toMainScreen:(id)sender {
+    [user saveInBackground];
+    [self showMainScreen];
+}
+
+- (void)showMainScreen
+{
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *slideViewController = [mainStoryboard instantiateInitialViewController];
+    [self presentViewController:slideViewController animated:NO completion:nil];
 }
 
 @end

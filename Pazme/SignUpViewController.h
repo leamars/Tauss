@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <HTAutocompleteTextField.h>
 
 @interface SignUpViewController : UIViewController <UITextFieldDelegate>
 
 // Outlets
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
-@property (weak, nonatomic) IBOutlet UITextField *emailField;
+@property (weak, nonatomic) IBOutlet HTAutocompleteTextField *emailField;
 @property (weak, nonatomic) IBOutlet UIButton *signUpButton;
 
 // Actions

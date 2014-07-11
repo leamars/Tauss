@@ -567,7 +567,7 @@
         controller.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blueColor]};
         
         
-        controller.body = @"Hey! Join me on Paz! http://itunes.apple.com/app/id809039837" ;
+        controller.body = @"Hey! Join me on Paz! -insert appid when it's on store here-cxdxcds" ;
         controller.recipients = @[recipient];
         controller.messageComposeDelegate = self;
         if (controller) {
@@ -585,7 +585,7 @@
         
         controller.mailComposeDelegate = self;
         [controller setSubject:@"Hey! Join me on Paz!"];
-        [controller setMessageBody:@"I've been using Paz since forever! http://itunes.apple.com/app/id809039837" isHTML:NO];
+        [controller setMessageBody:@"I've been using Paz since forever! -insert appstore id-" isHTML:NO];
         [controller setToRecipients:@[recipient]];
         if (controller)
             [self presentViewController:controller animated:YES completion:nil];
@@ -626,4 +626,7 @@
 }
 
 
+- (IBAction)toInterests:(id)sender {
+    [self performSegueWithIdentifier:@"contactsToInterests" sender:self];
+}
 @end

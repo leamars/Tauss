@@ -10,7 +10,11 @@
 
 @interface FacebookFriendsViewController : UIViewController
 
+// Outlets
 @property (nonatomic, strong) NSMutableArray *friends;
 @property (weak, nonatomic) IBOutlet UITableView *fbContactsTableView;
+
+// Actions
+- (IBAction)doneWithSignUp:(id)sender;
 
 @end

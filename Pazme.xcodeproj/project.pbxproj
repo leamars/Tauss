@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B0CDE5B196F1E8B00E5804C /* CompleteFbSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0CDE5A196F1E8B00E5804C /* CompleteFbSignInViewController.m */; };
+		8B0CDE5F196F2ECB00E5804C /* HTAutoCompleteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0CDE5E196F2ECB00E5804C /* HTAutoCompleteManager.m */; };
 		8B0EE421196666EB00F64BA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0EE420196666EB00F64BA0 /* Foundation.framework */; };
 		8B401D751959116100EE906A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B401D741959116100EE906A /* CoreGraphics.framework */; };
 		8B401D771959116100EE906A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B401D761959116100EE906A /* UIKit.framework */; };
@@ -70,6 +71,8 @@
 		3A0803FB80604A72B14E77FB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		8B0CDE59196F1E8B00E5804C /* CompleteFbSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompleteFbSignInViewController.h; sourceTree = "<group>"; };
 		8B0CDE5A196F1E8B00E5804C /* CompleteFbSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompleteFbSignInViewController.m; sourceTree = "<group>"; };
+		8B0CDE5D196F2ECB00E5804C /* HTAutoCompleteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTAutoCompleteManager.h; sourceTree = "<group>"; };
+		8B0CDE5E196F2ECB00E5804C /* HTAutoCompleteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTAutoCompleteManager.m; sourceTree = "<group>"; };
 		8B0EE420196666EB00F64BA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8B401D6F1959116100EE906A /* Pazme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pazme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B401D741959116100EE906A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -171,6 +174,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B0CDE5C196F2E9D00E5804C /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				8B0CDE5D196F2ECB00E5804C /* HTAutoCompleteManager.h */,
+				8B0CDE5E196F2ECB00E5804C /* HTAutoCompleteManager.m */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
 		8B401D661959116100EE906A = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +227,7 @@
 		8B401D781959116100EE906A /* Pazme */ = {
 			isa = PBXGroup;
 			children = (
+				8B0CDE5C196F2E9D00E5804C /* Vendor */,
 				8B8985E8196732DC00CF24BD /* Models */,
 				8B8985DC19672A4200CF24BD /* Views */,
 				8BF1C56219664AAA00350A05 /* Fonts */,
@@ -481,6 +494,7 @@
 			files = (
 				8B8985EE1968C0EB00CF24BD /* MainViewController.h in Sources */,
 				8B8985EF1968C0EB00CF24BD /* UserMenuViewController.h in Sources */,
+				8B0CDE5F196F2ECB00E5804C /* HTAutoCompleteManager.m in Sources */,
 				8B8985F01968C0EB00CF24BD /* MainViewController.m in Sources */,
 				8B8985F11968C0EB00CF24BD /* UserMenuViewController.m in Sources */,
 				8BCDE9201959200C006B7D30 /* SignInViewController.m in Sources */,

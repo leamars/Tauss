@@ -55,7 +55,7 @@
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
         NSLog(@"Is there a current user? IT IS: %@", currentUser);
-        [self performSegueWithIdentifier:@"toFb" sender:self];
+        [self showMainScreen];
         // Send the user to the main screen if they're already logged in
         
     } else {
@@ -145,7 +145,7 @@
                             }
                         }
                         
-                        NSString *profilePictureURL = [NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?width=200&height=200", me.id];
+                        NSString *profilePictureURL = [NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?width=200&height=200", me.objectID];
                         
                         //Update the profile picture with a facebook one if there is no profile picture at all. (First time user)
                         if (!currentUser[@"profilePictureURL"]) {
@@ -201,21 +201,9 @@
 
 - (void)showMainScreen
 {
-//    [[PFUser currentUser] refresh];
-//    
-//    PFInstallation *installation = [PFInstallation currentInstallation];
-//    installation[@"owner"] = [PFUser currentUser];
-//    [installation saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-//        if (succeeded) {
-//            NSLog(@"Installation saved");
-//        }
-//    }];
-//    
-//    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    UIViewController *slideViewController = [mainStoryboard instantiateInitialViewController];
-//    [self presentViewController:slideViewController animated:NO completion:nil];
-    
-    NSLog(@"WE ARE GETTING SOMEWHERE.");
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *slideViewController = [mainStoryboard instantiateInitialViewController];
+    [self presentViewController:slideViewController animated:NO completion:nil];
 }
 
 - (IBAction)loginWithTwitter:(id)sender {
