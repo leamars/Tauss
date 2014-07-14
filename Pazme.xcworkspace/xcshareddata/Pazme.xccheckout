@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>F3A730E1-17AA-4FF4-ABB4-F3A503B8F50E</string>
+	<string>DA2380CB-C784-41F3-9A4E-66F1D2F54EF2</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Pazme</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>3B597A36-7737-4459-9999-5AA76E33A442</key>
-		<string>ssh://github.com/leamars/PassIt.git</string>
+		<key>6F2B3433-57E6-47FF-91E7-B05234712616</key>
+		<string>https://github.com/leamars/Paz.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Pazme.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>3B597A36-7737-4459-9999-5AA76E33A442</key>
+		<key>6F2B3433-57E6-47FF-91E7-B05234712616</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/leamars/PassIt.git</string>
+	<string>https://github.com/leamars/Paz.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3B597A36-7737-4459-9999-5AA76E33A442</string>
+	<string>6F2B3433-57E6-47FF-91E7-B05234712616</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>3B597A36-7737-4459-9999-5AA76E33A442</string>
+			<string>6F2B3433-57E6-47FF-91E7-B05234712616</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Pazme</string>
 		</dict>

@@ -308,8 +308,8 @@
 			isa = PBXGroup;
 			children = (
 				8B8985EA1968C0EB00CF24BD /* MainViewController.h */,
-				8B8985EB1968C0EB00CF24BD /* UserMenuViewController.h */,
 				8B8985EC1968C0EB00CF24BD /* MainViewController.m */,
+				8B8985EB1968C0EB00CF24BD /* UserMenuViewController.h */,
 				8B8985ED1968C0EB00CF24BD /* UserMenuViewController.m */,
 				8BD049191959276F005B1826 /* FindFBFriendsTableViewController.h */,
 				8BD0491A1959276F005B1826 /* FindFBFriendsTableViewController.m */,

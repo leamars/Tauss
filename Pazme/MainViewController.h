@@ -10,4 +10,10 @@
 
 @interface MainViewController : UIViewController
 
+// Outlets
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet UIView *secondContainerView;
+
+// Actions
+
 @end
