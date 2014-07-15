@@ -10,12 +10,15 @@
 #import "UIViewController+ECSlidingViewController.h"
 #import <Parse/Parse.h>
 #import <MDCSwipeToChoose/MDCSwipeToChoose.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface MainViewController () {
     int contentIndex;
     int dataLoader;
     NSMutableArray *contentData;
+    NSMutableArray *contentData2;
     int numSwiped;
+    BOOL flipped;
 }
 
 @end
@@ -46,9 +49,6 @@
     
     // SWIPE VIEW PROGRAMATICALLY - [self.swipeToChooseView mdc_swipe:MDCSwipeDirectionLeft];
     
-    MDCSwipeToChooseViewOptions *options = [MDCSwipeToChooseViewOptions new];
-    options.delegate = self;
-    
 //    MDCSwipeToChooseView *view = [[MDCSwipeToChooseView alloc] initWithFrame:self.containerView.bounds options: options];
 //    MDCSwipeToChooseView *view1 = [[MDCSwipeToChooseView alloc] initWithFrame:self.containerView.bounds  options: options];
 //    MDCSwipeToChooseView *view2 = [[MDCSwipeToChooseView alloc] initWithFrame:self.containerView.bounds  options: options];
@@ -63,18 +63,19 @@
 //    
 //    contentIndex = 0;
 //    dataLoader = 0;
-//    numSwiped = 0;
+//
+    numSwiped = 1;
     
     contentData = [[NSMutableArray alloc] initWithCapacity:10];
+    contentData2 = [[NSMutableArray alloc] initWithCapacity:10];
     
-    for (int i = 1; i < 21; i++) {
-        MDCSwipeToChooseView *view = [[MDCSwipeToChooseView alloc] initWithFrame:self.containerView.bounds  options:options];
-        
-        view.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"stock%i", i]];
-        [contentData addObject:view];
-        
-        [self.containerView  addSubview:view];
-    }
+    [self loadDataIntoView];
+    flipped = NO;
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -122,16 +123,9 @@
         NSLog(@"Photo saved!");
     }
     
-//    //contentIndex--;
-//    NSLog(@"What is content index: %i", contentIndex);
-//    
-//    if (contentIndex == 0) {
-//        for (int i = 0; i < 20; i++) {
-//            [self loadDataIntoView];
-//        }
-//        [self viewWillAppear:YES];
-//        contentIndex = 20;
-//    }
+    [contentData removeObjectAtIndex:0];
+    [contentData2 removeObjectAtIndex:0];
+    [self.containerView addSubview:contentData[0]];
 }
 
 #pragma mark - acquire content
@@ -146,17 +140,54 @@
 }
 
 - (void) loadDataIntoView {
-    // load data into view
-    if (!([contentData count] == 0)){
-            [self.containerView addSubview:contentData[0]];
-            [contentData removeObjectAtIndex:0];
+
+    MDCSwipeToChooseViewOptions *options = [MDCSwipeToChooseViewOptions new];
+    options.delegate = self;
+    
+    for (int i = 0; i < 21; i++) {
+        MDCSwipeToChooseView *view = [[MDCSwipeToChooseView alloc] initWithFrame:self.containerView.bounds options:options];
+        
+        view.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"stock%i", i+1]];
+        [contentData addObject:view];
     }
-    else {
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-        label.text = @"No more content for you!!!";
-        [self.view addSubview:label];
+    
+    for (int i = 0; i < 21; i++) {
+        MDCSwipeToChooseView *view = [[MDCSwipeToChooseView alloc] initWithFrame:self.containerView.bounds options:options];
+        
+        view.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"stock%i", i+1]];
+        [contentData2 addObject:view];
+
     }
+    
+    [self.containerView addSubview:contentData[0]];
+    [contentData removeObjectAtIndex:0];
+    [contentData2 removeObjectAtIndex:0];
+    
 
 }
 
+- (IBAction)flipImage:(id)sender {
+
+    if (!flipped) {
+        NSLog(@"NOT FLIPPED this view: %@ to this view: %@", contentData[numSwiped], contentData2[numSwiped]);
+    
+        [UIView transitionFromView:contentData[0]
+                            toView:contentData2[0]
+                          duration:1
+                           options:UIViewAnimationOptionTransitionFlipFromLeft
+                        completion:nil];
+        flipped = YES;
+    }
+    else {
+        NSLog(@"FLIPPED this view: %@ to this view: %@", contentData[numSwiped], contentData2[numSwiped]);
+        
+        [UIView transitionFromView:contentData2[0]
+                            toView:contentData[0]
+                          duration:1
+                           options:UIViewAnimationOptionTransitionFlipFromRight
+                        completion:nil];
+        flipped = NO;
+    }
+    
+}
 @end

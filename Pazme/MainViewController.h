@@ -13,7 +13,12 @@
 // Outlets
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (weak, nonatomic) IBOutlet UIView *secondContainerView;
+@property (weak, nonatomic) IBOutlet UIButton *flipImageButton;
+
+@property (nonatomic, strong) UIImageView *frontView;
+@property (nonatomic, strong) UIImageView *backView;
 
 // Actions
+- (IBAction)flipImage:(id)sender;
 
 @end

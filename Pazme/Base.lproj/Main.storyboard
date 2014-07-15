@@ -25,6 +25,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="flipImage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TEt-OG-X0x"/>
+                                </connections>
                             </button>
                             <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2g-oc-BRI">
                                 <rect key="frame" x="249" y="522" width="42" height="21"/>
@@ -61,6 +64,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="containerView" destination="hCP-JR-eXZ" id="CcB-YW-ROS"/>
+                        <outlet property="flipImageButton" destination="h1i-5E-g6b" id="UfA-bc-BHe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
