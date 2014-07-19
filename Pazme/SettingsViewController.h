@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SettingsViewController : UIViewController
+@interface SettingsViewController : UITableViewController
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *emailLabel;
 
 @end

@@ -170,7 +170,7 @@ typedef enum {
                 [imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
                     
                     PFUser *currentUser = [PFUser currentUser];
-                    currentUser[@"profilePictureURL"] = imageFile.url;
+                    currentUser[@"profilePicURL"] = imageFile.url;
                     [currentUser saveEventually];
                 }];
             }

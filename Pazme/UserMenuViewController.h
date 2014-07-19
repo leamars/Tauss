@@ -10,4 +10,12 @@
 
 @interface UserMenuViewController : UIViewController
 
+// Outlets
+@property (weak, nonatomic) IBOutlet UIImageView *profilePictureImageView;
+- (IBAction)goToSettings:(id)sender;
+- (IBAction)goToProfile:(id)sender;
+- (IBAction)goToFriends:(id)sender;
+- (IBAction)goToActiity:(id)sender;
+
+// Actions
 @end

@@ -8,8 +8,12 @@
 
 #import "UserMenuViewController.h"
 #import "UIViewController+ECSlidingViewController.h"
+#import <Parse/Parse.h>
 
 @interface UserMenuViewController ()
+{
+    PFUser *currentUser;
+}
 
 @end
 
@@ -30,6 +34,23 @@
     // Do any additional setup after loading the view.
     
     self.slidingViewController.anchorRightRevealAmount = 250.0;
+    
+    currentUser = [PFUser currentUser];
+    
+    NSString *profilePictureString = [[PFUser currentUser] objectForKey:@"profilePictureURL"];
+    NSLog(@"wHAT IS THE URL %@", profilePictureString);
+    NSURL *url = [NSURL URLWithString:profilePictureString];
+    NSData *data = [[NSData alloc] initWithContentsOfURL:url];
+    UIImage *profileImage = [UIImage imageWithData:data];
+    
+    NSLog(@"Profile Image: %@", profileImage);
+    
+    [self.profilePictureImageView setImage:profileImage];
+    
+    self.profilePictureImageView.layer.cornerRadius = 63;
+    self.profilePictureImageView.layer.masksToBounds = YES;
+    
+    [self resizeImage:self.profilePictureImageView.image toWidth:200 andHeight:200];
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,4 +77,33 @@
     NSLog(@"We unwound. Whoo.");
 }
 
+- (IBAction)goToSettings:(id)sender {
+    [self performSegueWithIdentifier:@"toSettings" sender:sender];
+}
+
+- (IBAction)goToProfile:(id)sender {
+    [self performSegueWithIdentifier:@"toProfile" sender:sender];
+}
+
+- (IBAction)goToFriends:(id)sender {
+    [self performSegueWithIdentifier:@"toFriends" sender:sender];
+}
+
+- (IBAction)goToActiity:(id)sender {
+    [self performSegueWithIdentifier:@"toPassIt" sender:sender];
+}
+
+#pragma mark - Helper Methods
+
+- (UIImage *)resizeImage:(UIImage *)image toWidth:(float)width andHeight:(float)height
+{
+    CGSize newSize = CGSizeMake(width, height);
+    CGRect newRectangle = CGRectMake(0, 0, width, height);
+    
+    UIGraphicsBeginImageContext(newSize);
+    [image drawInRect:newRectangle];
+    UIImage *resizedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return resizedImage;
+}
 @end

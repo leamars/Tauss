@@ -349,7 +349,7 @@
             
             //NSString *friendId = user[@"facebookId"];
             //NSURL *profilePictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?width=200&height=200", friendId]];
-            [cell.friendImageView setImageWithURL:user[@"profilePictureURL"] placeholderImage:placeholderImage];
+            [cell.friendImageView setImageWithURL:user[@"profilePicURL"] placeholderImage:placeholderImage];
             
             
             if ([self isFriend:user]) {

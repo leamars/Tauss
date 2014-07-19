@@ -148,8 +148,8 @@
                         NSString *profilePictureURL = [NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?width=200&height=200", me.objectID];
                         
                         //Update the profile picture with a facebook one if there is no profile picture at all. (First time user)
-                        if (!currentUser[@"profilePictureURL"]) {
-                            currentUser[@"profilePictureURL"] = profilePictureURL;
+                        if (!currentUser[@"profilePicURL"]) {
+                            currentUser[@"profilePicURL"] = profilePictureURL;
                         }
                         
                         
