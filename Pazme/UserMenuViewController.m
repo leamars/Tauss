@@ -37,8 +37,8 @@
     
     currentUser = [PFUser currentUser];
     
-    NSString *profilePictureString = [[PFUser currentUser] objectForKey:@"profilePictureURL"];
-    NSLog(@"wHAT IS THE URL %@", profilePictureString);
+    NSString *profilePictureString = [[PFUser currentUser] objectForKey:@"profilePicURL"];
+    NSLog(@"What is the URL: %@", profilePictureString);
     NSURL *url = [NSURL URLWithString:profilePictureString];
     NSData *data = [[NSData alloc] initWithContentsOfURL:url];
     UIImage *profileImage = [UIImage imageWithData:data];

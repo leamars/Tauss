@@ -130,8 +130,7 @@
         
         controller.mailComposeDelegate = self;
         [controller setSubject:@"Pass It - Feedback!"];
-        //[controller setMessageBody:@"I've been using Voyse since forever!" isHTML:NO];
-        [controller setToRecipients:@[@"passit@gmail.com"]];
+        [controller setToRecipients:@[@"passit@gmail.com"]]; //TO DO: Get an actual email
         if (controller)
             [self presentViewController:controller animated:YES completion:nil];
     }

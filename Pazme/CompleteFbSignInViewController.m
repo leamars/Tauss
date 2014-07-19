@@ -50,7 +50,7 @@
     
     self.notIntendedUserLabel.text = [NSString stringWithFormat:@"Not %@?", currentUser[@"firstName"]];
     
-    NSString *profilePictureString = [[PFUser currentUser] objectForKey:@"profilePictureURL"];
+    NSString *profilePictureString = [[PFUser currentUser] objectForKey:@"profilePicURL"];
     //NSString *ppS = [NSString stringWithFormat:@"%@%@", profilePictureString, @"?width=200&height=200"];
     NSURL *profileImageURL = [NSURL URLWithString:profilePictureString];
     
