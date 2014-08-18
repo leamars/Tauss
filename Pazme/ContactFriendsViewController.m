@@ -13,7 +13,6 @@
 #import <Parse/Parse.h>
 #import "FriendCell.h"
 #import "PazmeDataModel.h"
-#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface ContactFriendsViewController ()
 
@@ -47,6 +46,8 @@
     self.allPhoneNumbersArray = [NSMutableArray new];
     
     [self checkAddressBook];
+    
+    NSLog(@"VIEW CONTROLLERS %@", self.navigationController.viewControllers);    
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,15 +57,15 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 - (void)checkAddressBook
 {
@@ -288,7 +289,7 @@
     label.font = [UIFont fontWithName:@"AvenirNext-Regular" size:13];
     
     [view addSubview:label];
-    view.backgroundColor = [UIColor blueColor];
+    view.backgroundColor = [UIColor taussBlue];
     
     
     switch (section) {
@@ -345,24 +346,38 @@
             [cell.addFriendButton addTarget:self action:@selector(addFriendButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
             PFUser *user = self.contactsOnPaz[indexPath.row];
             cell.nameLabel.text = user[@"fullName"];
-            
+            [cell.nameLabel setFont:[UIFont fontWithName:@"ProximaNovaA-Light" size:25.0]];
             
             //NSString *friendId = user[@"facebookId"];
             //NSURL *profilePictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?width=200&height=200", friendId]];
-            [cell.friendImageView setImageWithURL:user[@"profilePicURL"] placeholderImage:placeholderImage];
+            
+            if (user[@"profilePicURL"]) {
+                
+                NSString *profilePictureString = user[@"profilePicURL"];
+                //NSString *ppS = [NSString stringWithFormat:@"%@%@", profilePictureString, @"?width=200&height=200"];
+                NSURL *profileImageURL = [NSURL URLWithString:profilePictureString];
+                
+                NSData *imageData = [NSData dataWithContentsOfURL:profileImageURL];
+                
+                cell.friendImageView.image = [UIImage imageWithData:imageData];
+                
+            }
+            else {
+                cell.friendImageView.image = placeholderImage;
+            }
             
             
             if ([self isFriend:user]) {
-                [cell.addFriendButton setImage:[UIImage imageNamed:@"purple_checkmark"] forState:UIControlStateNormal];
+                [cell.addFriendButton setImage:[UIImage imageNamed:@"checkmark"] forState:UIControlStateNormal];
             } else {
-                [cell.addFriendButton setImage:[UIImage imageNamed:@"purple_plus"] forState:UIControlStateNormal];
+                [cell.addFriendButton setImage:[UIImage imageNamed:@"plus"] forState:UIControlStateNormal];
             }
         }
             break;
             
         case 1: {
             [cell.addFriendButton addTarget:self action:@selector(inviteFriendButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-            [cell.addFriendButton setImage:[UIImage imageNamed:@"purple_plus"] forState:UIControlStateNormal];
+            [cell.addFriendButton setImage:[UIImage imageNamed:@"plus"] forState:UIControlStateNormal];
             
             NSDictionary *contactDict = self.contactsNotOnPaz[indexPath.row];
             
@@ -379,6 +394,9 @@
     
     // NSDictionary *contact = self.allContacts[indexPath.row];
     // cell.textLabel.text = contact[@"name"];
+    
+    cell.friendImageView.layer.cornerRadius = 30;
+    cell.friendImageView.layer.masksToBounds = YES;
     
     return cell;
 }
@@ -398,7 +416,7 @@
     PFRelation *friendsRelation = [[PFUser currentUser] relationforKey:@"friendsRelation"];
     
     if ([self isFriend:user]) {
-        [cell.addFriendButton setImage:[UIImage imageNamed:@"purple_plus"] forState:UIControlStateNormal];
+        [cell.addFriendButton setImage:[UIImage imageNamed:@"plus"] forState:UIControlStateNormal];
         
         for (PFUser *friend in [[PazmeDataModel sharedModel] myFriends]) {
             if ([friend.objectId isEqualToString:user.objectId]) {
@@ -411,7 +429,7 @@
     } else {
         NSLog(@"Will add friend: %@", user.username);
         [friendsRelation addObject:user];
-        [cell.addFriendButton setImage:[UIImage imageNamed:@"purple_checkmark"] forState:UIControlStateNormal];
+        [cell.addFriendButton setImage:[UIImage imageNamed:@"checkmark"] forState:UIControlStateNormal];
         [[[PazmeDataModel sharedModel] myFriends] addObject:user];
         
         //If this user is a friend who has already added you , do NOT send a push.
@@ -535,80 +553,80 @@
 #pragma mark - MessageComposerDelegate
 - (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result
 {
-    NSLog(@"result: %@", controller);
-    [controller dismissViewControllerAnimated:YES completion:nil];
-    if  (result == MessageComposeResultSent) {
-        [PFAnalytics trackEvent:@"InvitationSentViaText"];
-        NSLog(@"Sent text");
-    }
-    // Send the dimensions to Parse along with the 'search' event
+//    NSLog(@"result: %@", controller);
+//    [controller dismissViewControllerAnimated:YES completion:nil];
+//    if  (result == MessageComposeResultSent) {
+//        [PFAnalytics trackEvent:@"InvitationSentViaText"];
+//        NSLog(@"Sent text");
+//    }
+//    // Send the dimensions to Parse along with the 'search' event
 }
 
 - (void)mailComposeController:(MFMailComposeViewController*)controller
           didFinishWithResult:(MFMailComposeResult)result
                         error:(NSError*)error;
 {
-    if (result == MFMailComposeResultSent) {
-        NSLog(@"It's away!");
-        [PFAnalytics trackEvent:@"InvitationSentViaEmail"];
-        
-    }
-    [controller dismissViewControllerAnimated:YES completion:nil];
+//    if (result == MFMailComposeResultSent) {
+//        NSLog(@"It's away!");
+//        [PFAnalytics trackEvent:@"InvitationSentViaEmail"];
+//        
+//    }
+//    [controller dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - Request
 
 - (void)sendPhoneRequest:(NSString *)recipient
 {
-    if([MFMessageComposeViewController canSendText])
-    {
-        MFMessageComposeViewController *controller = [[MFMessageComposeViewController alloc] init];
-        controller.navigationBar.tintColor = [UIColor blueColor];
-        controller.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blueColor]};
-        
-        
-        controller.body = @"Hey! Join me on Paz! -insert appid when it's on store here-cxdxcds" ;
-        controller.recipients = @[recipient];
-        controller.messageComposeDelegate = self;
-        if (controller) {
-            [self presentViewController:controller animated:YES completion:nil];
-        }
-    }
+//    if([MFMessageComposeViewController canSendText])
+//    {
+//        MFMessageComposeViewController *controller = [[MFMessageComposeViewController alloc] init];
+//        controller.navigationBar.tintColor = [UIColor blueColor];
+//        controller.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blueColor]};
+//        
+//        
+//        controller.body = @"Hey! Join me on Paz! -insert appid when it's on store here-cxdxcds" ;
+//        controller.recipients = @[recipient];
+//        controller.messageComposeDelegate = self;
+//        if (controller) {
+//            [self presentViewController:controller animated:YES completion:nil];
+//        }
+//    }
 }
 
 - (void)sendEmailRequest:(NSString *)recipient
 {
-    if ([MFMailComposeViewController canSendMail] ) {
-        MFMailComposeViewController* controller = [[MFMailComposeViewController alloc] init];
-        controller.navigationBar.tintColor = [UIColor blueColor];
-        controller.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blueColor]};
-        
-        controller.mailComposeDelegate = self;
-        [controller setSubject:@"Hey! Join me on Paz!"];
-        [controller setMessageBody:@"I've been using Paz since forever! -insert appstore id-" isHTML:NO];
-        [controller setToRecipients:@[recipient]];
-        if (controller)
-            [self presentViewController:controller animated:YES completion:nil];
-        
-    }
+//    if ([MFMailComposeViewController canSendMail] ) {
+//        MFMailComposeViewController* controller = [[MFMailComposeViewController alloc] init];
+//        controller.navigationBar.tintColor = [UIColor blueColor];
+//        controller.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blueColor]};
+//        
+//        controller.mailComposeDelegate = self;
+//        [controller setSubject:@"Hey! Join me on Paz!"];
+//        [controller setMessageBody:@"I've been using Paz since forever! -insert appstore id-" isHTML:NO];
+//        [controller setToRecipients:@[recipient]];
+//        if (controller)
+//            [self presentViewController:controller animated:YES completion:nil];
+//        
+//    }
 }
 
 #pragma mark - UIAlertView Delegate
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    if (!(buttonIndex == alertView.cancelButtonIndex)) {
-        
-        //Get the title.
-        NSString *buttontitle = [alertView buttonTitleAtIndex:buttonIndex];
-        
-        //If it's an email regex. Send email hehe
-        if ([self isValidEmail:buttontitle]) {
-            [self sendEmailRequest:buttontitle];
-        } else {
-            //Send phone
-            [self sendPhoneRequest:buttontitle];
-        }
-    }
+//    if (!(buttonIndex == alertView.cancelButtonIndex)) {
+//        
+//        //Get the title.
+//        NSString *buttontitle = [alertView buttonTitleAtIndex:buttonIndex];
+//        
+//        //If it's an email regex. Send email hehe
+//        if ([self isValidEmail:buttontitle]) {
+//            [self sendEmailRequest:buttontitle];
+//        } else {
+//            //Send phone
+//            [self sendPhoneRequest:buttontitle];
+//        }
+//    }
 }
 
 
@@ -625,8 +643,13 @@
     return [emailTest evaluateWithObject:checkString];
 }
 
-
-- (IBAction)toInterests:(id)sender {
-    [self performSegueWithIdentifier:@"contactsToInterests" sender:self];
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
+    if(cell.selectionStyle == UITableViewCellSelectionStyleNone){
+        return nil;
+    }
+    
+    return indexPath;
 }
+
 @end

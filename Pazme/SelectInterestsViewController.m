@@ -50,12 +50,18 @@
         userTags = [[NSMutableArray alloc] initWithCapacity:10];
     }
     
+    [self.topLabel setFont:[UIFont fontWithName:@"Lobster1.4" size:30.0]];
+
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) viewWillAppear:(BOOL)animated {
 }
 
 /*
@@ -98,7 +104,7 @@
             currentInterest.selected = YES;
         }
         else {
-            cell.backgroundColor = [UIColor colorWithRed:175.0/255.0 green:82.0/255.0 blue:15.0/255.0 alpha:0.6];
+            cell.backgroundColor = [UIColor colorWithWhite:1 alpha:0.2];
         }
     }
     else {
@@ -106,6 +112,7 @@
     }
     
     cell.interestImage.image = currentInterest.image;
+    [cell.interestLabel setFont:[UIFont fontWithName:@"ProximaNovaA-Light" size:15.0]];
     cell.interestLabel.text = currentInterest.tag;
     return cell;
 }
@@ -127,8 +134,8 @@
         
         [interestsArray[indexPath.row] setSelected:YES];
         // Animate cell background color to re
-        [UIView animateWithDuration:0.3 animations:^{
-            cell.backgroundColor = [UIColor redColor];
+        [UIView animateWithDuration:0.5 animations:^{
+            cell.backgroundColor = [UIColor colorWithRed:70.0/255.0 green:125.0/255.0 blue:117.0/255.0 alpha:0.6];
         }];
         
         // Set tags for the user
@@ -138,8 +145,8 @@
     else {
         [currentInterest setSelected:NO];
         // Animate cell background color to normal
-        [UIView animateWithDuration:0.2 animations:^{
-            cell.backgroundColor = [UIColor colorWithRed:175.0/255.0 green:82.0/255.0 blue:15.0/255.0 alpha:0.6];
+        [UIView animateWithDuration:0.5 animations:^{
+            cell.backgroundColor = [UIColor colorWithWhite:1 alpha:0.2];
         }];
         
         [userTags removeObject:currentInterest.tag];

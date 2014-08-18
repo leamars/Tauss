@@ -45,10 +45,23 @@
     
     NSLog(@"Profile Image: %@", profileImage);
     
-    [self.profilePictureImageView setImage:profileImage];
+    if (profileImage) {
+    
+        [self.profilePictureImageView setImage:profileImage];
+        [self resizeImage:self.profilePictureImageView.image toWidth:180 andHeight:180];
+
+    }
+    else {
+//        UIView *noProfilePicture = [UIView new];
+//        [noProfilePicture view];
+//        [self.profilePictureImageView addSubview:[UIImage imageNamed:@"camera"]];
+    }
     
     self.profilePictureImageView.layer.cornerRadius = 63;
     self.profilePictureImageView.layer.masksToBounds = YES;
+    
+    self.profilePicBg.layer.cornerRadius = 70;
+    self.profilePicBg.layer.masksToBounds = YES;
     
     [self resizeImage:self.profilePictureImageView.image toWidth:200 andHeight:200];
 }
@@ -86,11 +99,11 @@
 }
 
 - (IBAction)goToFriends:(id)sender {
-    [self performSegueWithIdentifier:@"toFriends" sender:sender];
+    [self performSegueWithIdentifier:@"toMain" sender:sender];
 }
 
-- (IBAction)goToActiity:(id)sender {
-    [self performSegueWithIdentifier:@"toPassIt" sender:sender];
+- (IBAction)goToActivity:(id)sender {
+    [self performSegueWithIdentifier:@"toMain" sender:sender];
 }
 
 #pragma mark - Helper Methods

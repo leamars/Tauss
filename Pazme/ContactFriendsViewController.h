@@ -14,6 +14,5 @@
 @property (weak, nonatomic) IBOutlet UITableView *contactsTableView;
 
 // ACTIONS
-- (IBAction)toInterests:(id)sender;
 
 @end

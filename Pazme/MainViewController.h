@@ -7,18 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DBCameraViewController.h"
+#import "DBCameraContainerViewController.h"
+#import "OCMapView.h"
+#import <MapKit/MapKit.h>
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController <MKMapViewDelegate>
 
-// Outlets
-@property (weak, nonatomic) IBOutlet UIView *containerView;
-@property (weak, nonatomic) IBOutlet UIView *secondContainerView;
-@property (weak, nonatomic) IBOutlet UIButton *flipImageButton;
+@property (weak, nonatomic) IBOutlet UIImageView *contentImageView;
+@property (weak, nonatomic) IBOutlet UIButton *shareCount;
+@property (weak, nonatomic) IBOutlet UIView *metricsView;
+@property (weak, nonatomic) IBOutlet UILabel *sharedNum;
+@property (weak, nonatomic) IBOutlet OCMapView *mapView;
+- (IBAction)addRandom:(id)sender;
 
-@property (nonatomic, strong) UIImageView *frontView;
-@property (nonatomic, strong) UIImageView *backView;
 
-// Actions
-- (IBAction)flipImage:(id)sender;
+- (IBAction)takePhoto:(id)sender;
+- (IBAction)showMetricsView:(id)sender;
+
 
 @end
+
+

@@ -31,7 +31,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"tralalalala");
+    self.passwordField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Password"
+                                                                               attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    
+    self.usernameField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Email"
+                                                                               attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
 
 }
 
@@ -57,7 +61,7 @@
     NSData *imageData = [NSData dataWithContentsOfURL:profileImageURL];
     self.profilePictureImageView.image = [UIImage imageWithData:imageData];
     
-    self.profilePictureImageView.layer.cornerRadius = 100;
+    self.profilePictureImageView.layer.cornerRadius = 58;
     self.profilePictureImageView.layer.masksToBounds = YES;
 }
 
@@ -108,12 +112,7 @@
 #define ACCEPTABLE_CHARECTERS @"abcdefghijklmnopqrstuvwxyz0123456789_."
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string  {
-    if (textField == self.usernameField) {
-        
-        NSCharacterSet *cs = [[NSCharacterSet characterSetWithCharactersInString:ACCEPTABLE_CHARECTERS] invertedSet];
-        NSString *filtered = [[string componentsSeparatedByCharactersInSet:cs] componentsJoinedByString:@""];
-        return [string isEqualToString:filtered];
-    }
+
     return YES;
 }
 

@@ -11,13 +11,16 @@
 #import <FBShimmering.h>
 #import <FBShimmeringView.h>
 #import "HTAutoCompleteManager.h"
+#import "UITextField+textPad.h"
+#import "UIImage+ImageEffects.h"
+#import "UIColor+Tauss.h"
+#import "UILabel+BetterLabel.h"
 
 @interface SignUpViewController ()
 
 @end
 
 @implementation SignUpViewController {
-    NSString *username;
     NSString *password;
     NSString *email;
     BOOL optional;
@@ -39,8 +42,23 @@
     
     optional = true;
     
-    self.emailField.autocompleteDataSource = [HTAutocompleteManager sharedManager];
-    self.emailField.autocompleteType = HTAutocompleteTypeEmail;
+//    self.emailField.autocompleteDataSource = [HTAutocompleteManager sharedManager];
+//    self.emailField.autocompleteType = HTAutocompleteTypeEmail;
+//    
+//    [self.emailField textRectForBounds:self.emailField.layer.bounds];
+//    [self.emailField editingRectForBounds:self.emailField.layer.bounds];
+    
+    self.passwordField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Password"
+                                                                               attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    
+    self.emailField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Email"
+                                                                               attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    
+    [self.taglineLabel setFont:[UIFont fontWithName:@"ProximaNovaA-Light" size:14.0]];
+    
+    // SHIMMER AWAY
+    [self shimmerThisView:self.taglineLabel];
+    
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -49,6 +67,9 @@
         
         //DO SOMETHING IF WE GET TO THIS SCREEN BY MISTAKE AND THE USER IS ALREADY LOGGED IN
     }
+    [self.signUpLabel prettyLabel:self.signUpLabel];
+    [self.signUpButton setBackgroundImage:[UIImage imageWithColor:[UIColor taussBlue]] forState:UIControlStateHighlighted];
+    [self.titleLabel setFont:[UIFont fontWithName:@"Lobster1.4" size:70.0]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -75,27 +96,41 @@
     [self.view endEditing:YES];
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField{
-
-    [self saveData];
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
-    [textField resignFirstResponder];
-    [self signUp:self.signUpButton];
+    if (textField == self.passwordField) {
+        
+        [self saveData];
+        [self signUp:self.signUpButton];
+        return YES;
+    }
+    else {
+        [textField resignFirstResponder];
+        [self.passwordField becomeFirstResponder];
+    }
     
     return NO;
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    [self animateTextField: textField up: YES];
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [self animateTextField: textField up: NO];
 }
 
 - (IBAction)signUp:(id)sender {
     
     [self saveData];
     
-    if ([username length] == 0 || [password length] == 0 || [email length] == 0) {
+    if ([password length] == 0 || [email length] == 0) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oops!" message:@"Looks like you didn't enter information for all the fields." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [alert show];
     }
     else {
         PFUser *newUser = [PFUser user];
-        newUser.username = username;
+        newUser.username = email;
         newUser.password = password;
         newUser.email = email;
         
@@ -124,7 +159,6 @@
 }
 
 - (void) saveData {
-    username = [self.usernameField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     password = [self.passwordField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     email = [self.emailField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
@@ -140,4 +174,37 @@
     }
     return YES;
 }
+
+- (void) animateTextField: (UITextField *)textField up: (BOOL) up
+{
+    const int movementDistance = 220; // tweak as needed
+    const float movementDuration = 0.3f; // tweak as needed
+    
+    const int movementDistanceTwo = 40;
+    
+    int movement = (up ? -movementDistance : movementDistance);
+    int movementTwo = (up ? -movementDistanceTwo : movementDistanceTwo);
+    
+    [UIView beginAnimations: @"anim" context: nil];
+    [UIView setAnimationBeginsFromCurrentState: YES];
+    [UIView setAnimationDuration: movementDuration];
+    self.signUpButton.frame = CGRectOffset(self.signUpButton.frame, 0, movement);
+    self.signUpLabel.frame = CGRectOffset(self.signUpLabel.frame, 0, movement);
+    self.separator.frame = CGRectOffset(self.separator.frame, 0, movementTwo);
+    self.passwordField.frame = CGRectOffset(self.passwordField.frame, 0, movementTwo);
+    self.emailField.frame = CGRectOffset(self.emailField.frame, 0, movementTwo);
+    
+    [UIView commitAnimations];
+}
+
+-(void)shimmerThisView:(UIView *) view {
+    
+    FBShimmeringView *shimmeringView = [[FBShimmeringView alloc] initWithFrame:view.frame];
+    [self.view addSubview:shimmeringView];
+    shimmeringView.contentView = view;
+    
+    // Start shimmering.
+    shimmeringView.shimmering = YES;
+}
+
 @end

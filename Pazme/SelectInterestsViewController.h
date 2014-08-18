@@ -13,6 +13,7 @@
 // Outlets
 @property (weak, nonatomic) IBOutlet UICollectionView *interestsCollection;
 @property (weak, nonatomic) IBOutlet UIButton *toMainButton;
+@property (weak, nonatomic) IBOutlet UILabel *topLabel;
 
 // Actions
 - (IBAction)toMainScreen:(id)sender;

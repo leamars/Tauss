@@ -13,4 +13,8 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "UITextField+TextPad.h"
+    #import "UIImage+ImageEffects.h"
+    #import "UIColor+Tauss.h"
+    #import "UILabel+BetterLabel.h"
 #endif

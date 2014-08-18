@@ -14,8 +14,12 @@
 // Outlets
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
-@property (weak, nonatomic) IBOutlet HTAutocompleteTextField *emailField;
+@property (weak, nonatomic) IBOutlet UITextField *emailField;
 @property (weak, nonatomic) IBOutlet UIButton *signUpButton;
+@property (weak, nonatomic) IBOutlet UILabel *signUpLabel;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIView *separator;
+@property (weak, nonatomic) IBOutlet UILabel *taglineLabel;
 
 // Actions
 - (IBAction)signUp:(id)sender;

@@ -7,3 +7,7 @@ pod 'MDCSwipeToChoose'
 pod 'SVProgressHUD', :head
 pod 'HTAutocompleteTextField'
 pod 'DZNPhotoPickerController', '~> 1.0.7'
+pod 'pop', '~> 1.0'
+pod 'DBCamera', '~> 2.3'
+pod 'DWTagList', '~> 0.0.5'
+pod 'OCMapView'

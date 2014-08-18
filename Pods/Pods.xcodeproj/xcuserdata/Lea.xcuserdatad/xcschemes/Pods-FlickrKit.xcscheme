@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C3672F6C09FF4FFCA4263184"
+               BlueprintIdentifier = "3C66BB2AD4774570AEB97FCB"
                BuildableName = "libPods-FlickrKit.a"
                BlueprintName = "Pods-FlickrKit"
                ReferencedContainer = "container:Pods.xcodeproj">

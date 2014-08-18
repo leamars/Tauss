@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *continueButton;
 @property (weak, nonatomic) IBOutlet UIButton *profilePictureButton;
 @property (nonatomic, strong) UIImagePickerController *imagePickerController;
+@property (weak, nonatomic) IBOutlet UIView *separatorOne;
+@property (weak, nonatomic) IBOutlet UIView *separatorTwo;
 
 // Actions
 - (IBAction)continue:(id)sender;

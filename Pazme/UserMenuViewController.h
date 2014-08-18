@@ -15,7 +15,8 @@
 - (IBAction)goToSettings:(id)sender;
 - (IBAction)goToProfile:(id)sender;
 - (IBAction)goToFriends:(id)sender;
-- (IBAction)goToActiity:(id)sender;
+- (IBAction)goToActivity:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *profilePicBg;
 
 // Actions
 @end

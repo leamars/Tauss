@@ -9,6 +9,7 @@
 #import "SettingsViewController.h"
 #import <Parse/Parse.h>
 #import <MessageUI/MFMailComposeViewController.h>
+#import "UIColor+Tauss.h"
 
 @interface SettingsViewController ()
 
@@ -31,13 +32,29 @@
     // Do any additional setup after loading the view.
     
     self.nameLabel.text = [[PFUser currentUser] objectForKey:@"fullName"];
+
     self.emailLabel.text = [[PFUser currentUser] objectForKey:@"email"];
+    
+    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"BackgroundAlt"]];
+    
+    self.broadcastSwitch.onTintColor = [UIColor taussBlue];
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
+                             forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    self.navigationController.navigationBar.translucent = YES;
+
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
+    [self customizeCells];
 }
 
 /*
@@ -51,7 +68,42 @@
 }
 */
 
+#pragma mark - UISwtich Methods
+
+
 #pragma mark - UITableView Delegate
+
+- (void) customizeCells {
+    [self.broadcastCellLabel setFont:[UIFont fontWithName:@"ProximaNovaA-Regular" size:20.0]];
+    self.broadcastCellLabel.textColor = [UIColor colorWithRed:64.0/255.0 green:166.0/255.0 blue:207.0/255.0 alpha:1];
+    
+    [self.nameCellLabel setFont:[UIFont fontWithName:@"ProximaNovaA-Regular" size:20.0]];
+    self.nameCellLabel.textColor = [UIColor colorWithRed:68.0/255.0 green:171.0/255.0 blue:201.0/255.0 alpha:1];
+    
+    [self.emailCellLabel setFont:[UIFont fontWithName:@"ProximaNovaA-Regular" size:20.0]];
+    self.emailCellLabel.textColor = [UIColor colorWithRed:72.0/255.0 green:176.0/255.0 blue:195.0/255.0 alpha:1];
+    
+    [self.logoutCellLabel setFont:[UIFont fontWithName:@"ProximaNovaA-Regular" size:20.0]];
+    self.logoutCellLabel.textColor = [UIColor colorWithRed:76.0/255.0 green:181.0/255.0 blue:189.0/255.0 alpha:1];
+    
+    [self.termsCellLabel setFont:[UIFont fontWithName:@"ProximaNovaA-Regular" size:20.0]];
+    self.termsCellLabel.textColor = [UIColor colorWithRed:80.0/255.0 green:186.0/255.0 blue:183.0/255.0 alpha:1];
+    
+    [self.privacyCellLabel setFont:[UIFont fontWithName:@"ProximaNovaA-Regular" size:20.0]];
+    self.privacyCellLabel.textColor = [UIColor colorWithRed:84.0/255.0 green:191.0/255.0 blue:177.0/255.0 alpha:1];
+    
+    [self.acknCellLabel setFont:[UIFont fontWithName:@"ProximaNovaA-Regular" size:20.0]];
+    self.acknCellLabel.textColor = [UIColor colorWithRed:88.0/255.0 green:196.0/255.0 blue:171.0/255.0 alpha:1];
+    
+    [self.contactCellLabel setFont:[UIFont fontWithName:@"ProximaNovaA-Regular" size:20.0]];
+    self.contactCellLabel.textColor = [UIColor colorWithRed:92.0/255.0 green:201.0/255.0 blue:165.0/255.0 alpha:1];
+    
+    [self.nameLabel setFont:[UIFont fontWithName:@"ProximaNovaA-Light" size:16.0]];
+    self.nameLabel.textColor = [UIColor colorWithRed:97.0/255.0 green:97.0/255.0 blue:97.0/255.0 alpha:1];
+    
+    [self.emailLabel setFont:[UIFont fontWithName:@"ProximaNovaA-Light" size:16.0]];
+    self.emailLabel.textColor = [UIColor colorWithRed:97.0/255.0 green:97.0/255.0 blue:97.0/255.0 alpha:1];
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"Selected: %@", indexPath);
@@ -63,7 +115,7 @@
             
             switch(indexPath.row) {
                     
-                case 4: {
+                case 3: {
                     [PFUser logOut];
                     // Load back the main. There might be the instance that it isn't there? Or should it always be there? Perhaps?
                     [self.presentingViewController dismissViewControllerAnimated:NO completion:^{
@@ -149,4 +201,16 @@
 
 
 
+- (IBAction)switchChanged:(id)sender {
+    UISwitch *switcher = (UISwitch*)sender;
+    BOOL value = switcher.on;
+    
+    // Broadcast initially ON == 1
+    if (value == true) {
+        // turn broadcast feature on
+    }
+    else {
+        // turn it off
+    }
+}
 @end

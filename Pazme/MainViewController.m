@@ -11,14 +11,23 @@
 #import <Parse/Parse.h>
 #import <MDCSwipeToChoose/MDCSwipeToChoose.h>
 #import <QuartzCore/QuartzCore.h>
+#import "TagPhotoViewController.h"
+#import "OCMapViewSampleHelpAnnotation.h"
 
-@interface MainViewController () {
+static CGFloat kDEFAULTCLUSTERSIZE = 0.2;
+static NSString *const kTYPE1 = @"Banana";
+static NSString *const kTYPE2 = @"Orange";
+
+@interface MainViewController () <DBCameraViewControllerDelegate> {
     int contentIndex;
     int dataLoader;
     NSMutableArray *contentData;
     NSMutableArray *contentData2;
     int numSwiped;
     BOOL flipped;
+    BOOL up;
+    int pressNum;
+    UIImage *imageToSend;
 }
 
 @end
@@ -71,6 +80,17 @@
     
     [self loadDataIntoView];
     flipped = NO;
+    
+    pressNum = 0;
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
+                                                  forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    self.navigationController.navigationBar.translucent = YES;
+    
+    // MAP STUFF
+    
+    self.mapView.clusterSize = kDEFAULTCLUSTERSIZE;
     
 }
 
@@ -125,7 +145,6 @@
     
     [contentData removeObjectAtIndex:0];
     [contentData2 removeObjectAtIndex:0];
-    [self.containerView addSubview:contentData[0]];
 }
 
 #pragma mark - acquire content
@@ -141,53 +160,299 @@
 
 - (void) loadDataIntoView {
 
-    MDCSwipeToChooseViewOptions *options = [MDCSwipeToChooseViewOptions new];
-    options.delegate = self;
-    
-    for (int i = 0; i < 21; i++) {
-        MDCSwipeToChooseView *view = [[MDCSwipeToChooseView alloc] initWithFrame:self.containerView.bounds options:options];
-        
-        view.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"stock%i", i+1]];
-        [contentData addObject:view];
-    }
-    
-    for (int i = 0; i < 21; i++) {
-        MDCSwipeToChooseView *view = [[MDCSwipeToChooseView alloc] initWithFrame:self.containerView.bounds options:options];
-        
-        view.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"stock%i", i+1]];
-        [contentData2 addObject:view];
-
-    }
-    
-    [self.containerView addSubview:contentData[0]];
-    [contentData removeObjectAtIndex:0];
-    [contentData2 removeObjectAtIndex:0];
+//    MDCSwipeToChooseViewOptions *options = [MDCSwipeToChooseViewOptions new];
+//    options.delegate = self;
+//    
+//    for (int i = 0; i < 21; i++) {
+//        MDCSwipeToChooseView *view = [[MDCSwipeToChooseView alloc] initWithFrame:self.containerView.bounds options:options];
+//        
+//        view.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"stock%i", i+1]];
+//        [contentData addObject:view];
+//    }
+//    
+//    for (int i = 0; i < 21; i++) {
+//        MDCSwipeToChooseView *view = [[MDCSwipeToChooseView alloc] initWithFrame:self.containerView.bounds options:options];
+//        
+//        view.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"stock%i", i+1]];
+//        [contentData2 addObject:view];
+//
+//    }
+//    
+//    [self.containerView addSubview:contentData[0]];
+//    [contentData removeObjectAtIndex:0];
+//    [contentData2 removeObjectAtIndex:0];
     
 
 }
 
 - (IBAction)flipImage:(id)sender {
 
-    if (!flipped) {
-        NSLog(@"NOT FLIPPED this view: %@ to this view: %@", contentData[numSwiped], contentData2[numSwiped]);
-    
-        [UIView transitionFromView:contentData[0]
-                            toView:contentData2[0]
-                          duration:1
-                           options:UIViewAnimationOptionTransitionFlipFromLeft
-                        completion:nil];
-        flipped = YES;
-    }
-    else {
-        NSLog(@"FLIPPED this view: %@ to this view: %@", contentData[numSwiped], contentData2[numSwiped]);
-        
-        [UIView transitionFromView:contentData2[0]
-                            toView:contentData[0]
-                          duration:1
-                           options:UIViewAnimationOptionTransitionFlipFromRight
-                        completion:nil];
-        flipped = NO;
-    }
+//    if (!flipped) {
+//        NSLog(@"NOT FLIPPED this view: %@ to this view: %@", contentData[numSwiped], contentData2[numSwiped]);
+//    
+//        [UIView transitionFromView:contentData[0]
+//                            toView:contentData2[0]
+//                          duration:1
+//                           options:UIViewAnimationOptionTransitionFlipFromLeft
+//                        completion:nil];
+//        flipped = YES;
+//    }
+//    else {
+//        NSLog(@"FLIPPED this view: %@ to this view: %@", contentData[numSwiped], contentData2[numSwiped]);
+//        
+//        [UIView transitionFromView:contentData2[0]
+//                            toView:contentData[0]
+//                          duration:1
+//                           options:UIViewAnimationOptionTransitionFlipFromRight
+//                        completion:nil];
+//        flipped = NO;
+//    }
     
 }
+
+- (IBAction)takePhoto:(id)sender {
+    [self openCamera];
+}
+
+- (IBAction)showMetricsView:(id)sender {
+    
+    if (pressNum % 2 == 0) {
+        [self animateMetrics:YES];
+    }
+    else {
+        [self animateMetrics:NO];
+    }
+    
+    pressNum++;
+}
+
+- (void) animateMetrics:(BOOL) direction {
+    
+    const int movementDistance = 110; // tweak as needed
+    const float movementDuration = 0.3f; // tweak as needed
+    
+    const int movementDistanceTwo = 50;
+    
+    int movement = (direction ? -movementDistance : movementDistance);
+    int movementTwo = (direction ? -movementDistanceTwo : movementDistanceTwo);
+    
+    [UIView beginAnimations: @"anim" context: nil];
+    [UIView setAnimationBeginsFromCurrentState: YES];
+    [UIView setAnimationDuration: movementDuration];
+    
+    self.metricsView.frame = CGRectOffset(self.metricsView.frame, 0, movementTwo);
+    
+    [UIView commitAnimations];
+}
+
+#pragma mark - Camera methods
+
+- (void) openCamera
+{
+    DBCameraContainerViewController *cameraContainer = [[DBCameraContainerViewController alloc] initWithDelegate:self];
+    [cameraContainer setFullScreenMode];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:cameraContainer];
+    [nav setNavigationBarHidden:YES];
+    [self presentViewController:nav animated:YES completion:nil];
+}
+
+- (void) camera:(id)cameraViewController didFinishWithImage:(UIImage *)image withMetadata:(NSDictionary *)metadata
+{
+    imageToSend = [UIImage new];
+    imageToSend = image;
+    [self performSegueWithIdentifier:@"tagPhoto" sender:self];
+    NSLog(@"BUTTON PRESSED");
+    [self dismissCamera:cameraViewController];
+}
+
+- (void) dismissCamera:(id)cameraViewController{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [cameraViewController restoreFullScreenMode];
+}
+
+#pragma mark - Segue
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"tagPhoto"]){
+        
+        TagPhotoViewController *tpvc = (TagPhotoViewController *)segue.destinationViewController;
+        tpvc.receivedImage = imageToSend;
+    }
+}
+
+#pragma mark - map methods
+
+- (void)updateOverlays
+{
+    [self.mapView removeOverlays:self.mapView.overlays];
+    
+    for (OCAnnotation *annotation in self.mapView.displayedAnnotations) {
+        if ([annotation isKindOfClass:[OCAnnotation class]]) {
+            
+            // static circle size of cluster
+            CLLocationDistance clusterRadius = self.mapView.region.span.longitudeDelta * self.mapView.clusterSize * 111000 / 2.0f;
+            clusterRadius = clusterRadius * cos([annotation coordinate].latitude * M_PI / 180.0);
+            
+            MKCircle *circle = [MKCircle circleWithCenterCoordinate:annotation.coordinate radius:clusterRadius];
+            [circle setTitle:@"background"];
+            [self.mapView addOverlay:circle];
+            
+            MKCircle *circleLine = [MKCircle circleWithCenterCoordinate:annotation.coordinate radius:clusterRadius];
+            [circleLine setTitle:@"line"];
+            [self.mapView addOverlay:circleLine];
+        }
+    }
+}
+
+- (IBAction)addRandom:(id)sender {
+    
+    NSArray *randomLocations = [[NSArray alloc] initWithArray:[self randomCoordinatesGenerator:100]];
+    NSMutableSet *annotationsToAdd = [[NSMutableSet alloc] init];
+    
+    for (CLLocation *loc in randomLocations) {
+        OCMapViewSampleHelpAnnotation *annotation = [[OCMapViewSampleHelpAnnotation alloc] initWithCoordinate:loc.coordinate];
+        [annotationsToAdd addObject:annotation];
+        
+        // add to group if specified
+        if (annotationsToAdd.count < (randomLocations.count)/2.0) {
+            annotation.groupTag = kTYPE1;
+        } else {
+            annotation.groupTag = kTYPE2;
+        }
+        
+    }
+    
+    [self.mapView addAnnotations:[annotationsToAdd allObjects]];
+}
+
+- (NSArray *)randomCoordinatesGenerator:(int)numberOfCoordinates
+{
+    MKCoordinateRegion visibleRegion = self.mapView.region;
+    visibleRegion.span.latitudeDelta *= 0.8;
+    visibleRegion.span.longitudeDelta *= 0.8;
+    
+    int max = 9999;
+    numberOfCoordinates = MAX(0,numberOfCoordinates);
+    NSMutableArray *coordinates = [[NSMutableArray alloc] initWithCapacity:numberOfCoordinates];
+    for (int i = 0; i < numberOfCoordinates; i++) {
+        
+        // start with top left corner
+        CLLocationDistance longitude = visibleRegion.center.longitude - visibleRegion.span.longitudeDelta/2.0;
+        CLLocationDistance latitude  = visibleRegion.center.latitude + visibleRegion.span.latitudeDelta/2.0;
+        
+        // Get random coordinates within current map rect
+        longitude += ((arc4random()%max)/(CGFloat)max) * visibleRegion.span.longitudeDelta;
+        latitude  -= ((arc4random()%max)/(CGFloat)max) * visibleRegion.span.latitudeDelta;
+        
+        CLLocation *loc = [[CLLocation alloc]initWithLatitude:latitude longitude:longitude];
+        [coordinates addObject:loc];
+    }
+    return  coordinates;
+}
+
+
+#pragma mark - map delegate
+- (MKAnnotationView *)mapView:(MKMapView *)aMapView viewForAnnotation:(id <MKAnnotation>)annotation
+{
+    MKAnnotationView *annotationView;
+    
+    // if it's a cluster
+    if ([annotation isKindOfClass:[OCAnnotation class]]) {
+        
+        OCAnnotation *clusterAnnotation = (OCAnnotation *)annotation;
+        
+        annotationView = (MKAnnotationView *)[aMapView dequeueReusableAnnotationViewWithIdentifier:@"ClusterView"];
+        if (!annotationView) {
+            annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"ClusterView"];
+            annotationView.canShowCallout = YES;
+            annotationView.centerOffset = CGPointMake(0, -20);
+        }
+        
+        // set title
+        clusterAnnotation.title = @"Cluster";
+        clusterAnnotation.subtitle = [NSString stringWithFormat:@"Containing annotations: %zd", [clusterAnnotation.annotationsInCluster count]];
+        
+        // set its image
+        annotationView.image = [UIImage imageNamed:@"regular.png"];
+        
+        // change pin image for group
+        if (self.mapView.clusterByGroupTag) {
+            if ([clusterAnnotation.groupTag isEqualToString:kTYPE1]) {
+                annotationView.image = [UIImage imageNamed:@"bananas.png"];
+            }
+            else if([clusterAnnotation.groupTag isEqualToString:kTYPE2]){
+                annotationView.image = [UIImage imageNamed:@"oranges.png"];
+            }
+            clusterAnnotation.title = clusterAnnotation.groupTag;
+        }
+    }
+    // If it's a single annotation
+    else if([annotation isKindOfClass:[OCMapViewSampleHelpAnnotation class]]){
+        OCMapViewSampleHelpAnnotation *singleAnnotation = (OCMapViewSampleHelpAnnotation *)annotation;
+        annotationView = (MKAnnotationView *)[aMapView dequeueReusableAnnotationViewWithIdentifier:@"singleAnnotationView"];
+        if (!annotationView) {
+            annotationView = [[MKAnnotationView alloc] initWithAnnotation:singleAnnotation reuseIdentifier:@"singleAnnotationView"];
+            annotationView.canShowCallout = YES;
+            annotationView.centerOffset = CGPointMake(0, -20);
+        }
+        singleAnnotation.title = singleAnnotation.groupTag;
+        
+        if ([singleAnnotation.groupTag isEqualToString:kTYPE1]) {
+            annotationView.image = [UIImage imageNamed:@"banana.png"];
+        }
+        else if([singleAnnotation.groupTag isEqualToString:kTYPE2]){
+            annotationView.image = [UIImage imageNamed:@"orange.png"];
+        }
+    }
+    // Error
+    else{
+        annotationView = (MKPinAnnotationView *)[aMapView dequeueReusableAnnotationViewWithIdentifier:@"errorAnnotationView"];
+        if (!annotationView) {
+            annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"errorAnnotationView"];
+            annotationView.canShowCallout = NO;
+            ((MKPinAnnotationView *)annotationView).pinColor = MKPinAnnotationColorRed;
+        }
+    }
+    
+    return annotationView;
+}
+
+- (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id <MKOverlay>)overlay
+{
+    MKCircle *circle = overlay;
+    MKCircleView *circleView = [[MKCircleView alloc] initWithCircle:overlay];
+    
+    if ([circle.title isEqualToString:@"background"])
+    {
+        circleView.fillColor = [UIColor yellowColor];
+        circleView.alpha = 0.25;
+    }
+    else if ([circle.title isEqualToString:@"helper"])
+    {
+        circleView.fillColor = [UIColor redColor];
+        circleView.alpha = 0.25;
+    }
+    else
+    {
+        circleView.strokeColor = [UIColor blackColor];
+        circleView.lineWidth = 0.5;
+    }
+    
+    return circleView;
+}
+
+- (void)mapView:(MKMapView *)aMapView regionDidChangeAnimated:(BOOL)animated
+{
+    [self.mapView doClustering];
+    [self updateOverlays];
+}
+
+- (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray *)views;
+{
+    [self updateOverlays];
+}
+
+
+
 @end

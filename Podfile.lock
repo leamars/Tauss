@@ -1,20 +1,26 @@
 PODS:
   - 500px-iOS-api (1.0.5)
   - AFNetworking (1.3.4)
-  - Bolts (1.1.0)
+  - Bolts (1.1.1)
+  - DBCamera (2.3.3):
+    - GPUImage (~> 0.1)
+  - DWTagList (0.0.5)
   - DZNPhotoPickerController (1.0.10):
     - 500px-iOS-api (~> 1.0.4)
     - AFNetworking (~> 1.3.3)
     - FlickrKit (~> 1.0.2)
     - SDWebImage (~> 3.4)
   - ECSlidingViewController (2.0.2)
-  - Facebook-iOS-SDK (3.15.1):
+  - Facebook-iOS-SDK (3.17.0):
     - Bolts
   - FlickrKit (1.0.3)
+  - GPUImage (0.1.5)
   - HTAutocompleteTextField (1.2.6)
   - MDCSwipeToChoose (0.2.1)
+  - OCMapView (0.1.0)
   - Parse (1.2.19):
     - Facebook-iOS-SDK (~> 3.11)
+  - pop (1.0.6)
   - SDWebImage (3.6):
     - SDWebImage/Core
   - SDWebImage/Core (3.6)
@@ -22,11 +28,15 @@ PODS:
   - SVProgressHUD (HEAD based on 1.0)
 
 DEPENDENCIES:
+  - DBCamera (~> 2.3)
+  - DWTagList (~> 0.0.5)
   - DZNPhotoPickerController (~> 1.0.7)
   - ECSlidingViewController (~> 2.0.2)
   - HTAutocompleteTextField
   - MDCSwipeToChoose
+  - OCMapView
   - Parse
+  - pop (~> 1.0)
   - SDWebImage (~> 3.6)
   - Shimmer
   - SVProgressHUD (HEAD)
@@ -34,14 +44,19 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   500px-iOS-api: f3d2933143178565d499977fb18f1730d6a33376
   AFNetworking: 80c4e0652b08eb34e25b9c0ff3c82556fe5967b4
-  Bolts: 91c2af8eae1d44e1dd75946a5b0ae04a43ea43e4
+  Bolts: 0ca796081c3e7c139bd86d6903c27f1b83036a5d
+  DBCamera: d1bf4699c496e982004223a4da33941c7389f4e2
+  DWTagList: 92b407bb66107675ddc98f4fa670a16d8fa5f110
   DZNPhotoPickerController: 3a6f3f9f1b07a3ec1acf0e7d21df3b0372c2873b
   ECSlidingViewController: 6c11fadb10d720c2d48bc577962332bdd4264c9f
-  Facebook-iOS-SDK: 56214af8e0ef16e751eb2804250326b709e571b8
+  Facebook-iOS-SDK: f20274d809f112ba540842e2b6cbe50128d51b7b
   FlickrKit: 884ea0173b3f8a1f56fd418f2ae635a03a852294
+  GPUImage: 5114a47f5fc33eb312f3731550a3cea379416d04
   HTAutocompleteTextField: 92ca48eb8f2a7fba756fb9f19bc54cba3391b8f4
   MDCSwipeToChoose: 54f7b1675eff182cdc46c582360c7fca4c766a67
+  OCMapView: b6c23a490834c7ac6d4c125cb8431e0ba33abcb9
   Parse: ffebaecaddd32cb52671010f81567c298ff93d04
+  pop: e518794da38942c05255eb64b36d894e70cb4f00
   SDWebImage: c6989652c1cdf27cbdf3f56957e2030f825af5bc
   Shimmer: 35aa2a57b8fbc17f9e16706021665966fd93dbd1
   SVProgressHUD: 5034c6e22b8c2ca3e09402e48d41ed0340aa1c50

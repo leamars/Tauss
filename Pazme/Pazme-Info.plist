@@ -42,9 +42,13 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>SegoeLight.ttf</string>
+		<string>ProximaNovaAltThing.otf</string>
 		<string>SegoeSemiLight.ttf</string>
+		<string>ProximaNovaScOsfCondensedThin.otf</string>
 		<string>SegoeBold.ttf</string>
+		<string>Lobster.otf</string>
 		<string>SegoeNormal.ttf</string>
+		<string>ProximaNovaAltLight.otf</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>IntroStoryboard</string>

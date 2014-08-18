@@ -11,7 +11,6 @@
 #import <MobileCoreServices/UTCoreTypes.h>
 #import "DZNPhotoPickerController.h"
 #import "UIImagePickerController+Edit.h"
-#import "SVProgressHUD.h"
 
 
 typedef enum {
@@ -47,6 +46,17 @@ typedef enum {
     // Do any additional setup after loading the view.
     
     user = [PFUser currentUser];
+    
+    self.firstNameField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"First Name (optional)"
+                                                                               attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    
+    self.lastNameField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Last Name (optional)"
+                                                                               attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    
+    self.phoneField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Phone # (optional)"
+                                                                               attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    
+    NSLog(@"VIEW CONTROLLERS IN OPT SIGN UP %@", self.navigationController.viewControllers);
 }
 
 - (void) viewWillAppear:(BOOL)animated {
@@ -60,8 +70,20 @@ typedef enum {
         self.lastNameField.text = user[@"lastName"];
     }
     
-    self.profilePictureButton.imageView.layer.cornerRadius = 45;
-    self.profilePictureButton.imageView.layer.masksToBounds = YES;
+    if (user[@"profilePicUrl"]) {
+        NSString *profilePictureString = [[PFUser currentUser] objectForKey:@"profilePicURL"];
+        //NSString *ppS = [NSString stringWithFormat:@"%@%@", profilePictureString, @"?width=200&height=200"];
+        NSURL *profileImageURL = [NSURL URLWithString:profilePictureString];
+        
+        NSData *imageData = [NSData dataWithContentsOfURL:profileImageURL];
+        self.profilePictureButton.imageView.image = [UIImage imageWithData:imageData];
+        
+        self.profilePictureButton.layer.cornerRadius = 58;
+        self.profilePictureButton.layer.masksToBounds = YES;
+    }
+    
+    self.firstNameField.autocapitalizationType = UITextAutocapitalizationTypeWords;
+    self.lastNameField.autocapitalizationType = UITextAutocapitalizationTypeWords;
 }
 
 - (void)didReceiveMemoryWarning
@@ -92,20 +114,29 @@ typedef enum {
     [self.view endEditing:YES];
 }
 
--(BOOL)textFieldShouldReturn:(UITextField *)textField {
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
-    [self saveData];
-    [textField resignFirstResponder];
+    if (textField == self.lastNameField) {
+        
+        [self saveData];
+        [self continue:self.continueButton];
+        return YES;
+    }
+    else {
+        [textField resignFirstResponder];
+        [self.lastNameField becomeFirstResponder];
+    }
     
     return NO;
 }
 
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    [self animateTextField:textField up:YES];
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
-    
+    [self animateTextField:textField up:NO];
 }
 
 - (void) saveData {
@@ -116,11 +147,8 @@ typedef enum {
         user[@"firstName"] = firstName;
         user[@"lastName"] = lastName;
     }
-    
-    int phoneNum = [self.phoneField.text intValue];
-    phoneNumber = [NSNumber numberWithInt:phoneNum];
 
-    user[@"phone"] = phoneNumber;
+    user[@"phone"] = self.phoneField.text;
     
     [user saveInBackground];
     [self.view endEditing:YES];
@@ -178,6 +206,9 @@ typedef enum {
         [picker dismissViewControllerAnimated:YES completion:nil];
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     }
+    
+    self.profilePictureButton.layer.cornerRadius = 58;
+    self.profilePictureButton.layer.masksToBounds = YES;
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
@@ -243,13 +274,63 @@ typedef enum {
 
 #define ACCEPTABLE_CHARECTERS @"abcdefghijklmnopqrstuvwxyz"
 
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string  {
-    if (textField == self.firstNameField || textField == self.lastNameField) {
-        
-        NSCharacterSet *cs = [[NSCharacterSet characterSetWithCharactersInString:ACCEPTABLE_CHARECTERS] invertedSet];
-        NSString *filtered = [[string componentsSeparatedByCharactersInSet:cs] componentsJoinedByString:@""];
-        return [string isEqualToString:filtered];
-    }
+- (void) animateTextField: (UITextField *)textField up: (BOOL) up
+{
+    const int movementDistance = 100; // tweak as needed
+    const float movementDuration = 0.3f; // tweak as needed
+    
+    const int movementDistanceTwo = 50;
+    
+    int movement = (up ? -movementDistance : movementDistance);
+    int movementTwo = (up ? -movementDistanceTwo : movementDistanceTwo);
+    
+    [UIView beginAnimations: @"anim" context: nil];
+    [UIView setAnimationBeginsFromCurrentState: YES];
+    [UIView setAnimationDuration: movementDuration];
+    self.phoneField.frame = CGRectOffset(self.phoneField.frame, 0, movement);
+    self.firstNameField.frame = CGRectOffset(self.firstNameField.frame, 0, movement);
+    self.lastNameField.frame = CGRectOffset(self.lastNameField.frame, 0, movement);
+    self.separatorOne.frame = CGRectOffset(self.separatorOne.frame, 0, movement);
+    self.separatorTwo.frame = CGRectOffset(self.separatorTwo.frame, 0, movement);
+    self.profilePictureButton.frame = CGRectOffset(self.profilePictureButton.frame, 0, movementTwo);
+    
+    [UIView commitAnimations];
+}
+
+// automatically add hyphens in phone number
+// http://stackoverflow.com/questions/6968331/ios-automatically-add-hyphen-in-text-field
+
+- (BOOL) textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    
+    // All digits entered
+    if (textField == self.phoneField) {
+        if (range.location == 12) {
+            return NO;
+        }
+    
+        // Reject appending non-digit characters
+        if (range.length == 0 &&
+            ![[NSCharacterSet decimalDigitCharacterSet] characterIsMember:[string characterAtIndex:0]]) {
+            return NO;
+        }
+    
+        // Auto-add hyphen before appending 4rd or 7th digit
+        if (range.length == 0 &&
+            (range.location == 3 || range.location == 7)) {
+            textField.text = [NSString stringWithFormat:@"%@-%@", textField.text, string];
+            return NO;
+        }
+    
+        // Delete hyphen when deleting its trailing digit
+        if (range.length == 1 &&
+            (range.location == 4 || range.location == 8))  {
+            range.location--;
+            range.length = 2;
+            textField.text = [textField.text stringByReplacingCharactersInRange:range withString:@""];
+            return NO;
+        }
+        }
+    
     return YES;
 }
 

@@ -10,13 +10,23 @@
 		8B0CDE5B196F1E8B00E5804C /* CompleteFbSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0CDE5A196F1E8B00E5804C /* CompleteFbSignInViewController.m */; };
 		8B0CDE5F196F2ECB00E5804C /* HTAutoCompleteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0CDE5E196F2ECB00E5804C /* HTAutoCompleteManager.m */; };
 		8B0EE421196666EB00F64BA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0EE420196666EB00F64BA0 /* Foundation.framework */; };
+		8B10F278197C668D00F23760 /* UITextField+TextPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B10F277197C668D00F23760 /* UITextField+TextPad.m */; };
+		8B248717199695AB0095E02D /* UIColor+Tauss.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B248716199695AB0095E02D /* UIColor+Tauss.m */; };
+		8B24871D19969B180095E02D /* UILabel+BetterLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B24871C19969B180095E02D /* UILabel+BetterLabel.m */; };
+		8B35CED019A1106700A9C99C /* TagPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B35CECF19A1106700A9C99C /* TagPhotoViewController.m */; };
+		8B372CF319967ED200EB4F1F /* ProximaNovaScOsfCondensedThin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B372CF219967ED200EB4F1F /* ProximaNovaScOsfCondensedThin.otf */; };
+		8B372CF419967ED200EB4F1F /* ProximaNovaScOsfCondensedThin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B372CF219967ED200EB4F1F /* ProximaNovaScOsfCondensedThin.otf */; };
+		8B372CF619967EE900EB4F1F /* ProximaNovaAltThin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B372CF519967EE900EB4F1F /* ProximaNovaAltThin.otf */; };
+		8B372CF819967EFB00EB4F1F /* ProximaNovaAltLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B372CF719967EFB00EB4F1F /* ProximaNovaAltLight.otf */; };
+		8B372CFA199680C800EB4F1F /* Lobster.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B372CF9199680C800EB4F1F /* Lobster.otf */; };
+		8B3A94E6197CA45400A3453A /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A94E5197CA45400A3453A /* UIImage+ImageEffects.m */; };
 		8B401D751959116100EE906A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B401D741959116100EE906A /* CoreGraphics.framework */; };
 		8B401D771959116100EE906A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B401D761959116100EE906A /* UIKit.framework */; };
 		8B401D7D1959116100EE906A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B401D7B1959116100EE906A /* InfoPlist.strings */; };
 		8B401D7F1959116100EE906A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B401D7E1959116100EE906A /* main.m */; };
 		8B401D831959116100EE906A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B401D821959116100EE906A /* AppDelegate.m */; };
 		8B401D861959116100EE906A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B401D841959116100EE906A /* Main.storyboard */; };
-		8B401D8B1959116100EE906A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B401D8A1959116100EE906A /* Images.xcassets */; };
+		8B401D8B1959116100EE906A /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B401D8A1959116100EE906A /* Image.xcassets */; };
 		8B401D921959116100EE906A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B401D911959116100EE906A /* XCTest.framework */; };
 		8B401D941959116100EE906A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B401D761959116100EE906A /* UIKit.framework */; };
 		8B401D9C1959116100EE906A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B401D9A1959116100EE906A /* InfoPlist.strings */; };
@@ -30,6 +40,10 @@
 		8B63E54719594E70008AEE2A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B63E54619594E70008AEE2A /* Security.framework */; };
 		8B63E54919594E78008AEE2A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B63E54819594E78008AEE2A /* StoreKit.framework */; };
 		8B63E54B19594E86008AEE2A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B63E54A19594E86008AEE2A /* SystemConfiguration.framework */; };
+		8B64203419A0152700B4A854 /* ProximaNovaAltRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B64203319A0152700B4A854 /* ProximaNovaAltRegular.otf */; };
+		8B64203519A0152700B4A854 /* ProximaNovaAltRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B64203319A0152700B4A854 /* ProximaNovaAltRegular.otf */; };
+		8B67FBCD19A19407006ED975 /* OCMapViewSampleHelpAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B67FBCC19A19407006ED975 /* OCMapViewSampleHelpAnnotation.m */; };
+		8B67FBCF19A19972006ED975 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B67FBCE19A19972006ED975 /* MapKit.framework */; };
 		8B8985E119672A9D00CF24BD /* InterestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8985E019672A9D00CF24BD /* InterestCell.m */; };
 		8B8985E419672CFE00CF24BD /* Interest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8985E319672CFE00CF24BD /* Interest.m */; };
 		8B8985E7196732CD00CF24BD /* Interests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8985E6196732CD00CF24BD /* Interests.m */; };
@@ -37,6 +51,7 @@
 		8B8985EF1968C0EB00CF24BD /* UserMenuViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 8B8985EB1968C0EB00CF24BD /* UserMenuViewController.h */; };
 		8B8985F01968C0EB00CF24BD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8985EC1968C0EB00CF24BD /* MainViewController.m */; };
 		8B8985F11968C0EB00CF24BD /* UserMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8985ED1968C0EB00CF24BD /* UserMenuViewController.m */; };
+		8BB2AB8019A0257500CFE51C /* UserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB2AB7F19A0257500CFE51C /* UserProfileViewController.m */; };
 		8BCDE91A19591ED7006B7D30 /* IntroStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCDE91919591ED7006B7D30 /* IntroStoryboard.storyboard */; };
 		8BCDE9201959200C006B7D30 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDE91F1959200C006B7D30 /* SignInViewController.m */; };
 		8BCDE92319592015006B7D30 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDE92219592015006B7D30 /* SignUpViewController.m */; };
@@ -74,6 +89,20 @@
 		8B0CDE5D196F2ECB00E5804C /* HTAutoCompleteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTAutoCompleteManager.h; sourceTree = "<group>"; };
 		8B0CDE5E196F2ECB00E5804C /* HTAutoCompleteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTAutoCompleteManager.m; sourceTree = "<group>"; };
 		8B0EE420196666EB00F64BA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8B10F276197C668D00F23760 /* UITextField+TextPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+TextPad.h"; sourceTree = "<group>"; };
+		8B10F277197C668D00F23760 /* UITextField+TextPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+TextPad.m"; sourceTree = "<group>"; };
+		8B248715199695AB0095E02D /* UIColor+Tauss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tauss.h"; sourceTree = "<group>"; };
+		8B248716199695AB0095E02D /* UIColor+Tauss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tauss.m"; sourceTree = "<group>"; };
+		8B24871B19969B180095E02D /* UILabel+BetterLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+BetterLabel.h"; sourceTree = "<group>"; };
+		8B24871C19969B180095E02D /* UILabel+BetterLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+BetterLabel.m"; sourceTree = "<group>"; };
+		8B35CECE19A1106700A9C99C /* TagPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagPhotoViewController.h; sourceTree = "<group>"; };
+		8B35CECF19A1106700A9C99C /* TagPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagPhotoViewController.m; sourceTree = "<group>"; };
+		8B372CF219967ED200EB4F1F /* ProximaNovaScOsfCondensedThin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaScOsfCondensedThin.otf; sourceTree = "<group>"; };
+		8B372CF519967EE900EB4F1F /* ProximaNovaAltThin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaAltThin.otf; sourceTree = "<group>"; };
+		8B372CF719967EFB00EB4F1F /* ProximaNovaAltLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaAltLight.otf; sourceTree = "<group>"; };
+		8B372CF9199680C800EB4F1F /* Lobster.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lobster.otf; sourceTree = "<group>"; };
+		8B3A94E4197CA45400A3453A /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		8B3A94E5197CA45400A3453A /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		8B401D6F1959116100EE906A /* Pazme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pazme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B401D741959116100EE906A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8B401D761959116100EE906A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -84,7 +113,7 @@
 		8B401D811959116100EE906A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8B401D821959116100EE906A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8B401D851959116100EE906A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8B401D8A1959116100EE906A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8B401D8A1959116100EE906A /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		8B401D901959116100EE906A /* PazmeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PazmeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B401D911959116100EE906A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8B401D991959116100EE906A /* PazmeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PazmeTests-Info.plist"; sourceTree = "<group>"; };
@@ -99,6 +128,11 @@
 		8B63E54619594E70008AEE2A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		8B63E54819594E78008AEE2A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		8B63E54A19594E86008AEE2A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8B64203319A0152700B4A854 /* ProximaNovaAltRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProximaNovaAltRegular.otf; sourceTree = "<group>"; };
+		8B67FBCB19A19407006ED975 /* OCMapViewSampleHelpAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMapViewSampleHelpAnnotation.h; sourceTree = "<group>"; };
+		8B67FBCC19A19407006ED975 /* OCMapViewSampleHelpAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCMapViewSampleHelpAnnotation.m; sourceTree = "<group>"; };
+		8B67FBCE19A19972006ED975 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8B67FBD019A1997D006ED975 /* libPods-OCMapView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-OCMapView.a"; path = "Pods/build/Debug-iphoneos/libPods-OCMapView.a"; sourceTree = "<group>"; };
 		8B8985DF19672A9D00CF24BD /* InterestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterestCell.h; sourceTree = "<group>"; };
 		8B8985E019672A9D00CF24BD /* InterestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterestCell.m; sourceTree = "<group>"; };
 		8B8985E219672CFE00CF24BD /* Interest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interest.h; sourceTree = "<group>"; };
@@ -109,6 +143,8 @@
 		8B8985EB1968C0EB00CF24BD /* UserMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserMenuViewController.h; sourceTree = "<group>"; };
 		8B8985EC1968C0EB00CF24BD /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		8B8985ED1968C0EB00CF24BD /* UserMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserMenuViewController.m; sourceTree = "<group>"; };
+		8BB2AB7E19A0257500CFE51C /* UserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileViewController.h; sourceTree = "<group>"; };
+		8BB2AB7F19A0257500CFE51C /* UserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileViewController.m; sourceTree = "<group>"; };
 		8BCDE91919591ED7006B7D30 /* IntroStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = IntroStoryboard.storyboard; path = ../IntroStoryboard.storyboard; sourceTree = "<group>"; };
 		8BCDE91E1959200C006B7D30 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
 		8BCDE91F1959200C006B7D30 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
@@ -146,6 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B67FBCF19A19972006ED975 /* MapKit.framework in Frameworks */,
 				8B0EE421196666EB00F64BA0 /* Foundation.framework in Frameworks */,
 				8B63E54B19594E86008AEE2A /* SystemConfiguration.framework in Frameworks */,
 				8B63E54919594E78008AEE2A /* StoreKit.framework in Frameworks */,
@@ -177,10 +214,27 @@
 		8B0CDE5C196F2E9D00E5804C /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				8B67FBCB19A19407006ED975 /* OCMapViewSampleHelpAnnotation.h */,
+				8B67FBCC19A19407006ED975 /* OCMapViewSampleHelpAnnotation.m */,
 				8B0CDE5D196F2ECB00E5804C /* HTAutoCompleteManager.h */,
 				8B0CDE5E196F2ECB00E5804C /* HTAutoCompleteManager.m */,
 			);
 			name = Vendor;
+			sourceTree = "<group>";
+		};
+		8B10F279197C669B00F23760 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8B3A94E4197CA45400A3453A /* UIImage+ImageEffects.h */,
+				8B3A94E5197CA45400A3453A /* UIImage+ImageEffects.m */,
+				8B10F276197C668D00F23760 /* UITextField+TextPad.h */,
+				8B10F277197C668D00F23760 /* UITextField+TextPad.m */,
+				8B248715199695AB0095E02D /* UIColor+Tauss.h */,
+				8B248716199695AB0095E02D /* UIColor+Tauss.m */,
+				8B24871B19969B180095E02D /* UILabel+BetterLabel.h */,
+				8B24871C19969B180095E02D /* UILabel+BetterLabel.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		8B401D661959116100EE906A = {
@@ -206,6 +260,8 @@
 		8B401D711959116100EE906A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B67FBD019A1997D006ED975 /* libPods-OCMapView.a */,
+				8B67FBCE19A19972006ED975 /* MapKit.framework */,
 				8B0EE420196666EB00F64BA0 /* Foundation.framework */,
 				8B63E54A19594E86008AEE2A /* SystemConfiguration.framework */,
 				8B63E54819594E78008AEE2A /* StoreKit.framework */,
@@ -227,6 +283,7 @@
 		8B401D781959116100EE906A /* Pazme */ = {
 			isa = PBXGroup;
 			children = (
+				8B10F279197C669B00F23760 /* Categories */,
 				8B0CDE5C196F2E9D00E5804C /* Vendor */,
 				8B8985E8196732DC00CF24BD /* Models */,
 				8B8985DC19672A4200CF24BD /* Views */,
@@ -236,7 +293,7 @@
 				8BCDE91B19591EDF006B7D30 /* App Delegate */,
 				8BCDE91919591ED7006B7D30 /* IntroStoryboard.storyboard */,
 				8B401D841959116100EE906A /* Main.storyboard */,
-				8B401D8A1959116100EE906A /* Images.xcassets */,
+				8B401D8A1959116100EE906A /* Image.xcassets */,
 				8B401D791959116100EE906A /* Supporting Files */,
 			);
 			path = Pazme;
@@ -319,6 +376,10 @@
 				8BCDE931195924BC006B7D30 /* FriendsTableViewController.m */,
 				8BD0491C19592845005B1826 /* SettingsViewController.h */,
 				8BD0491D19592845005B1826 /* SettingsViewController.m */,
+				8BB2AB7E19A0257500CFE51C /* UserProfileViewController.h */,
+				8BB2AB7F19A0257500CFE51C /* UserProfileViewController.m */,
+				8B35CECE19A1106700A9C99C /* TagPhotoViewController.h */,
+				8B35CECF19A1106700A9C99C /* TagPhotoViewController.m */,
 			);
 			name = "Main Controllers";
 			sourceTree = "<group>";
@@ -347,6 +408,11 @@
 		8BF1C56219664AAA00350A05 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				8B64203319A0152700B4A854 /* ProximaNovaAltRegular.otf */,
+				8B372CF9199680C800EB4F1F /* Lobster.otf */,
+				8B372CF719967EFB00EB4F1F /* ProximaNovaAltLight.otf */,
+				8B372CF519967EE900EB4F1F /* ProximaNovaAltThin.otf */,
+				8B372CF219967ED200EB4F1F /* ProximaNovaScOsfCondensedThin.otf */,
 				8BF1C56319664AD700350A05 /* SegoeLight.ttf */,
 				8BF1C56419664AE700350A05 /* SegoeSemiLight.ttf */,
 				8BF1C56519664AE700350A05 /* SegoeBold.ttf */,
@@ -433,13 +499,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B401D8B1959116100EE906A /* Images.xcassets in Resources */,
+				8B401D8B1959116100EE906A /* Image.xcassets in Resources */,
 				8B401D7D1959116100EE906A /* InfoPlist.strings in Resources */,
 				8BCDE91A19591ED7006B7D30 /* IntroStoryboard.storyboard in Resources */,
 				8BF1C56819664C2500350A05 /* SegoeBold.ttf in Resources */,
+				8B372CFA199680C800EB4F1F /* Lobster.otf in Resources */,
+				8B372CF619967EE900EB4F1F /* ProximaNovaAltThin.otf in Resources */,
 				8BF1C56719664C2100350A05 /* SegoeLight.ttf in Resources */,
 				8B401D861959116100EE906A /* Main.storyboard in Resources */,
+				8B64203419A0152700B4A854 /* ProximaNovaAltRegular.otf in Resources */,
+				8B372CF819967EFB00EB4F1F /* ProximaNovaAltLight.otf in Resources */,
 				8BF1C56919664C2800350A05 /* SegoeSemiLight.ttf in Resources */,
+				8B372CF319967ED200EB4F1F /* ProximaNovaScOsfCondensedThin.otf in Resources */,
 				8BF1C56A19664C2A00350A05 /* SegoeNormal.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,7 +519,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B372CF419967ED200EB4F1F /* ProximaNovaScOsfCondensedThin.otf in Resources */,
 				8B401D9C1959116100EE906A /* InfoPlist.strings in Resources */,
+				8B64203519A0152700B4A854 /* ProximaNovaAltRegular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,13 +567,19 @@
 			files = (
 				8B8985EE1968C0EB00CF24BD /* MainViewController.h in Sources */,
 				8B8985EF1968C0EB00CF24BD /* UserMenuViewController.h in Sources */,
+				8B248717199695AB0095E02D /* UIColor+Tauss.m in Sources */,
 				8B0CDE5F196F2ECB00E5804C /* HTAutoCompleteManager.m in Sources */,
 				8B8985F01968C0EB00CF24BD /* MainViewController.m in Sources */,
+				8B10F278197C668D00F23760 /* UITextField+TextPad.m in Sources */,
 				8B8985F11968C0EB00CF24BD /* UserMenuViewController.m in Sources */,
+				8B3A94E6197CA45400A3453A /* UIImage+ImageEffects.m in Sources */,
 				8BCDE9201959200C006B7D30 /* SignInViewController.m in Sources */,
+				8B24871D19969B180095E02D /* UILabel+BetterLabel.m in Sources */,
 				8BCDE92C19592046006B7D30 /* FacebookFriendsViewController.m in Sources */,
 				8BCDE9291959203B006B7D30 /* ContactFriendsViewController.m in Sources */,
 				8BEB19DF196BC3F70034B5F2 /* FriendCell.m in Sources */,
+				8B35CED019A1106700A9C99C /* TagPhotoViewController.m in Sources */,
+				8BB2AB8019A0257500CFE51C /* UserProfileViewController.m in Sources */,
 				8B8985E419672CFE00CF24BD /* Interest.m in Sources */,
 				8B401D831959116100EE906A /* AppDelegate.m in Sources */,
 				8BCDE92F195924A8006B7D30 /* FindContactsFriendsTableViewController.m in Sources */,
@@ -509,6 +588,7 @@
 				8BCDE9261959202A006B7D30 /* SelectInterestsViewController.m in Sources */,
 				8B8985E7196732CD00CF24BD /* Interests.m in Sources */,
 				8B401D7F1959116100EE906A /* main.m in Sources */,
+				8B67FBCD19A19407006ED975 /* OCMapViewSampleHelpAnnotation.m in Sources */,
 				8B0CDE5B196F1E8B00E5804C /* CompleteFbSignInViewController.m in Sources */,
 				8BCDE932195924BC006B7D30 /* FriendsTableViewController.m in Sources */,
 				8BCDE92319592015006B7D30 /* SignUpViewController.m in Sources */,
