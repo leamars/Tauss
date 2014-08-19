@@ -118,22 +118,6 @@
     
 }
 
-//- (void) makeImagesArray {
-//    
-//    imagesArray = [NSMutableArray new];
-//    
-//    for (PFObject *photo in allContent) {
-//        PFUser *photoUser = [photo objectForKey:@"createdBy"];
-//        if ([[photoUser objectId] isEqualToString:[currrentUser objectId]]) {
-//            imagesArray = allContent;
-//            //[self.photoCollectionView reloadData];
-//        }
-//    }
-//
-//    if ([imagesArray count] != 0) {
-//        //[self.photoCollectionView reloadData];
-//    }
-//}
 
 /*
 #pragma mark - Navigation
@@ -165,6 +149,7 @@
 - (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section {
     
     if ([allContent count] > 0) {
+        NSLog(@"What is the count? %i", [allContent count]);
         return [allContent count];
     }
     else {
@@ -198,9 +183,8 @@
         currentPhoto.image = [UIImage imageNamed:@"defaultImage"]; // placeholder image
     }
     
-    CGSize square = CGSizeMake(50, 50);
-    
     cell.photo.image = [self resizeImage:currentPhoto.image toWidth:70.0 andHeight:70.0];
+    cell.parseId = [photoFile objectId];
 
     return cell;
 }

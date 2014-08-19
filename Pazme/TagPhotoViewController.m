@@ -20,10 +20,18 @@
     NSString *city;
     NSMutableArray *cityArray;
     NSMutableArray *countryArray;
+    // tags that appear on the view
     NSMutableArray *tags;
     PFObject *userContent;
     NSData *contentData;
     NSMutableArray *userGeneratedContent;
+    // array of preset tags displayed on the view
+    NSMutableArray *presetTags;
+    // for comparison with parse tags
+    NSMutableArray *parseTags;
+    // unique tags not on parse yet
+    NSMutableArray *uniqueTags;
+    NSMutableArray *toRemove;
 }
 
 @end
@@ -64,7 +72,12 @@
     self.tagField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Add tags..."
                                                                           attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     // seting up tag view
+    tags = [NSMutableArray new];
+    parseTags = [NSMutableArray new];
+    uniqueTags = [NSMutableArray new];
+    toRemove = [NSMutableArray new];
     [self setUpTags];
+    [self tagsForPhoto];
     
     // set up image to save on parse
     UIGraphicsBeginImageContext(CGSizeMake(640, 960));
@@ -267,6 +280,48 @@
 
 - (IBAction)broadcastImage:(id)sender {
     [self uploadImage:contentData];
+    
+    PFQuery *tagQuery = [PFQuery queryWithClassName:@"Tag"];
+    NSLog(@"parse tags: %@", parseTags);
+    [tagQuery whereKey:@"name" containedIn:parseTags];
+    [tagQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (error) {
+            NSLog(@"ERROR: There was an error with the Query for Content!");
+        } else {
+            NSLog(@"ALL THE TAGS: %@", objects);
+            for (int i = 0; i < [objects count]; i++) {
+                int used = [[objects[i] valueForKey:@"timesUsed"] intValue];
+                used++;
+                PFObject *tag = [PFObject objectWithClassName:@"Tag"];
+                tag = objects[i];
+                [tag setValue:[NSNumber numberWithInt:used] forKey:@"timesUsed"];
+                [tag saveInBackground];
+            }
+        }
+    }];
+    
+    // to do - improve this search query by better parameters
+    PFQuery *uniqueQuery = [PFQuery queryWithClassName:@"Tag"];
+    [uniqueQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            toRemove = [objects valueForKey:@"name"];
+            NSLog(@"BEFORE IN UNIQUE TAGS: %@", uniqueTags);
+            [uniqueTags removeObjectsInArray:toRemove];
+            
+            NSLog(@"AFTER IN UNIQUE TAGS: %@", uniqueTags);
+            for (int i = 0; i < [uniqueTags count]; i++) {
+                PFObject *uniqueTag = [PFObject objectWithClassName:@"Tag"];
+                [uniqueTag setObject: uniqueTags[i] forKey:@"name"];
+                [uniqueTag setObject:[NSNumber numberWithInt:1] forKey:@"timesUsed"];
+                [uniqueTag saveInBackground];
+            }
+
+        }
+        else {
+            NSLog(@"Houston... we have a problem :(");
+        }
+     }];
+    
 }
 
 #pragma mark - taglist delegate
@@ -275,11 +330,11 @@
     
     CGSize viewSize = self.view.bounds.size;
     
-    tags = [NSMutableArray new];
+    presetTags = [[NSMutableArray alloc] initWithObjects:@"Technology", @"Design", @"Photography", @"Business", @"Sports", @"Style", @"Travel", @"Music", @"Food", @"Science", nil];
     
-    _tagList = [[DWTagList alloc] initWithFrame:CGRectMake(20.0, viewSize.height - 100, self.view.bounds.size.width-40.0f, 50.0f)];
+    _tagList = [[DWTagList alloc] initWithFrame:CGRectMake(20.0, viewSize.height - 200, self.view.bounds.size.width-40.0f, 50.0f)];
     [_tagList setAutomaticResize:YES];
-    [_tagList setTags:tags];
+    [_tagList setTags:presetTags];
     [_tagList setTagDelegate:self];
     
     // Customisation
@@ -293,20 +348,45 @@
     [self.view addSubview:_tagList];
     
     // tag array for parse
+       tagArray = [NSMutableArray new];
+}
+
+- (void) tagsForPhoto {
+    CGSize viewSize = self.view.bounds.size;
+    
+    _photoTags = [[DWTagList alloc] initWithFrame:CGRectMake(20.0, viewSize.height - 100, self.view.bounds.size.width-40.0f, 50.0f)];
+    [_photoTags setAutomaticResize:YES];
+    [_photoTags setTags:tags];
+    [_photoTags setTagDelegate:self];
+    
+    // Customisation
+    [_photoTags setCornerRadius:4.0f];
+    [_photoTags setBorderColor:[UIColor colorWithWhite:1 alpha:0.5].CGColor];
+    [_photoTags setTagHighlightColor:[UIColor taussBlue]];
+    [_photoTags setTextShadowColor:[UIColor clearColor]];
+    [_photoTags setBorderWidth:0.0f];
+    [_photoTags setFont:[UIFont fontWithName:@"ProximaNovaA-Light" size:14.0]];
+    [_photoTags setTagBackgroundColor:[UIColor taussBlue]];
+    
+    [self.view addSubview:_photoTags];
+    
+    // tag array for parse
     tagArray = [NSMutableArray new];
 }
 
 - (void)selectedTag:(NSString *)tagName tagIndex:(NSInteger)tagIndex {
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Message"
-                                                    message:[NSString stringWithFormat:@"You tapped tag %@", tagName]
-                                                   delegate:nil
-                                          cancelButtonTitle:@"Ok"
-                                          otherButtonTitles:nil];
+    if ([presetTags objectAtIndex:tagIndex] == tagName) {
+        [parseTags addObject:tagName];
+        //[tags addObject:[NSString stringWithFormat:@"%@ x", tagName]];
+        [self.photoTags setTags:tags];
+    }
+    else {
+        [parseTags removeObject:tagName];
+        [tags removeObject:tagName];
+        [self.photoTags setTags:tags];
+    }
     
-    NSLog(@"TAG VIEW IS: %ld", (long)tagIndex);
-    
-    [alert show];
 }
 
 #pragma mark - UITextFieldDelegate Methods
@@ -325,15 +405,16 @@
         NSArray *stringArr = [tag componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
         NSLog(@"What's in the string array: %@", stringArr);
         for (int i = 0; i < stringArr.count; i++) {
-            [tags addObject:stringArr[i]];
-            NSLog(@"am i getting here...? %@", stringArr[i]);
+            [tags addObject:[[NSString stringWithFormat:@"%@ x", stringArr[i]] capitalizedString]];
+            [uniqueTags addObject:[stringArr[i] capitalizedString]];
+            [parseTags addObject:[stringArr[i] capitalizedString]];
         }
-        [tagArray addObjectsFromArray:stringArr];
+        //[tagArray addObjectsFromArray:stringArr];
     }
     [self.tagField setText:@""];
-    [_tagList setTags:tags];
+    [self.photoTags setTags:tags];
     
-    [userContent setObject:tagArray forKey:@"tags"];
+    //[userContent setObject:tagArray forKey:@"tags"];
     
     return NO;
 }
@@ -362,6 +443,7 @@
     self.tagList.frame = CGRectOffset(self.tagList.frame, 0, movement);
     self.tagField.frame = CGRectOffset(self.tagField.frame, 0, movement);
     self.backgroundTagView.frame = CGRectOffset(self.backgroundTagView.frame, 0, movement);
+    self.photoTags.frame = CGRectOffset(self.photoTags.frame, 0, movement);
     [UIView commitAnimations];
 }
 

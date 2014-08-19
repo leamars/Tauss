@@ -19,6 +19,7 @@
 @property (nonatomic, strong) DWTagList *tagList;
 @property (weak, nonatomic) IBOutlet UITextField *tagField;
 @property (weak, nonatomic) IBOutlet UIView *backgroundTagView;
+@property (nonatomic, strong) DWTagList *photoTags;
 
 @property (weak, nonatomic) IBOutlet UIView *broadcast;
 - (IBAction)broadcastImage:(id)sender;

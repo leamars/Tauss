@@ -20,7 +20,7 @@
 #define TEXT_SHADOW_OFFSET CGSizeMake(0.0f, 1.0f)
 #define BORDER_COLOR [UIColor lightGrayColor].CGColor
 #define BORDER_WIDTH 1.0f
-#define HIGHLIGHTED_BACKGROUND_COLOR [UIColor colorWithRed:0.40 green:0.80 blue:1.00 alpha:0.5]
+#define HIGHLIGHTED_BACKGROUND_COLOR [UIColor colorWithRed:32.f/255.f green:113/255.f blue:208.f/255.f alpha:1]
 #define DEFAULT_AUTOMATIC_RESIZE NO
 #define DEFAULT_SHOW_TAG_MENU NO
 
@@ -180,6 +180,7 @@
         [tagView setTextShadowOffset:self.textShadowOffset];
         [tagView setTag:tag];
         [tagView setDelegate:self];
+        [tagView setSelected:NO];
         
         tag++;
         
@@ -212,7 +213,6 @@
 {
     UIButton *button = (UIButton*)sender;
     DWTagView *tagView = (DWTagView *)[button superview];
-    [tagView setBackgroundColor:self.highlightedBackgroundColor];
     
     if ([self.tagDelegate respondsToSelector:@selector(selectedTag:tagIndex:)]) {
         [self.tagDelegate selectedTag:tagView.label.text tagIndex:tagView.tag];
@@ -227,6 +227,15 @@
         [menuController setTargetRect:tagView.frame inView:self];
         [menuController setMenuVisible:YES animated:YES];
         [tagView becomeFirstResponder];
+    }
+    
+    if (!tagView.selected) {
+        [tagView setBackgroundColor:[self highlightedBackgroundColor]];
+        tagView.selected = YES;
+    }
+    else {
+        [tagView setBackgroundColor:[self getBackgroundColor]];
+        tagView.selected = NO;
     }
 }
 
@@ -304,12 +313,6 @@
     if ([self.tagDelegate respondsToSelector:@selector(tagListTagsChanged:)]) {
         [self.tagDelegate tagListTagsChanged:self];
     }
-}
-
-- (NSString *) getTagForIndex:(int)index {
-    NSMutableArray *tagArray = [self.textArray mutableCopy];
-    
-    return [self.textArray objectAtIndex:index];
 }
 
 @end

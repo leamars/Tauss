@@ -397,7 +397,7 @@
             </objects>
             <point key="canvasLocation" x="781" y="863"/>
         </scene>
-        <!--Settings View Controller - Settings-->
+        <!--Settings View Controller-->
         <scene sceneID="dGt-UI-Ko2">
             <objects>
                 <tableViewController id="uuu-CB-t6L" customClass="SettingsViewController" sceneMemberID="viewController">
@@ -568,7 +568,7 @@
                             <outlet property="delegate" destination="uuu-CB-t6L" id="4pn-Zl-H3q"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Settings" id="YCd-2X-d4N">
+                    <navigationItem key="navigationItem" id="YCd-2X-d4N">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="fal-76-FgR">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9WT-RK-w0A">
                                 <rect key="frame" x="16" y="13" width="20" height="18"/>

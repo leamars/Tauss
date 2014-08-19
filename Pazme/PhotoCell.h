@@ -11,5 +11,6 @@
 @interface PhotoCell : UICollectionViewCell
 
 @property(nonatomic, strong) IBOutlet UIImageView *photo;
+@property (nonatomic, strong) NSString *parseId;
 
 @end

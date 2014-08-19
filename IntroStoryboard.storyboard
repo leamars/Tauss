@@ -23,11 +23,10 @@
                             <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="204" translatesAutoresizingMaskIntoConstraints="NO" id="gEl-KY-lNt">
                                 <rect key="frame" x="59" y="98" width="204" height="52"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Share the world, with the world.">
+                                    <fragment content="Share your world, with the world.">
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="14" name="SegoeUI-Semilight"/>
-                                            <font key="NSOriginalFont" size="14" name="SegoeUI-Semilight"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
@@ -344,7 +343,7 @@
                             <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="191" translatesAutoresizingMaskIntoConstraints="NO" id="yQp-vH-Hik">
                                 <rect key="frame" x="66" y="88" width="191" height="49"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Share the world, with the world.">
+                                    <fragment content="Share your world, with the world.">
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="14" name="SegoeUI-Light"/>
@@ -812,7 +811,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="eEH-eR-JQn"/>
         <segue reference="Xrm-q9-VCF"/>
-        <segue reference="tFL-VT-Zfu"/>
     </inferredMetricsTieBreakers>
 </document>
