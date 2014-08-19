@@ -13,8 +13,10 @@
 #import <QuartzCore/QuartzCore.h>
 #import "TagPhotoViewController.h"
 #import "OCMapViewSampleHelpAnnotation.h"
+#import "UIColor+Tauss.h"
+#import "PazmeDataModel.h"
 
-static CGFloat kDEFAULTCLUSTERSIZE = 0.2;
+static CGFloat kDEFAULTCLUSTERSIZE = 0.5;
 static NSString *const kTYPE1 = @"Banana";
 static NSString *const kTYPE2 = @"Orange";
 
@@ -28,6 +30,7 @@ static NSString *const kTYPE2 = @"Orange";
     BOOL up;
     int pressNum;
     UIImage *imageToSend;
+    OCAnnotation *clusterAnnotation;
 }
 
 @end
@@ -73,6 +76,7 @@ static NSString *const kTYPE2 = @"Orange";
 //    contentIndex = 0;
 //    dataLoader = 0;
 //
+    
     numSwiped = 1;
     
     contentData = [[NSMutableArray alloc] initWithCapacity:10];
@@ -228,19 +232,17 @@ static NSString *const kTYPE2 = @"Orange";
 
 - (void) animateMetrics:(BOOL) direction {
     
-    const int movementDistance = 110; // tweak as needed
-    const float movementDuration = 0.3f; // tweak as needed
-    
-    const int movementDistanceTwo = 50;
+    const int movementDistance = 400; // tweak as needed
+    const float movementDuration = 0.6f; // tweak as needed
     
     int movement = (direction ? -movementDistance : movementDistance);
-    int movementTwo = (direction ? -movementDistanceTwo : movementDistanceTwo);
     
     [UIView beginAnimations: @"anim" context: nil];
     [UIView setAnimationBeginsFromCurrentState: YES];
     [UIView setAnimationDuration: movementDuration];
     
-    self.metricsView.frame = CGRectOffset(self.metricsView.frame, 0, movementTwo);
+    self.metricsView.frame = CGRectOffset(self.metricsView.frame, 0, movement);
+    self.mapView.frame = CGRectOffset(self.mapView.frame, 0, movement);
     
     [UIView commitAnimations];
 }
@@ -290,9 +292,44 @@ static NSString *const kTYPE2 = @"Orange";
     for (OCAnnotation *annotation in self.mapView.displayedAnnotations) {
         if ([annotation isKindOfClass:[OCAnnotation class]]) {
             
+            int numOfPins = [annotation.annotationsInCluster count];
+            NSLog(@"WHAT IS THE NUMBER OF ANNOTATIONS IN THIS CLUSTER? %i", numOfPins);
+            
+//            if (numOfPins <= 10) {
+//                self.mapView.clusterSize = 0.1;
+//            }
+//            
+//            else if (numOfPins > 10 && numOfPins <= 50) {
+//                self.mapView.clusterSize = 0.2;
+//            }
+//            
+//            else if (numOfPins > 50 && numOfPins <= 100) {
+//                self.mapView.clusterSize = 0.3;
+//            }
+//            
+//            else if (numOfPins > 100 && numOfPins <= 500) {
+//                self.mapView.clusterSize = 0.4;
+//            }
+//            
+//            else if (numOfPins > 500 && numOfPins <= 1000) {
+//                self.mapView.clusterSize = 0.5;
+//            }
+//            
+//            else if (numOfPins > 1000 && numOfPins <= 2000) {
+//                self.mapView.clusterSize = 0.6;
+//            }
+//            
+//            else if (numOfPins > 2000 && numOfPins <= 5000) {
+//                self.mapView.clusterSize = 0.7;
+//            }
+//            
+//            else if (numOfPins > 5000 && numOfPins <= 10000) {
+//                self.mapView.clusterSize = 1;
+//            }
+            
             // static circle size of cluster
-            CLLocationDistance clusterRadius = self.mapView.region.span.longitudeDelta * self.mapView.clusterSize * 111000 / 2.0f;
-            clusterRadius = clusterRadius * cos([annotation coordinate].latitude * M_PI / 180.0);
+            CLLocationDistance clusterRadius = self.mapView.region.span.longitudeDelta * (numOfPins/250.0) * 111000 / 20.0f;
+            clusterRadius = clusterRadius * [self zoomLevel];
             
             MKCircle *circle = [MKCircle circleWithCenterCoordinate:annotation.coordinate radius:clusterRadius];
             [circle setTitle:@"background"];
@@ -301,13 +338,25 @@ static NSString *const kTYPE2 = @"Orange";
             MKCircle *circleLine = [MKCircle circleWithCenterCoordinate:annotation.coordinate radius:clusterRadius];
             [circleLine setTitle:@"line"];
             [self.mapView addOverlay:circleLine];
+            
         }
     }
 }
 
+- (double) zoomLevel
+{
+    CLLocationDegrees longitudeDelta = self.mapView.region.span.longitudeDelta;
+    CGFloat mapWidthInPixels = self.mapView.bounds.size.width;
+    double zoomScale = longitudeDelta * 85445659.44705395 * M_PI / (180.0 * mapWidthInPixels);
+    double zoomer = 20 - log2( zoomScale );
+    if ( zoomer < 0 ) zoomer = 0;
+    //  zoomer = round(zoomer);
+    return zoomer;
+}
+
 - (IBAction)addRandom:(id)sender {
     
-    NSArray *randomLocations = [[NSArray alloc] initWithArray:[self randomCoordinatesGenerator:100]];
+    NSArray *randomLocations = [[NSArray alloc] initWithArray:[self randomCoordinatesGenerator:10]];
     NSMutableSet *annotationsToAdd = [[NSMutableSet alloc] init];
     
     for (CLLocation *loc in randomLocations) {
@@ -325,6 +374,9 @@ static NSString *const kTYPE2 = @"Orange";
     
     [self.mapView addAnnotations:[annotationsToAdd allObjects]];
 }
+
+// MY METHODS
+
 
 - (NSArray *)randomCoordinatesGenerator:(int)numberOfCoordinates
 {
@@ -360,7 +412,7 @@ static NSString *const kTYPE2 = @"Orange";
     // if it's a cluster
     if ([annotation isKindOfClass:[OCAnnotation class]]) {
         
-        OCAnnotation *clusterAnnotation = (OCAnnotation *)annotation;
+        clusterAnnotation = (OCAnnotation *)annotation;
         
         annotationView = (MKAnnotationView *)[aMapView dequeueReusableAnnotationViewWithIdentifier:@"ClusterView"];
         if (!annotationView) {
@@ -368,10 +420,10 @@ static NSString *const kTYPE2 = @"Orange";
             annotationView.canShowCallout = YES;
             annotationView.centerOffset = CGPointMake(0, -20);
         }
-        
+    
         // set title
-        clusterAnnotation.title = @"Cluster";
-        clusterAnnotation.subtitle = [NSString stringWithFormat:@"Containing annotations: %zd", [clusterAnnotation.annotationsInCluster count]];
+        clusterAnnotation.title = [NSString stringWithFormat:@"Shares: %zd", [clusterAnnotation.annotationsInCluster count]];
+        
         
         // set its image
         annotationView.image = [UIImage imageNamed:@"regular.png"];
@@ -379,10 +431,10 @@ static NSString *const kTYPE2 = @"Orange";
         // change pin image for group
         if (self.mapView.clusterByGroupTag) {
             if ([clusterAnnotation.groupTag isEqualToString:kTYPE1]) {
-                annotationView.image = [UIImage imageNamed:@"bananas.png"];
+                annotationView.image = [UIImage imageNamed:@"regular.png"];
             }
             else if([clusterAnnotation.groupTag isEqualToString:kTYPE2]){
-                annotationView.image = [UIImage imageNamed:@"oranges.png"];
+                annotationView.image = [UIImage imageNamed:@"regular.png"];
             }
             clusterAnnotation.title = clusterAnnotation.groupTag;
         }
@@ -399,10 +451,10 @@ static NSString *const kTYPE2 = @"Orange";
         singleAnnotation.title = singleAnnotation.groupTag;
         
         if ([singleAnnotation.groupTag isEqualToString:kTYPE1]) {
-            annotationView.image = [UIImage imageNamed:@"banana.png"];
+            annotationView.image = [UIImage imageNamed:@"regular"];
         }
         else if([singleAnnotation.groupTag isEqualToString:kTYPE2]){
-            annotationView.image = [UIImage imageNamed:@"orange.png"];
+            annotationView.image = [UIImage imageNamed:@"regular"];
         }
     }
     // Error
@@ -425,7 +477,7 @@ static NSString *const kTYPE2 = @"Orange";
     
     if ([circle.title isEqualToString:@"background"])
     {
-        circleView.fillColor = [UIColor yellowColor];
+        circleView.fillColor = [UIColor taussBlue];
         circleView.alpha = 0.25;
     }
     else if ([circle.title isEqualToString:@"helper"])

@@ -77,7 +77,7 @@ static const CGSize kFilterCellSize = { 75, 90 };
     // Do any additional setup after loading the view.
     
     [self.view setUserInteractionEnabled:YES];
-    [self.view setBackgroundColor:[UIColor clearColor]];
+    [self.view setBackgroundColor:[UIColor blackColor]];
     
     CGFloat cropX = ( CGRectGetWidth( self.frameView.frame) - 320 ) * .5;
     _pFrame = (CGRect){ cropX, ( CGRectGetHeight( self.frameView.frame) - 360 ) * .5, 320, 320 };
@@ -249,12 +249,10 @@ static const CGSize kFilterCellSize = { 75, 90 };
 {
     if ( !_useButton ) {
         _useButton = [self baseButton];
-        [_useButton setTitle:[DBCameraLocalizedStrings(@"button.use") uppercaseString] forState:UIControlStateNormal];
-        [_useButton.titleLabel sizeToFit];
-        [_useButton sizeToFit];
-        [_useButton setFrame:(CGRect){ CGRectGetWidth(self.view.frame) - (CGRectGetWidth(_useButton.frame) + buttonMargin), 0, CGRectGetWidth(_useButton.frame) + buttonMargin, 60 }];
+        [_useButton setImage:[UIImage imageNamed:@"useimage"] forState:UIControlStateNormal];
+        [_useButton setFrame:(CGRect){ 285, 25, 15, 28 }];
         [_useButton addTarget:self action:@selector(saveImage) forControlEvents:UIControlEventTouchUpInside];
-        _useButton.backgroundColor = [UIColor clearColor];
+        _useButton.backgroundColor = [UIColor blackColor];
     }
     
     return _useButton;
@@ -264,10 +262,8 @@ static const CGSize kFilterCellSize = { 75, 90 };
 {
     if ( !_retakeButton ) {
         _retakeButton = [self baseButton];
-        [_retakeButton setTitle:[DBCameraLocalizedStrings(@"button.retake") uppercaseString] forState:UIControlStateNormal];
-        [_retakeButton.titleLabel sizeToFit];
-        [_retakeButton sizeToFit];
-        [_retakeButton setFrame:(CGRect){ 0, 0, CGRectGetWidth(_retakeButton.frame) + buttonMargin, 60 }];
+        [_retakeButton setImage:[UIImage imageNamed:@"retake"] forState:UIControlStateNormal];
+        [_retakeButton setFrame:(CGRect){ 20, 25, 15, 28 }];
         [_retakeButton addTarget:self action:@selector(retakeImage) forControlEvents:UIControlEventTouchUpInside];
     }
     
@@ -278,7 +274,7 @@ static const CGSize kFilterCellSize = { 75, 90 };
 {
     if ( !_cropButton) {
         _cropButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_cropButton setBackgroundColor:[UIColor clearColor]];
+        [_cropButton setBackgroundColor:[UIColor blackColor]];
         [_cropButton setImage:[[UIImage imageNamed:@"Crop"] tintImageWithColor:self.tintColor] forState:UIControlStateNormal];
         [_cropButton setImage:[[UIImage imageNamed:@"Crop"] tintImageWithColor:self.selectedTintColor] forState:UIControlStateSelected];
         [_cropButton setFrame:(CGRect){ CGRectGetMidX(self.view.bounds) - 15, 15, 30, 30 }];
@@ -291,7 +287,7 @@ static const CGSize kFilterCellSize = { 75, 90 };
 - (UIButton *) baseButton
 {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setBackgroundColor:[UIColor clearColor]];
+    [button setBackgroundColor:[UIColor blackColor]];
     [button setTitleColor:self.tintColor forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont systemFontOfSize:12];
     

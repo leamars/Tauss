@@ -23,6 +23,7 @@
     NSMutableArray *tags;
     PFObject *userContent;
     NSData *contentData;
+    NSMutableArray *userGeneratedContent;
 }
 
 @end
@@ -51,6 +52,8 @@
     currentUser = [PFUser currentUser];
     userContent = [PFObject objectWithClassName:@"Content"];
     
+    [self getCurrentLocation];
+    
     self.broadcast.alpha = 0;
     
     // LOCATION STUFF
@@ -59,8 +62,7 @@
     self.contentImageView.image = self.receivedImage;
     
     self.tagField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Add tags..."
-                                                                               attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
-    
+                                                                          attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     // seting up tag view
     [self setUpTags];
     
@@ -96,6 +98,12 @@
     
     PFFile *imageFile = [PFFile fileWithName:@"Image.jpg" data:imageData];
     
+    if ([userContent objectForKey:@"contentQueue"]) {
+        userGeneratedContent = [[NSMutableArray alloc] initWithArray:[userContent objectForKey:@"contentQueue"]];
+    }
+    else {
+        userGeneratedContent = [NSMutableArray new];
+    }
     // Save PFFile
     [imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error) {
@@ -110,7 +118,7 @@
             // TO DO - what is the movement array? Adding location to things??
             
             // Set the access control list to current user for security purposes
-            userContent.ACL = [PFACL ACLWithUser:[PFUser currentUser]];
+            userContent.ACL = [PFACL ACLWithUser:currentUser];
             
             [PFGeoPoint geoPointForCurrentLocationInBackground:^(PFGeoPoint *geoPoint, NSError *error) {
                 if (!error) {
@@ -142,7 +150,7 @@
                              if (!error) {
                                  NSLog(@"City & Country saved!!");
                                  [SVProgressHUD dismiss];
-                                 
+                                 [self performSelector:@selector(popTagView) withObject:nil afterDelay:0.6];   
                              }
                              else{
                                  // Log details of the failure
@@ -168,13 +176,14 @@
             }];
             
             
-            PFUser *user = [PFUser currentUser];
-            [userContent setObject:user forKey:@"createdBy"];
+            [userContent setObject:[currentUser objectId] forKey:@"createdBy"];
             
             [userContent saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
                 if (!error) {
                     NSLog(@"Photo saved entirely!");
-                    [self broadcasted];
+                    
+                    //[self broadcasted];
+                    [SVProgressHUD dismiss];
                 }
                 else{
                     // Log details of the failure
@@ -189,8 +198,9 @@
         }
     } progressBlock:^(int percentDone) {
         // Update your progress spinner here. percentDone will be between 0 and 100.
+        
     }];
-
+    
 }
 
 
@@ -294,7 +304,7 @@
                                           cancelButtonTitle:@"Ok"
                                           otherButtonTitles:nil];
     
-    NSLog(@"TAG VIEW IS: %d", tagIndex);
+    NSLog(@"TAG VIEW IS: %ld", (long)tagIndex);
     
     [alert show];
 }
@@ -371,7 +381,12 @@
                                                   self.broadcast.alpha = 0;
                                               }
                                               completion:nil];
+                             
                          }];
+}
+
+- (void) popTagView {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

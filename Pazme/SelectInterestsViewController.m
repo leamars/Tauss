@@ -108,7 +108,7 @@
         }
     }
     else {
-        cell.backgroundColor = [UIColor redColor];
+        cell.backgroundColor = [UIColor colorWithRed:70.0/255.0 green:125.0/255.0 blue:117.0/255.0 alpha:0.6];
     }
     
     cell.interestImage.image = currentInterest.image;

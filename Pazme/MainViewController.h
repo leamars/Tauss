@@ -19,6 +19,17 @@
 @property (weak, nonatomic) IBOutlet UIView *metricsView;
 @property (weak, nonatomic) IBOutlet UILabel *sharedNum;
 @property (weak, nonatomic) IBOutlet OCMapView *mapView;
+
+@property (weak, nonatomic) IBOutlet UIButton *locationIcon;
+@property (weak, nonatomic) IBOutlet UILabel *locationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *numShared;
+@property (weak, nonatomic) IBOutlet UIButton *timeIcon;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *citiesLabel;
+@property (weak, nonatomic) IBOutlet UILabel *milesLabel;
+@property (weak, nonatomic) IBOutlet UILabel *countriesLabel;
+
+
 - (IBAction)addRandom:(id)sender;
 
 

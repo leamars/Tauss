@@ -31,7 +31,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.nameLabel.text = [[PFUser currentUser] objectForKey:@"fullName"];
+    self.nameLabel.text = [[PFUser currentUser] objectForKey:@"firstName"];
 
     self.emailLabel.text = [[PFUser currentUser] objectForKey:@"email"];
     

@@ -195,7 +195,7 @@
                                 <rect key="frame" x="0.0" y="-63" width="325" height="631"/>
                             </imageView>
                             <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVs-4f-G3h">
-                                <rect key="frame" x="288" y="29" width="25" height="25"/>
+                                <rect key="frame" x="295" y="32" width="13" height="20"/>
                                 <state key="normal" image="forwardButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -409,7 +409,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKn-oD-LTZ">
-                                <rect key="frame" x="293" y="26" width="25" height="25"/>
+                                <rect key="frame" x="293" y="26" width="15" height="25"/>
                                 <state key="normal" image="forwardButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -800,7 +800,7 @@
         <image name="Background" width="734" height="1187"/>
         <image name="backButton" width="50" height="50"/>
         <image name="facebook" width="35" height="69"/>
-        <image name="forwardButton" width="50" height="50"/>
+        <image name="forwardButton" width="23" height="41"/>
         <image name="plus" width="30" height="29"/>
         <image name="profile" width="239" height="231"/>
         <image name="read" width="342" height="317"/>

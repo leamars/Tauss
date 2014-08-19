@@ -10,6 +10,7 @@
 		8B0CDE5B196F1E8B00E5804C /* CompleteFbSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0CDE5A196F1E8B00E5804C /* CompleteFbSignInViewController.m */; };
 		8B0CDE5F196F2ECB00E5804C /* HTAutoCompleteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0CDE5E196F2ECB00E5804C /* HTAutoCompleteManager.m */; };
 		8B0EE421196666EB00F64BA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0EE420196666EB00F64BA0 /* Foundation.framework */; };
+		8B10870419A1E6CA0005F314 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B10870319A1E6CA0005F314 /* PhotoCell.m */; };
 		8B10F278197C668D00F23760 /* UITextField+TextPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B10F277197C668D00F23760 /* UITextField+TextPad.m */; };
 		8B248717199695AB0095E02D /* UIColor+Tauss.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B248716199695AB0095E02D /* UIColor+Tauss.m */; };
 		8B24871D19969B180095E02D /* UILabel+BetterLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B24871C19969B180095E02D /* UILabel+BetterLabel.m */; };
@@ -89,6 +90,8 @@
 		8B0CDE5D196F2ECB00E5804C /* HTAutoCompleteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTAutoCompleteManager.h; sourceTree = "<group>"; };
 		8B0CDE5E196F2ECB00E5804C /* HTAutoCompleteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTAutoCompleteManager.m; sourceTree = "<group>"; };
 		8B0EE420196666EB00F64BA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8B10870219A1E6CA0005F314 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		8B10870319A1E6CA0005F314 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
 		8B10F276197C668D00F23760 /* UITextField+TextPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+TextPad.h"; sourceTree = "<group>"; };
 		8B10F277197C668D00F23760 /* UITextField+TextPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+TextPad.m"; sourceTree = "<group>"; };
 		8B248715199695AB0095E02D /* UIColor+Tauss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tauss.h"; sourceTree = "<group>"; };
@@ -335,6 +338,8 @@
 				8B8985E019672A9D00CF24BD /* InterestCell.m */,
 				8BEB19DD196BC3F70034B5F2 /* FriendCell.h */,
 				8BEB19DE196BC3F70034B5F2 /* FriendCell.m */,
+				8B10870219A1E6CA0005F314 /* PhotoCell.h */,
+				8B10870319A1E6CA0005F314 /* PhotoCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -574,6 +579,7 @@
 				8B8985F11968C0EB00CF24BD /* UserMenuViewController.m in Sources */,
 				8B3A94E6197CA45400A3453A /* UIImage+ImageEffects.m in Sources */,
 				8BCDE9201959200C006B7D30 /* SignInViewController.m in Sources */,
+				8B10870419A1E6CA0005F314 /* PhotoCell.m in Sources */,
 				8B24871D19969B180095E02D /* UILabel+BetterLabel.m in Sources */,
 				8BCDE92C19592046006B7D30 /* FacebookFriendsViewController.m in Sources */,
 				8BCDE9291959203B006B7D30 /* ContactFriendsViewController.m in Sources */,
