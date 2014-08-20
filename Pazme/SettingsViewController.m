@@ -177,8 +177,8 @@
 {
     if ([MFMailComposeViewController canSendMail] ) {
         MFMailComposeViewController* controller = [[MFMailComposeViewController alloc] init];
-        controller.navigationBar.tintColor = [UIColor blueColor];
-        controller.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blueColor]};
+        controller.navigationBar.tintColor = [UIColor taussBlue];
+        controller.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor taussBlue]};
         
         controller.mailComposeDelegate = self;
         [controller setSubject:@"Pass It - Feedback!"];

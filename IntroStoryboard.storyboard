@@ -546,7 +546,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VH-Iw-4dm">
-                                <rect key="frame" x="293" y="25" width="25" height="25"/>
+                                <rect key="frame" x="296" y="32" width="13" height="20"/>
                                 <state key="normal" image="forwardButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -811,7 +811,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="eEH-eR-JQn"/>
         <segue reference="Xrm-q9-VCF"/>
+        <segue reference="tFL-VT-Zfu"/>
     </inferredMetricsTieBreakers>
 </document>

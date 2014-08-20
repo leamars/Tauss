@@ -24,16 +24,26 @@
     [PFTwitterUtils initializeWithConsumerKey:@"YzwQeAbAZgFbPGsxlvupTOFah"
                                consumerSecret:@"fm42AGkjtCdORnCf3ouEVdXbW00bFAYMfaJIcYbo7TzAX5BEkd"];
     
+    // Register for push notifications
+    [application registerForRemoteNotificationTypes:
+     UIRemoteNotificationTypeBadge |
+     UIRemoteNotificationTypeAlert |
+     UIRemoteNotificationTypeSound];
+    
     return YES;
 }
 
-- (void)application:(UIApplication *)application
-didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
-{
-    // Store the deviceToken in the current Installation and save it to Parse.
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)newDeviceToken {
+    
+    // Store the deviceToken in the current installation and save it to Parse.
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation setDeviceTokenFromData:newDeviceToken];
+    currentInstallation.channels = @[@"global"];
     [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

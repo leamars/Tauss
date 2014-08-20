@@ -63,7 +63,7 @@
     self.profilePicBg.layer.cornerRadius = 70;
     self.profilePicBg.layer.masksToBounds = YES;
     
-    [self resizeImage:self.profilePictureImageView.image toWidth:200 andHeight:200];
+    [self resizeImage:self.profilePictureImageView.image toWidth:180 andHeight:180];
 }
 
 - (void)didReceiveMemoryWarning

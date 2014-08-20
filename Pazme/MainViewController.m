@@ -67,6 +67,14 @@ static NSString *const kTYPE2 = @"Orange";
     
     // You can customize MDCSwipeToChooseView using MDCSwipeToChooseViewOptions.
     [self viewsToSwipe];
+    
+    // Create our Installation query
+    PFQuery *pushQuery = [PFInstallation query];
+    [pushQuery whereKey:@"deviceType" equalTo:@"ios"];
+    
+    // Send push notification to query
+    [PFPush sendPushMessageToQueryInBackground:pushQuery
+                                   withMessage:@"Hello World!"];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -452,7 +460,15 @@ static NSString *const kTYPE2 = @"Orange";
     for (int i = numSwiped; i < numSwiped + 5; i++) {
         MDCSwipeToChooseView *view = [[MDCSwipeToChooseView alloc] initWithFrame:self.view.bounds
                                                                          options:options];
-        view.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"stock%i", i]];
+        
+        CGRect wholeScreen = CGRectMake(0, 0, 320, 568);
+        
+        UIImage *img = [UIImage imageNamed:[NSString stringWithFormat:@"stock%i-1", i]];
+        
+//        view.imageView.image = [self getSubImageFrom:[self resizeImage:img toWidth:img.size.width/1.5 andHeight:img.size.height/1.5] WithRect:wholeScreen];
+        
+        view.imageView.image = img;
+        
         [self.view insertSubview:view belowSubview:self.metricsView];
     }
 }
@@ -557,6 +573,41 @@ static NSString *const kTYPE2 = @"Orange";
             }
         }];
     }
+}
+
+- (UIImage*) getSubImageFrom: (UIImage*) img WithRect: (CGRect) rect {
+    
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    // translated rectangle for drawing sub image
+    CGRect drawRect = CGRectMake(-rect.origin.x, -rect.origin.y, img.size.width, img.size.height);
+    
+    // clip to the bounds of the image context
+    // not strictly necessary as it will get clipped anyway?
+    CGContextClipToRect(context, CGRectMake(0, 0, rect.size.width, rect.size.height));
+    
+    // draw image
+    [img drawInRect:drawRect];
+    
+    // grab image
+    UIImage* subImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return subImage;
+}
+
+- (UIImage *)resizeImage:(UIImage *)image toWidth:(float)width andHeight:(float)height
+{
+    CGSize newSize = CGSizeMake(width, height);
+    CGRect newRectangle = CGRectMake(0, 0, width, height);
+    
+    UIGraphicsBeginImageContext(newSize);
+    [image drawInRect:newRectangle];
+    UIImage *resizedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return resizedImage;
 }
 
 @end
