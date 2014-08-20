@@ -21,16 +21,12 @@ static NSString *const kTYPE1 = @"Banana";
 static NSString *const kTYPE2 = @"Orange";
 
 @interface MainViewController () <DBCameraViewControllerDelegate> {
-    int contentIndex;
-    int dataLoader;
-    NSMutableArray *contentData;
-    NSMutableArray *contentData2;
-    int numSwiped;
-    BOOL flipped;
     BOOL up;
-    int pressNum;
     UIImage *imageToSend;
     OCAnnotation *clusterAnnotation;
+    NSMutableArray *stockImages;
+    int pressNum;
+    int numSwiped;
 }
 
 @end
@@ -42,6 +38,7 @@ static NSString *const kTYPE2 = @"Orange";
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        stockImages = [NSMutableArray arrayWithArray:[self defaultPhotos]];
     }
     return self;
 }
@@ -52,40 +49,8 @@ static NSString *const kTYPE2 = @"Orange";
     // Do any additional setup after loading the view.
     
     [self configureECSlidingController];
-    
-//    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-//    testObject[@"foo"] = @"bar";
-//    [testObject saveInBackground];
-    
-    // You can customize MDCSwipeToChooseView using MDCSwipeToChooseViewOptions.
-    
-    // SWIPE VIEW PROGRAMATICALLY - [self.swipeToChooseView mdc_swipe:MDCSwipeDirectionLeft];
-    
-//    MDCSwipeToChooseView *view = [[MDCSwipeToChooseView alloc] initWithFrame:self.containerView.bounds options: options];
-//    MDCSwipeToChooseView *view1 = [[MDCSwipeToChooseView alloc] initWithFrame:self.containerView.bounds  options: options];
-//    MDCSwipeToChooseView *view2 = [[MDCSwipeToChooseView alloc] initWithFrame:self.containerView.bounds  options: options];
-//    
-//    view.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"stock1"]];
-//    view1.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"stock2"]];
-//    view2.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"stock3"]];
-//    
-//    [self.containerView addSubview:view];
-//    [self.containerView  addSubview:view1];
-//    [self.containerView  addSubview:view2];
-//    
-//    contentIndex = 0;
-//    dataLoader = 0;
-//
-    
-    numSwiped = 1;
-    
-    contentData = [[NSMutableArray alloc] initWithCapacity:10];
-    contentData2 = [[NSMutableArray alloc] initWithCapacity:10];
-    
-    [self loadDataIntoView];
-    flipped = NO;
-    
     pressNum = 0;
+    numSwiped = 0;
     
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
                                                   forBarMetrics:UIBarMetricsDefault];
@@ -96,6 +61,12 @@ static NSString *const kTYPE2 = @"Orange";
     
     self.mapView.clusterSize = kDEFAULTCLUSTERSIZE;
     
+    // You can customize MDCSwipeToChooseView using MDCSwipeToChooseViewOptions.
+    
+    // SWIPE VIEW PROGRAMATICALLY - [self.swipeToChooseView mdc_swipe:MDCSwipeDirectionLeft];
+    
+    // You can customize MDCSwipeToChooseView using MDCSwipeToChooseViewOptions.
+    [self viewsToSwipe];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -109,15 +80,15 @@ static NSString *const kTYPE2 = @"Orange";
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 #pragma mark - ECSliding Methods
 
@@ -128,27 +99,6 @@ static NSString *const kTYPE2 = @"Orange";
     //    [[self.navigationController.viewControllers.firstObject view] addGestureRecognizer:self.slidingViewController.panGesture];
     
     // TO DO: Swipe to the right to reveal menu
-}
-
-#pragma mark - MDCSwipeToChooseDelegate Callbacks
-
-// This is called when a user didn't fully swipe left or right.
-- (void)viewDidCancelSwipe:(UIView *)view {
-    NSLog(@"Couldn't decide, huh?");
-}
-
-// This is called then a user swipes the view fully left or right.
-- (void)view:(UIView *)view wasChosenWithDirection:(MDCSwipeDirection)direction {
-    numSwiped++;
-    
-    if (direction == MDCSwipeDirectionLeft) {
-        NSLog(@"Photo deleted!");
-    } else {
-        NSLog(@"Photo saved!");
-    }
-    
-    [contentData removeObjectAtIndex:0];
-    [contentData2 removeObjectAtIndex:0];
 }
 
 #pragma mark - acquire content
@@ -162,57 +112,6 @@ static NSString *const kTYPE2 = @"Orange";
     return data;
 }
 
-- (void) loadDataIntoView {
-
-//    MDCSwipeToChooseViewOptions *options = [MDCSwipeToChooseViewOptions new];
-//    options.delegate = self;
-//    
-//    for (int i = 0; i < 21; i++) {
-//        MDCSwipeToChooseView *view = [[MDCSwipeToChooseView alloc] initWithFrame:self.containerView.bounds options:options];
-//        
-//        view.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"stock%i", i+1]];
-//        [contentData addObject:view];
-//    }
-//    
-//    for (int i = 0; i < 21; i++) {
-//        MDCSwipeToChooseView *view = [[MDCSwipeToChooseView alloc] initWithFrame:self.containerView.bounds options:options];
-//        
-//        view.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"stock%i", i+1]];
-//        [contentData2 addObject:view];
-//
-//    }
-//    
-//    [self.containerView addSubview:contentData[0]];
-//    [contentData removeObjectAtIndex:0];
-//    [contentData2 removeObjectAtIndex:0];
-    
-
-}
-
-- (IBAction)flipImage:(id)sender {
-
-//    if (!flipped) {
-//        NSLog(@"NOT FLIPPED this view: %@ to this view: %@", contentData[numSwiped], contentData2[numSwiped]);
-//    
-//        [UIView transitionFromView:contentData[0]
-//                            toView:contentData2[0]
-//                          duration:1
-//                           options:UIViewAnimationOptionTransitionFlipFromLeft
-//                        completion:nil];
-//        flipped = YES;
-//    }
-//    else {
-//        NSLog(@"FLIPPED this view: %@ to this view: %@", contentData[numSwiped], contentData2[numSwiped]);
-//        
-//        [UIView transitionFromView:contentData2[0]
-//                            toView:contentData[0]
-//                          duration:1
-//                           options:UIViewAnimationOptionTransitionFlipFromRight
-//                        completion:nil];
-//        flipped = NO;
-//    }
-    
-}
 
 - (IBAction)takePhoto:(id)sender {
     [self openCamera];
@@ -295,37 +194,37 @@ static NSString *const kTYPE2 = @"Orange";
             int numOfPins = [annotation.annotationsInCluster count];
             NSLog(@"WHAT IS THE NUMBER OF ANNOTATIONS IN THIS CLUSTER? %i", numOfPins);
             
-//            if (numOfPins <= 10) {
-//                self.mapView.clusterSize = 0.1;
-//            }
-//            
-//            else if (numOfPins > 10 && numOfPins <= 50) {
-//                self.mapView.clusterSize = 0.2;
-//            }
-//            
-//            else if (numOfPins > 50 && numOfPins <= 100) {
-//                self.mapView.clusterSize = 0.3;
-//            }
-//            
-//            else if (numOfPins > 100 && numOfPins <= 500) {
-//                self.mapView.clusterSize = 0.4;
-//            }
-//            
-//            else if (numOfPins > 500 && numOfPins <= 1000) {
-//                self.mapView.clusterSize = 0.5;
-//            }
-//            
-//            else if (numOfPins > 1000 && numOfPins <= 2000) {
-//                self.mapView.clusterSize = 0.6;
-//            }
-//            
-//            else if (numOfPins > 2000 && numOfPins <= 5000) {
-//                self.mapView.clusterSize = 0.7;
-//            }
-//            
-//            else if (numOfPins > 5000 && numOfPins <= 10000) {
-//                self.mapView.clusterSize = 1;
-//            }
+            //            if (numOfPins <= 10) {
+            //                self.mapView.clusterSize = 0.1;
+            //            }
+            //
+            //            else if (numOfPins > 10 && numOfPins <= 50) {
+            //                self.mapView.clusterSize = 0.2;
+            //            }
+            //
+            //            else if (numOfPins > 50 && numOfPins <= 100) {
+            //                self.mapView.clusterSize = 0.3;
+            //            }
+            //
+            //            else if (numOfPins > 100 && numOfPins <= 500) {
+            //                self.mapView.clusterSize = 0.4;
+            //            }
+            //
+            //            else if (numOfPins > 500 && numOfPins <= 1000) {
+            //                self.mapView.clusterSize = 0.5;
+            //            }
+            //
+            //            else if (numOfPins > 1000 && numOfPins <= 2000) {
+            //                self.mapView.clusterSize = 0.6;
+            //            }
+            //
+            //            else if (numOfPins > 2000 && numOfPins <= 5000) {
+            //                self.mapView.clusterSize = 0.7;
+            //            }
+            //
+            //            else if (numOfPins > 5000 && numOfPins <= 10000) {
+            //                self.mapView.clusterSize = 1;
+            //            }
             
             // static circle size of cluster
             CLLocationDistance clusterRadius = self.mapView.region.span.longitudeDelta * (numOfPins/250.0) * 111000 / 20.0f;
@@ -420,7 +319,7 @@ static NSString *const kTYPE2 = @"Orange";
             annotationView.canShowCallout = YES;
             annotationView.centerOffset = CGPointMake(0, -20);
         }
-    
+        
         // set title
         clusterAnnotation.title = [NSString stringWithFormat:@"Shares: %zd", [clusterAnnotation.annotationsInCluster count]];
         
@@ -505,6 +404,159 @@ static NSString *const kTYPE2 = @"Orange";
     [self updateOverlays];
 }
 
+// SWIPING STUFF
 
+- (NSArray *) defaultPhotos {
+    NSMutableArray *photoArray = [NSMutableArray new];
+    
+    for (int i = 0; i < 20; i++) {
+        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"stock%i", i]];
+        [photoArray addObject:image];
+    }
+    
+    return photoArray;
+}
+
+// This is called when a user didn't fully swipe left or right.
+- (void)viewDidCancelSwipe:(UIView *)view {
+    NSLog(@"Couldn't decide, huh?");
+}
+
+// This is called then a user swipes the view fully left or right.
+- (void)view:(UIView *)view wasChosenWithDirection:(MDCSwipeDirection)direction {
+    if (direction == MDCSwipeDirectionLeft) {
+        NSLog(@"Photo deleted!");
+    } else {
+        NSLog(@"Photo saved!");
+    }
+    numSwiped++;
+    
+    if (numSwiped % 4 == 0) {
+        [self viewsToSwipe];
+    }
+}
+
+- (void) viewsToSwipe {
+    MDCSwipeToChooseViewOptions *options = [MDCSwipeToChooseViewOptions new];
+    options.delegate = self;
+    options.likedText = @"Pass";
+    options.likedColor = [UIColor taussBlue];
+    options.nopeText = @"Trash";
+    options.nopeColor = [UIColor taussBlue];
+    options.onPan = ^(MDCPanState *state){
+        if (state.thresholdRatio == 1.f && state.direction == MDCSwipeDirectionLeft) {
+            NSLog(@"Let go now to delete the photo!");
+        }
+    };
+    
+    for (int i = numSwiped; i < numSwiped + 5; i++) {
+        MDCSwipeToChooseView *view = [[MDCSwipeToChooseView alloc] initWithFrame:self.view.bounds
+                                                                         options:options];
+        view.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"stock%i", i]];
+        [self.view insertSubview:view belowSubview:self.metricsView];
+    }
+}
+
+// PASS METHOD
+
+- (void) passContentWithId: (NSString *)contentId andTags:(NSArray *)contentTags toNumOfPeople:(int)numOfPeople to:(NSArray *) receivers withBroadcastOn:(BOOL) broadcast andCaption:(NSString*) caption {
+	
+    NSMutableArray *finalUsers = [NSMutableArray new];
+    
+	//Create a list with objectIds of receiver
+	NSMutableArray * receiverObjectIds = [NSMutableArray new];
+	for (PFUser *user in receivers) {
+		[receiverObjectIds addObject: [user objectId]];
+	}
+    
+    if (broadcast) {
+        
+        //Find user with similar interests which has not received the content yet
+        PFQuery *query = [PFUser query];
+        [query whereKey:@"contentQueue" notEqualTo:contentId];
+        [query whereKey:@"passes" notEqualTo:contentId];
+        [query whereKey:@"trashes" notEqualTo:contentId];
+        [query whereKey:@"tags" containedIn:contentTags]; // TO DO
+        //Exclude reciver list
+        
+        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+            int size = [objects count];
+            
+            // Scenario 1: amount of random users with interest (ri) is equal or more than the amount of people who have to receive the content.
+            // No real random (rr) users have to be added to the list.
+            
+            if (size >= numOfPeople) {
+                while ([finalUsers count] < numOfPeople) {
+                    for (int i = 0; i < numOfPeople; i++) {
+                        int random = arc4random() % size;
+                        if (![finalUsers containsObject:objects[random]]) {
+                            [finalUsers addObject:objects[random]];
+                        }
+                        else {
+                            i--;
+                        }
+                    }
+                }
+                
+                // Add results to receiver list
+                if ([receivers count] > 0) {
+                    [finalUsers addObjectsFromArray:receivers];
+                }
+                
+                //TO DO send to users here
+                for (PFUser *user in finalUsers) {
+                    NSLog(@"User is: %@", user[@"email"]);
+                }
+            }
+            
+            // Scenario 2: amount of found users is less than the number of interested users.
+            // real random (rr) users have to be added to the finalUsers list, until it is full. Full = numbers of finalUsers = numPeople
+            
+            else {
+                [finalUsers addObjectsFromArray:objects];
+                
+                PFQuery *newQuery = [PFUser query];
+                [newQuery whereKey:@"contentQueue" notEqualTo:contentId];
+                [newQuery whereKey:@"tags" notContainedIn:contentTags];
+                [newQuery whereKey:@"passes" notEqualTo:contentId];
+                [newQuery whereKey:@"trashes" notEqualTo:contentId];
+                
+                // Exclude receiver list
+                [newQuery setLimit:((numOfPeople - [objects count]) *5)];
+                
+                [newQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+                    int size = [objects count];
+                    int start = [finalUsers count];
+                    
+                    // If the number of finalUsers + the found users can serve the needed number of users (numPeople),
+                    // finalUsers can be filled up until numPeople is reached
+                    if ((size + start) >= numOfPeople) {
+                        for (int i = start; i < numOfPeople; i++) {
+                            int random = arc4random() % size;
+                            if (![finalUsers containsObject:objects[random]]) {
+                                [finalUsers addObject:objects[random]];
+                            }
+                            else {
+                                i--;
+                            }
+                        }
+                    }
+                    else {
+                        [finalUsers addObjectsFromArray:objects];
+                    }
+                    
+                    if (!([receivers count] > 0)) {
+                        [finalUsers addObjectsFromArray:objects];
+                    }
+                    
+                    for (PFUser *user in finalUsers) {
+                        NSLog(@"Parse user: %@", user[@"email"]);
+                    }
+                }];
+                
+            }
+        }];
+    }
+}
 
 @end

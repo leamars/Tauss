@@ -14,6 +14,7 @@
     PFUser *currrentUser;
     NSMutableArray *allContent;
     NSMutableArray *imagesArray;
+    NSMutableArray *idsArray;
 }
 
 @end
@@ -79,6 +80,8 @@
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
     currrentUser = [PFUser currentUser];
+    imagesArray = [NSMutableArray new];
+    idsArray = [NSMutableArray new];
 }
 
 - (void) viewDidAppear:(BOOL)animated {
@@ -103,6 +106,7 @@
     
     
     PFQuery *photoQuery = [PFQuery queryWithClassName:@"Content"];
+    photoQuery.cachePolicy = kPFCachePolicyCacheElseNetwork;
     [photoQuery whereKey:@"createdBy" equalTo:[currrentUser objectId]];
     [photoQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         NSLog(@"Getting to the query??");
@@ -111,6 +115,16 @@
         } else {
             [allContent addObjectsFromArray:objects];
             if ([allContent count] > 0) {
+                NSLog(@"My content...");
+                for (int i = 0; i < [allContent count]; i++) {
+                    PFImageView *photo = [[PFImageView alloc] init];
+                    //photo.image = [UIImage imageNamed:@"defaultImage"]; // placeholder image
+                    // REVERSE ORDER THE ARRAY - So we get the most recent ones first
+                    photo.file = [allContent[[allContent count] - i - 1] valueForKey:@"file"];
+                    [photo loadInBackground];
+                    [imagesArray addObject:[self resizeImage:photo.image toWidth:70.0 andHeight:70.0]];
+                    [idsArray addObject:[allContent[[allContent count] - i - 1] objectId]];
+                }
                 [self.photoCollectionView reloadData];
             }
         }
@@ -167,25 +181,34 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     PhotoCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"PhotoCell" forIndexPath:indexPath];
     
-    PFObject *photoFile;
-    
-    if ([allContent count] > 0) {
-        photoFile = allContent[indexPath.row];
-    }
-    
-    PFImageView *currentPhoto = [[PFImageView alloc] init];
-    
-    if (photoFile) {
-        currentPhoto.file = [photoFile objectForKey:@"file"];
-        [currentPhoto loadInBackground];
+    if ([imagesArray count] < [allContent count]) {
+        NSLog(@"Gonna put stuff in the images array!");
+        PFObject *photoFile;
+        
+        if ([allContent count] > 0) {
+            photoFile = allContent[indexPath.row];
+        }
+        
+        PFImageView *currentPhoto = [[PFImageView alloc] init];
+        
+        if (photoFile) {
+            currentPhoto.file = [photoFile objectForKey:@"file"];
+            [currentPhoto loadInBackground];
+            [imagesArray addObject:[self resizeImage:currentPhoto.image toWidth:70.0 andHeight:70.0]];
+            [idsArray addObject:photoFile.objectId];
+        }
+        else {
+            currentPhoto.image = [UIImage imageNamed:@"defaultImage"]; // placeholder image
+        }
+        
+        cell.photo.image = [self resizeImage:currentPhoto.image toWidth:70.0 andHeight:70.0];
+        cell.parseId = [photoFile objectId];
     }
     else {
-        currentPhoto.image = [UIImage imageNamed:@"defaultImage"]; // placeholder image
+        cell.photo.image = imagesArray[indexPath.row];
+        cell.parseId = idsArray[indexPath.row];
     }
     
-    cell.photo.image = [self resizeImage:currentPhoto.image toWidth:70.0 andHeight:70.0];
-    cell.parseId = [photoFile objectId];
-
     return cell;
 }
 

@@ -30,7 +30,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 static CGFloat const MDCSwipeToChooseViewHorizontalPadding = 10.f;
-static CGFloat const MDCSwipeToChooseViewTopPadding = 20.f;
+static CGFloat const MDCSwipeToChooseViewTopPadding = 100.f;
 static CGFloat const MDCSwipeToChooseViewLabelWidth = 65.f;
 
 @interface MDCSwipeToChooseView ()
@@ -58,12 +58,12 @@ static CGFloat const MDCSwipeToChooseViewLabelWidth = 65.f;
 
 - (void)setupView {
     self.backgroundColor = [UIColor clearColor];
-    self.layer.cornerRadius = 5.f;
-    self.layer.borderWidth = 2.f;
-    self.layer.borderColor = [UIColor colorWith8BitRed:220.f
-                                                 green:220.f
-                                                  blue:220.f
-                                                 alpha:1.f].CGColor;
+//    self.layer.cornerRadius = 0.f;
+//    self.layer.borderWidth = 0.f;
+//    self.layer.borderColor = [UIColor colorWith8BitRed:220.f
+//                                                 green:220.f
+//                                                  blue:220.f
+//                                                 alpha:1.f].CGColor;
 }
 
 - (void)constructImageView {

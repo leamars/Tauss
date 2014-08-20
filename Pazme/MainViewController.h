@@ -14,7 +14,6 @@
 
 @interface MainViewController : UIViewController <MKMapViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIImageView *contentImageView;
 @property (weak, nonatomic) IBOutlet UIButton *shareCount;
 @property (weak, nonatomic) IBOutlet UIView *metricsView;
 @property (weak, nonatomic) IBOutlet UILabel *sharedNum;
@@ -29,6 +28,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *milesLabel;
 @property (weak, nonatomic) IBOutlet UILabel *countriesLabel;
 
+@property (weak, nonatomic) IBOutlet UIImageView *backImage;
+@property (weak, nonatomic) IBOutlet UIImageView *frontImage;
+@property (nonatomic, strong) UIImage *currentImage;
 
 - (IBAction)addRandom:(id)sender;
 

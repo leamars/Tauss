@@ -187,6 +187,9 @@
 }
 
 - (IBAction)toMainScreen:(id)sender {
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setObject:user forKey:@"user"];
+    [currentInstallation saveInBackground];
     [user saveInBackground];
     [self showMainScreen];
 }
