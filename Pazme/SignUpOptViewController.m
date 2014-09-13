@@ -56,6 +56,18 @@ typedef enum {
     self.phoneField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Phone # (optional)"
                                                                                attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     
+    NSString *profilePictureString = [[PFUser currentUser] objectForKey:@"profilePicURL"];
+    //NSString *ppS = [NSString stringWithFormat:@"%@%@", profilePictureString, @"?width=200&height=200"];
+    if (profilePictureString) {
+        NSURL *profileImageURL = [NSURL URLWithString:profilePictureString];
+    
+        NSData *imageData = [NSData dataWithContentsOfURL:profileImageURL];
+        self.profilePictureButton.imageView.image = [UIImage imageWithData:imageData];
+    
+        self.profilePictureButton.imageView.layer.cornerRadius = 58;
+        self.profilePictureButton.imageView.layer.masksToBounds = YES;
+    }
+    
     NSLog(@"VIEW CONTROLLERS IN OPT SIGN UP %@", self.navigationController.viewControllers);
 }
 

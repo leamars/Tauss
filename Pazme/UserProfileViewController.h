@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UserProfileViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
-
 @property (weak, nonatomic) IBOutlet UIView *userPhotoBgView;
 @property (weak, nonatomic) IBOutlet UIImageView *userPhotoImageView;
 @property (weak, nonatomic) IBOutlet UICollectionView *photoCollectionView;

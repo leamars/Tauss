@@ -51,6 +51,18 @@
     }
     
     [self.topLabel setFont:[UIFont fontWithName:@"Lobster1.4" size:30.0]];
+    
+    PFACL *publicACL = [PFACL ACL];
+    [publicACL setPublicReadAccess:YES];
+    user.ACL = publicACL;
+    [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (!error) {
+            NSLog(@"WE SUCCEEEDEDE");
+        }
+        else {
+            NSLog(@"we failed!!!");
+        }
+    }];
 
     
 }
@@ -100,7 +112,7 @@
         //check if the tag of the cell matches any of the tags previously selected by the user
         //and mark the interest object appropriately
         if ([userTags containsObject:currentInterest.tag]) {
-            cell.backgroundColor = [UIColor redColor];
+            cell.backgroundColor = [UIColor colorWithRed:70.0/255.0 green:125.0/255.0 blue:117.0/255.0 alpha:0.6];
             currentInterest.selected = YES;
         }
         else {

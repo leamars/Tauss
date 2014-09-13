@@ -12,6 +12,8 @@
 		8B0EE421196666EB00F64BA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0EE420196666EB00F64BA0 /* Foundation.framework */; };
 		8B10870419A1E6CA0005F314 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B10870319A1E6CA0005F314 /* PhotoCell.m */; };
 		8B10F278197C668D00F23760 /* UITextField+TextPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B10F277197C668D00F23760 /* UITextField+TextPad.m */; };
+		8B1573C719A7EA0B00703FC9 /* Realization.aif in Resources */ = {isa = PBXBuildFile; fileRef = 8B1573C619A7EA0B00703FC9 /* Realization.aif */; };
+		8B1573C919A7EB6F00703FC9 /* Sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8B1573C819A7EB6F00703FC9 /* Sound.caf */; };
 		8B248717199695AB0095E02D /* UIColor+Tauss.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B248716199695AB0095E02D /* UIColor+Tauss.m */; };
 		8B24871D19969B180095E02D /* UILabel+BetterLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B24871C19969B180095E02D /* UILabel+BetterLabel.m */; };
 		8B35CED019A1106700A9C99C /* TagPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B35CECF19A1106700A9C99C /* TagPhotoViewController.m */; };
@@ -94,6 +96,8 @@
 		8B10870319A1E6CA0005F314 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
 		8B10F276197C668D00F23760 /* UITextField+TextPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+TextPad.h"; sourceTree = "<group>"; };
 		8B10F277197C668D00F23760 /* UITextField+TextPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+TextPad.m"; sourceTree = "<group>"; };
+		8B1573C619A7EA0B00703FC9 /* Realization.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = Realization.aif; path = ../Realization.aif; sourceTree = "<group>"; };
+		8B1573C819A7EB6F00703FC9 /* Sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sound.caf; sourceTree = "<group>"; };
 		8B248715199695AB0095E02D /* UIColor+Tauss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tauss.h"; sourceTree = "<group>"; };
 		8B248716199695AB0095E02D /* UIColor+Tauss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tauss.m"; sourceTree = "<group>"; };
 		8B24871B19969B180095E02D /* UILabel+BetterLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+BetterLabel.h"; sourceTree = "<group>"; };
@@ -240,6 +244,14 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		8B1573C519A7E9B100703FC9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		8B401D661959116100EE906A = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +298,9 @@
 		8B401D781959116100EE906A /* Pazme */ = {
 			isa = PBXGroup;
 			children = (
+				8B1573C619A7EA0B00703FC9 /* Realization.aif */,
+				8B1573C819A7EB6F00703FC9 /* Sound.caf */,
+				8B1573C519A7E9B100703FC9 /* Resources */,
 				8B10F279197C669B00F23760 /* Categories */,
 				8B0CDE5C196F2E9D00E5804C /* Vendor */,
 				8B8985E8196732DC00CF24BD /* Models */,
@@ -515,8 +530,10 @@
 				8B64203419A0152700B4A854 /* ProximaNovaAltRegular.otf in Resources */,
 				8B372CF819967EFB00EB4F1F /* ProximaNovaAltLight.otf in Resources */,
 				8BF1C56919664C2800350A05 /* SegoeSemiLight.ttf in Resources */,
+				8B1573C719A7EA0B00703FC9 /* Realization.aif in Resources */,
 				8B372CF319967ED200EB4F1F /* ProximaNovaScOsfCondensedThin.otf in Resources */,
 				8BF1C56A19664C2A00350A05 /* SegoeNormal.ttf in Resources */,
+				8B1573C919A7EB6F00703FC9 /* Sound.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,6 +683,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lea Marolt (6SF7SV3FWS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lea Marolt (6SF7SV3FWS)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -684,6 +702,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "b339977f-ace2-4d76-967d-526f46a40789";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -704,6 +723,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Lea Marolt (6SF7SV3FWS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lea Marolt (6SF7SV3FWS)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -715,6 +735,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "b339977f-ace2-4d76-967d-526f46a40789";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

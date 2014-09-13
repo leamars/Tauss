@@ -48,8 +48,7 @@
 //
 //    [self.usernameField.layer setCornerRadius:5.0f];
 //    [self.passwordField.layer setCornerRadius:5.0f];
-    
-    
+        
     self.passwordField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Password"
                                                                                attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     
@@ -124,7 +123,7 @@
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
                                             
-                                            [self performSegueWithIdentifier:@"toFb" sender:self];
+                                            [self showMainScreen];
                                             
                                             
                                         } else {
@@ -274,7 +273,7 @@
     [self animateTextField: textField up: NO];
 }
 
-#define ACCEPTABLE_CHARECTERS @"abcdefghijklmnopqrstuvwxyz0123456789_."
+#define ACCEPTABLE_CHARECTERS @"abcdefghijklmnopqrstuvwxyz0123456789_.@"
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string  {
     if (textField == self.usernameField) {

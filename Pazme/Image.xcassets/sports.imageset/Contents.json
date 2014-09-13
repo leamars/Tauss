@@ -3,12 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "batminton_filled.png"
+      "filename" : "sports.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "batminton_filled@2x.png"
+      "filename" : "sports@2x.png"
     }
   ],
   "info" : {

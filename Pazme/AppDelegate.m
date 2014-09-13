@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import "MainViewController.h"
 
 @implementation AppDelegate
 
@@ -30,21 +31,34 @@
      UIRemoteNotificationTypeAlert |
      UIRemoteNotificationTypeSound];
     
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"HasLaunchedOnce"])
+    {
+        // app already launched
+        NSLog(@"User has already launched the app!");
+    }
+    else
+    {
+                // This is the first launch ever
+         NSLog(@"First launch ever!!");
+    }
+    
+    
+    NSDictionary *notificationPayload = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey];
+    if(notificationPayload) {
+        NSLog(@"What IS this payload?! %@", notificationPayload);
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"PAYLOAD!" message:[notificationPayload description] delegate:nil cancelButtonTitle:@"Fuck you" otherButtonTitles: nil];
+        [alert show];
+    }
+    else {
+        NSLog(@"NO PAYLOAD...");
+        
+    }
+
+    
     return YES;
 }
 
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)newDeviceToken {
-    
-    // Store the deviceToken in the current installation and save it to Parse.
-    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-    [currentInstallation setDeviceTokenFromData:newDeviceToken];
-    currentInstallation.channels = @[@"global"];
-    [currentInstallation saveInBackground];
-}
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-    [PFPush handlePush:userInfo];
-}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -83,6 +97,18 @@
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
     return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication withSession:[PFFacebookUtils session]];
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)newDeviceToken {
+    
+    // Store the deviceToken in the current installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:newDeviceToken];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
 }
 
 @end

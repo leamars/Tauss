@@ -11,6 +11,7 @@
 #import "DBCameraContainerViewController.h"
 #import "OCMapView.h"
 #import <MapKit/MapKit.h>
+#import <MDCSwipeToChoose/MDCSwipeToChoose.h>
 
 @interface MainViewController : UIViewController <MKMapViewDelegate>
 
@@ -32,7 +33,11 @@
 @property (weak, nonatomic) IBOutlet UIImageView *frontImage;
 @property (nonatomic, strong) UIImage *currentImage;
 
+@property (nonatomic, strong) MDCSwipeToChooseView *frontView;
+@property (nonatomic, strong) MDCSwipeToChooseView *backView;
+
 - (IBAction)addRandom:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *randomButton;
 
 
 - (IBAction)takePhoto:(id)sender;

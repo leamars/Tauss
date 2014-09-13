@@ -55,6 +55,7 @@
 //        UIView *noProfilePicture = [UIView new];
 //        [noProfilePicture view];
 //        [self.profilePictureImageView addSubview:[UIImage imageNamed:@"camera"]];
+        //[self.profilePictureImageView setImage:[UIImage imageNamed:@"camera"]];
     }
     
     self.profilePictureImageView.layer.cornerRadius = 63;

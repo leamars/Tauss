@@ -25,10 +25,10 @@
 
 - (void) interestsWithData {
     
-    NSArray *interestImages = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"read"], [UIImage imageNamed:@"shopping"], [UIImage imageNamed:@"drink"], [UIImage imageNamed:@"music"], [UIImage imageNamed:@"travel"], [UIImage imageNamed:@"sports"], [UIImage imageNamed:@"crafts"], [UIImage imageNamed:@"exercise"], nil];
+    NSArray *interestImages = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"technology"], [UIImage imageNamed:@"style"], [UIImage imageNamed:@"sports"], [UIImage imageNamed:@"travel"], [UIImage imageNamed:@"business"], [UIImage imageNamed:@"science"], [UIImage imageNamed:@"music"], [UIImage imageNamed:@"food"], [UIImage imageNamed:@"photography"], [UIImage imageNamed:@"nature"], nil];
 
     
-    NSArray *interestNames =  @[@"Reading", @"Shopping", @"Cocktails", @"Music", @"Traveling", @"Sports", @"Crafts", @"Exercise"];
+    NSArray *interestNames =  @[@"Technology", @"Style", @"Sports", @"Travel", @"Business", @"Science", @"Music", @"Food", @"Photography", @"Nature"];
     
     
     _interests = [[NSMutableArray alloc] initWithCapacity:7];

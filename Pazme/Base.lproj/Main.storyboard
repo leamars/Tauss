@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stock1" translatesAutoresizingMaskIntoConstraints="NO" id="HGY-hB-kze">
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="walkthrough4" translatesAutoresizingMaskIntoConstraints="NO" id="HGY-hB-kze">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -69,7 +69,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 hour ago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaD-11-0j4">
-                                        <rect key="frame" x="217" y="58" width="75" height="21"/>
+                                        <rect key="frame" x="201" y="58" width="110" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -149,12 +149,16 @@
                     </navigationItem>
                     <connections>
                         <outlet property="backImage" destination="jyj-bw-fSf" id="UVo-EK-zpE"/>
+                        <outlet property="citiesLabel" destination="bob-yl-KHk" id="Aoa-PV-j9p"/>
+                        <outlet property="countriesLabel" destination="Jov-c6-jQh" id="uvZ-Wv-QsJ"/>
                         <outlet property="frontImage" destination="HGY-hB-kze" id="l40-cL-Xnw"/>
                         <outlet property="locationIcon" destination="cdt-41-soO" id="MTK-6r-fgi"/>
                         <outlet property="locationLabel" destination="gBD-cG-1Ae" id="k89-dG-eD8"/>
                         <outlet property="mapView" destination="qYT-mX-UHP" id="Sws-nK-H9p"/>
                         <outlet property="metricsView" destination="XIf-iM-VTn" id="Vcj-5j-g6C"/>
+                        <outlet property="milesLabel" destination="lyJ-dL-4VP" id="K8D-Ji-AOa"/>
                         <outlet property="numShared" destination="8BY-M7-JOM" id="u90-Ex-qk6"/>
+                        <outlet property="randomButton" destination="cdt-41-soO" id="l0o-yT-dBp"/>
                         <outlet property="shareCount" destination="h1i-5E-g6b" id="DPN-DK-DaU"/>
                         <outlet property="sharedNum" destination="8BY-M7-JOM" id="lUt-1R-Zb6"/>
                         <outlet property="timeIcon" destination="H9K-fi-KQU" id="LkP-zF-KCC"/>
@@ -882,10 +886,10 @@
         <image name="moreAlt" width="51" height="44"/>
         <image name="settings" width="65" height="66"/>
         <image name="sharedIcon" width="140" height="136"/>
-        <image name="stock1" width="1280" height="853"/>
         <image name="tauss" width="48" height="48"/>
         <image name="time" width="52" height="52"/>
         <image name="userBg" width="734" height="608"/>
+        <image name="walkthrough4" width="640" height="1136"/>
         <image name="yourProfile" width="55" height="60"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

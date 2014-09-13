@@ -32,6 +32,7 @@
     // unique tags not on parse yet
     NSMutableArray *uniqueTags;
     NSMutableArray *toRemove;
+    NSMutableArray *finalUsers;
 }
 
 @end
@@ -43,7 +44,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-
+        
     }
     return self;
 }
@@ -59,6 +60,7 @@
     
     currentUser = [PFUser currentUser];
     userContent = [PFObject objectWithClassName:@"Content"];
+    finalUsers = [NSMutableArray new];
     
     [self getCurrentLocation];
     
@@ -95,15 +97,15 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 - (void) uploadImage: (NSData *) imageData {
     
@@ -127,11 +129,18 @@
             [userContent setObject:[NSNumber numberWithInt:0] forKey:@"passes"];
             [userContent setObject:cityArray forKey:@"cityCount"];
             [userContent setObject:countryArray forKey:@"countryCount"];
+            [userContent setObject:imageFile.url forKey:@"contentURL"];
+            [userContent setValue:[NSNumber numberWithInt:1] forKey:@"pass"];
+            [userContent setObject:@"bryce" forKey:@"submitter"];
             
             // TO DO - what is the movement array? Adding location to things??
             
             // Set the access control list to current user for security purposes
-            userContent.ACL = [PFACL ACLWithUser:currentUser];
+            // userContent.ACL = [PFACL ACLWithUser:currentUser];
+            PFACL *contentACL = [PFACL ACL];
+            [contentACL setPublicWriteAccess:YES];
+            [contentACL setPublicReadAccess:YES];
+            userContent.ACL = contentACL;
             
             [PFGeoPoint geoPointForCurrentLocationInBackground:^(PFGeoPoint *geoPoint, NSError *error) {
                 if (!error) {
@@ -162,8 +171,9 @@
                          [userContent saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
                              if (!error) {
                                  NSLog(@"City & Country saved!!");
+                                 [self passContentWithId:[userContent objectId] andTags:tags toNumOfPeople:1 to:[NSArray new] withBroadcastOn:YES andCaption:@"Whateverr"];
                                  [SVProgressHUD dismiss];
-                                 [self performSelector:@selector(popTagView) withObject:nil afterDelay:0.6];   
+                                 [self performSelector:@selector(popTagView) withObject:nil afterDelay:0.6];
                              }
                              else{
                                  // Log details of the failure
@@ -178,7 +188,7 @@
                 [userContent saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
                     if (!error) {
                         NSLog(@"GeoLocation saved!!");
-                        [SVProgressHUD dismiss];
+                        //[SVProgressHUD dismiss];
                     }
                     else{
                         // Log details of the failure
@@ -196,7 +206,7 @@
                     NSLog(@"Photo saved entirely!");
                     
                     //[self broadcasted];
-                    [SVProgressHUD dismiss];
+                    //[SVProgressHUD dismiss];
                 }
                 else{
                     // Log details of the failure
@@ -315,12 +325,12 @@
                 [uniqueTag setObject:[NSNumber numberWithInt:1] forKey:@"timesUsed"];
                 [uniqueTag saveInBackground];
             }
-
+            
         }
         else {
             NSLog(@"Houston... we have a problem :(");
         }
-     }];
+    }];
     
 }
 
@@ -330,7 +340,7 @@
     
     CGSize viewSize = self.view.bounds.size;
     
-    presetTags = [[NSMutableArray alloc] initWithObjects:@"Technology", @"Design", @"Photography", @"Business", @"Sports", @"Style", @"Travel", @"Music", @"Food", @"Science", nil];
+    presetTags = [[NSMutableArray alloc] initWithObjects:@"Technology", @"Photography", @"Business", @"Sports", @"Style", @"Travel", @"Music", @"Food", @"Science", @"Nature", nil];
     
     _tagList = [[DWTagList alloc] initWithFrame:CGRectMake(20.0, viewSize.height - 200, self.view.bounds.size.width-40.0f, 50.0f)];
     [_tagList setAutomaticResize:YES];
@@ -348,7 +358,7 @@
     [self.view addSubview:_tagList];
     
     // tag array for parse
-       tagArray = [NSMutableArray new];
+    tagArray = [NSMutableArray new];
 }
 
 - (void) tagsForPhoto {
@@ -448,27 +458,155 @@
 }
 
 - (void) broadcasted {
-        [UIView animateWithDuration:0.25
-                              delay: 0.0
-                            options: UIViewAnimationOptionCurveEaseIn
-                         animations:^{
-                             self.broadcast.alpha = 0.5;
-                         }
-                         completion:^(BOOL finished){
-                             // Wait one second and then fade in the view
-                             [UIView animateWithDuration:0.25
-                                                   delay: 0.6
-                                                 options:UIViewAnimationOptionCurveEaseOut
-                                              animations:^{
-                                                  self.broadcast.alpha = 0;
-                                              }
-                                              completion:nil];
-                             
-                         }];
+    [UIView animateWithDuration:0.25
+                          delay: 0.0
+                        options: UIViewAnimationOptionCurveEaseIn
+                     animations:^{
+                         self.broadcast.alpha = 0.5;
+                     }
+                     completion:^(BOOL finished){
+                         // Wait one second and then fade in the view
+                         [UIView animateWithDuration:0.25
+                                               delay: 0.6
+                                             options:UIViewAnimationOptionCurveEaseOut
+                                          animations:^{
+                                              self.broadcast.alpha = 0;
+                                          }
+                                          completion:nil];
+                         
+                     }];
 }
 
 - (void) popTagView {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+// PASS METHOD
+
+- (void) passContentWithId: (NSString *)contentId andTags:(NSArray *)contentTags toNumOfPeople:(int)numOfPeople to:(NSArray *) receivers withBroadcastOn:(BOOL) broadcast andCaption:(NSString*) caption {
+	
+    finalUsers = [NSMutableArray new];
+    
+	//Create a list with objectIds of receiver
+	NSMutableArray * receiverObjectIds = [NSMutableArray new];
+	for (PFUser *user in receivers) {
+		[receiverObjectIds addObject: [user objectId]];
+	}
+    
+    if (broadcast) {
+        
+        //Find user with similar interests which has not received the content yet
+        PFQuery *query = [PFUser query];
+        [query whereKey:@"contentReceived" notEqualTo:contentId];
+        [query whereKey:@"passes" notEqualTo:contentId];
+        [query whereKey:@"trashes" notEqualTo:contentId];
+        [query whereKey:@"tags" containedIn:contentTags]; // TO DO
+        [query whereKey:@"objectId" notEqualTo:[currentUser objectId]];
+        //Exclude reciver list
+        
+        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+            int size = [objects count];
+            
+            // Scenario 1: amount of random users with interest (ri) is equal or more than the amount of people who have to receive the content.
+            // No real random (rr) users have to be added to the list.
+            
+            if (size >= numOfPeople) {
+                while ([finalUsers count] < numOfPeople) {
+                    for (int i = 0; i < numOfPeople; i++) {
+                        int random = arc4random() % size;
+                        if (![finalUsers containsObject:objects[random]]) {
+                            [finalUsers addObject:objects[random]];
+                        }
+                        else {
+                            i--;
+                        }
+                    }
+                }
+                
+                // Add results to receiver list
+                if ([receivers count] > 0) {
+                    [finalUsers addObjectsFromArray:receivers];
+                    // JUST FOR DEMO - DON'T ACTUALLY REMOVE
+                    for (PFUser *user in finalUsers) {
+                        if ([user[@"email"] isEqualToString:currentUser[@"email"]]) {
+                            [finalUsers removeObject:user];
+                        }
+                    }
+                }
+                
+                //TO DO send to users here
+                for (PFUser *user in finalUsers) {
+                    NSLog(@"User is: %@", user[@"email"]);
+                }
+            }
+            
+            // Scenario 2: amount of found users is less than the number of interested users.
+            // real random (rr) users have to be added to the finalUsers list, until it is full. Full = numbers of finalUsers = numPeople
+            
+            else {
+                [finalUsers addObjectsFromArray:objects];
+                
+                PFQuery *newQuery = [PFUser query];
+                [query whereKey:@"contentReceived" notEqualTo:contentId];
+                [newQuery whereKey:@"tags" notContainedIn:contentTags];
+                [newQuery whereKey:@"passes" notEqualTo:contentId];
+                [newQuery whereKey:@"trashes" notEqualTo:contentId];
+                [query whereKey:@"objectId" notEqualTo:[currentUser objectId]];
+                
+                // Exclude receiver list
+                [newQuery setLimit:((numOfPeople - [objects count]) *5)];
+                
+                [newQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+                    int size = [objects count];
+                    int start = [finalUsers count];
+                    
+                    // If the number of finalUsers + the found users can serve the needed number of users (numPeople),
+                    // finalUsers can be filled up until numPeople is reached
+                    if ((size + start) >= numOfPeople) {
+                        for (int i = start; i < numOfPeople; i++) {
+                            int random = arc4random() % size;
+                            if (![finalUsers containsObject:objects[random]]) {
+                                [finalUsers addObject:objects[random]];
+                            }
+                            else {
+                                //i--;
+                            }
+                        }
+                    }
+                    else {
+                        [finalUsers addObjectsFromArray:objects];
+                    }
+                    
+                    if ([receivers count] > 0) {
+                        [finalUsers addObjectsFromArray:objects];
+                    }
+                    
+                    for (PFUser *user in finalUsers) {
+                        if ([user isEqual:currentUser]) {
+                            [finalUsers removeObject:user];
+                        }
+                    }
+                    [self pushContentWithContentId:[userContent objectId] toReceivers:finalUsers withCaption:@""];
+                    
+                    for (PFUser *user in finalUsers) {
+                        NSLog(@"Parse user: %@", user[@"email"]);
+                    }
+                }];
+                
+            }
+        }];
+    }
+}
+
+- (void) pushContentWithContentId: (NSString *)contentId toReceivers:(NSArray *)receivers withCaption:(NSString *)caption {
+    PFQuery *pushQuery = [PFInstallation query];
+    [pushQuery whereKey:@"user" containedIn:receivers];
+    
+    NSDictionary *data = [NSDictionary dictionaryWithObjectsAndKeys:contentId, @"contentId", @"Increment", @"badge",  @"New great Tauss content just for you!", @"alert", caption, @"caption", @"Realization.aif", @"sound", nil];
+    PFPush *push = [PFPush new];
+    [push setQuery:pushQuery];
+    [push setData:data];
+    [push sendPushInBackground];
 }
 
 @end
